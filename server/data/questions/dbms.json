@@ -1,0 +1,2355 @@
+[
+  {
+    "text": "Which normal form deals with multi-valued dependencies?",
+    "options": [
+      "BCNF",
+      "2NF",
+      "3NF",
+      "4NF"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2017 | IBM",
+    "tags": [
+      "normalization",
+      "4nf",
+      "mvd"
+    ],
+    "explanation": "4NF handles multi-valued dependencies by decomposing relations with independent multi-valued facts."
+  },
+  {
+    "text": "ACID properties are related to?",
+    "options": [
+      "Transactions",
+      "Scheduling",
+      "Networking",
+      "Compilation"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Cognizant",
+    "tags": [
+      "acid",
+      "transactions"
+    ],
+    "explanation": "ACID (Atomicity, Consistency, Isolation, Durability) governs database transactions."
+  },
+  {
+    "text": "Which join returns all rows from both tables?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL OUTER JOIN"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | TCS",
+    "tags": [
+      "join",
+      "sql"
+    ],
+    "explanation": "FULL OUTER JOIN returns all rows from both tables, filling NULLs where no match exists."
+  },
+  {
+    "text": "A relation is in BCNF if every determinant is a?",
+    "options": [
+      "Candidate key",
+      "Primary key",
+      "Super key",
+      "Foreign key"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | Walmart",
+    "tags": [
+      "bcnf",
+      "superkey"
+    ],
+    "explanation": "BCNF requires that for every non-trivial FD X→Y, X must be a superkey of the relation."
+  },
+  {
+    "text": "Which of these is NOT a type of database key?",
+    "options": [
+      "Loop Key",
+      "Foreign Key",
+      "Candidate Key",
+      "Primary Key"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | IBM",
+    "tags": [
+      "keys"
+    ],
+    "explanation": "Loop Key is not a database concept. Primary, Foreign, and Candidate are valid key types."
+  },
+  {
+    "text": "In a B+ tree of order m, maximum number of keys in a node is?",
+    "options": [
+      "m/2",
+      "m-1",
+      "m+1",
+      "m"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Microsoft",
+    "tags": [
+      "b-plus-tree",
+      "indexing"
+    ],
+    "explanation": "A B+ tree node of order m stores at most m-1 keys and m child pointers."
+  },
+  {
+    "text": "Two-phase locking protocol ensures?",
+    "options": [
+      "Serializability",
+      "Atomicity",
+      "Deadlock freedom",
+      "Recovery"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Flipkart",
+    "tags": [
+      "2pl",
+      "serializability"
+    ],
+    "explanation": "2PL (growing and shrinking phases) guarantees conflict-serializable schedules."
+  },
+  {
+    "text": "Which SQL clause is used to filter groups?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Adobe",
+    "tags": [
+      "having",
+      "group-by"
+    ],
+    "explanation": "HAVING filters groups after GROUP BY, while WHERE filters individual rows before grouping."
+  },
+  {
+    "text": "A schedule is conflict-serializable if its precedence graph is?",
+    "options": [
+      "Cyclic",
+      "Acyclic",
+      "Complete",
+      "Bipartite"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Apple",
+    "tags": [
+      "precedence-graph",
+      "serializability"
+    ],
+    "explanation": "An acyclic precedence graph means no conflicting circular dependencies — the schedule is conflict-serializable."
+  },
+  {
+    "text": "The ARIES recovery algorithm uses which type of logging?",
+    "options": [
+      "Undo only",
+      "Redo only",
+      "Undo/Redo",
+      "No logging"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2020 | Accenture",
+    "tags": [
+      "aries",
+      "wal",
+      "recovery"
+    ],
+    "explanation": "ARIES uses Write-Ahead Logging with both undo and redo — it's the industry standard recovery algorithm."
+  },
+  {
+    "text": "Which normal form removes partial dependency?",
+    "options": [
+      "3NF",
+      "1NF",
+      "BCNF",
+      "2NF"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Cisco",
+    "tags": [
+      "2nf",
+      "partial-dependency"
+    ],
+    "explanation": "2NF eliminates partial dependencies — no non-prime attribute depends on a proper subset of a candidate key."
+  },
+  {
+    "text": "A view in SQL is a?",
+    "options": [
+      "Temporary table",
+      "Virtual table",
+      "Index",
+      "Physical table"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | AMD",
+    "tags": [
+      "view",
+      "virtual-table"
+    ],
+    "explanation": "A view is a virtual table defined by a query — it doesn't store data but computes results on the fly."
+  },
+  {
+    "text": "Which isolation level prevents dirty reads but allows non-repeatable reads?",
+    "options": [
+      "Read Uncommitted",
+      "Repeatable Read",
+      "Read Committed",
+      "Serializable"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Adobe",
+    "tags": [
+      "isolation-levels"
+    ],
+    "explanation": "Read Committed prevents dirty reads but allows non-repeatable reads and phantom reads."
+  },
+  {
+    "text": "The closure of a set of functional dependencies can be computed using?",
+    "options": [
+      "Armstrong's axioms",
+      "Normalization",
+      "Hashing",
+      "Chase algorithm"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Cisco",
+    "tags": [
+      "armstrongs-axioms",
+      "closure"
+    ],
+    "explanation": "Armstrong's axioms (reflexivity, augmentation, transitivity) compute the closure of FDs."
+  },
+  {
+    "text": "Which type of index stores data rows in the order of the index key?",
+    "options": [
+      "Non-clustered",
+      "Clustered",
+      "Bitmap",
+      "Hash"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Google",
+    "tags": [
+      "clustered-index"
+    ],
+    "explanation": "A clustered index physically orders data rows by the index key — only one per table."
+  },
+  {
+    "text": "What is a foreign key?",
+    "options": [
+      "A key from another table that references the primary key",
+      "A key that cannot be null",
+      "A key used for indexing only",
+      "The first column in a table"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "foreign-key"
+    ],
+    "explanation": "A foreign key is an attribute in one table that references the primary key of another table."
+  },
+  {
+    "text": "What is the difference between DELETE and TRUNCATE in SQL?",
+    "options": [
+      "No difference",
+      "DELETE can be rolled back, TRUNCATE cannot in most RDBMS",
+      "DELETE removes the table",
+      "TRUNCATE is slower"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | TCS",
+    "tags": [
+      "delete",
+      "truncate"
+    ],
+    "explanation": "DELETE is DML (can rollback, fires triggers), TRUNCATE is DDL (faster, resets identity, minimal logging)."
+  },
+  {
+    "text": "Which of the following is a DDL command?",
+    "options": [
+      "ALTER",
+      "SELECT",
+      "UPDATE",
+      "INSERT"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Cisco",
+    "tags": [
+      "ddl",
+      "alter"
+    ],
+    "explanation": "ALTER modifies table structure (DDL). SELECT/INSERT/UPDATE are DML commands."
+  },
+  {
+    "text": "What is a candidate key?",
+    "options": [
+      "A foreign key",
+      "Any column in a table",
+      "A minimal superkey that can uniquely identify rows",
+      "The primary key only"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2014 | Wipro",
+    "tags": [
+      "candidate-key"
+    ],
+    "explanation": "A candidate key is a minimal set of attributes that uniquely identifies every tuple in a relation."
+  },
+  {
+    "text": "In SQL, which aggregate function ignores NULL values?",
+    "options": [
+      "SUM",
+      "COUNT(*)",
+      "Both COUNT(column) and SUM",
+      "COUNT(column)"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "null",
+      "aggregate"
+    ],
+    "explanation": "COUNT(column), SUM, AVG, MIN, MAX all ignore NULL values. Only COUNT(*) counts all rows including NULLs."
+  },
+  {
+    "text": "What is the purpose of a trigger in SQL?",
+    "options": [
+      "Join tables",
+      "Automatically execute code in response to DML events",
+      "Sort results",
+      "Create indexes"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "trigger"
+    ],
+    "explanation": "Triggers automatically fire stored procedures in response to INSERT, UPDATE, or DELETE events."
+  },
+  {
+    "text": "Which of the following is true about 3NF?",
+    "options": [
+      "It removes multi-valued dependencies",
+      "It is stricter than BCNF",
+      "It allows partial dependencies",
+      "It removes all transitive dependencies"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | IBM",
+    "tags": [
+      "3nf",
+      "transitive"
+    ],
+    "explanation": "3NF eliminates transitive dependencies — no non-prime attribute transitively depends on a candidate key."
+  },
+  {
+    "text": "What is a stored procedure?",
+    "options": [
+      "A view with parameters",
+      "A query saved in a file",
+      "Precompiled SQL code stored in the database",
+      "An index type"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "stored-procedure"
+    ],
+    "explanation": "A stored procedure is precompiled SQL code stored in the database that can be called by name."
+  },
+  {
+    "text": "What is denormalization?",
+    "options": [
+      "Creating views",
+      "Deleting tables",
+      "Intentionally adding redundancy to improve read performance",
+      "Removing all redundancy"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "denormalization"
+    ],
+    "explanation": "Denormalization adds controlled redundancy to reduce joins and improve query performance at the cost of update complexity."
+  },
+  {
+    "text": "Which type of lock allows multiple transactions to read but not write?",
+    "options": [
+      "Update lock",
+      "Exclusive lock",
+      "Shared lock",
+      "Intent lock"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Meta",
+    "tags": [
+      "shared-lock",
+      "concurrency"
+    ],
+    "explanation": "Shared (S) locks allow multiple concurrent reads but block writes until all S locks are released."
+  },
+  {
+    "text": "What is a deadlock in database context?",
+    "options": [
+      "A failed query",
+      "Two transactions each waiting for the other's lock",
+      "A transaction that runs forever",
+      "A corrupted index"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "deadlock",
+      "database"
+    ],
+    "explanation": "Deadlock occurs when two or more transactions form a circular wait chain for each other's locks."
+  },
+  {
+    "text": "What is the purpose of the GROUP BY clause?",
+    "options": [
+      "Join tables",
+      "Group rows with same values for aggregate functions",
+      "Sort results",
+      "Filter rows"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Goldman Sachs",
+    "tags": [
+      "group-by"
+    ],
+    "explanation": "GROUP BY groups rows sharing specified column values so aggregate functions operate on each group."
+  },
+  {
+    "text": "What is referential integrity?",
+    "options": [
+      "Indexes must be unique",
+      "Foreign key values must reference existing primary key values",
+      "All columns have data types",
+      "Tables must have primary keys"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Amazon",
+    "tags": [
+      "referential-integrity"
+    ],
+    "explanation": "Referential integrity ensures that every foreign key value either matches an existing primary key or is NULL."
+  },
+  {
+    "text": "Which of the following is true about a hash index?",
+    "options": [
+      "Orders data physically",
+      "Only supports equality lookups",
+      "Supports range queries efficiently",
+      "Uses tree structure"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Infosys",
+    "tags": [
+      "hash-index"
+    ],
+    "explanation": "Hash indexes map keys to buckets via a hash function — fast for equality but don't support range queries."
+  },
+  {
+    "text": "What is the difference between UNION and UNION ALL?",
+    "options": [
+      "UNION sorts results",
+      "UNION removes duplicates, UNION ALL keeps them",
+      "No difference",
+      "UNION ALL is slower"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in AMD",
+    "tags": [
+      "union"
+    ],
+    "explanation": "UNION removes duplicate rows (with extra cost), UNION ALL returns all rows including duplicates."
+  },
+  {
+    "text": "What is a composite key?",
+    "options": [
+      "A key with special characters",
+      "An encrypted key",
+      "A foreign key with constraints",
+      "A key consisting of two or more attributes"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "composite-key"
+    ],
+    "explanation": "A composite key uses two or more columns together to uniquely identify a row."
+  },
+  {
+    "text": "In a B-tree of order 5, the minimum number of keys in a non-root internal node is?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | PayPal",
+    "tags": [
+      "b-tree",
+      "minimum-keys"
+    ],
+    "explanation": "For order m, minimum keys = ceil(m/2) - 1 = ceil(5/2) - 1 = 2."
+  },
+  {
+    "text": "What is a cursor in SQL?",
+    "options": [
+      "A mechanism to traverse result sets row by row",
+      "An index",
+      "A pointer on screen",
+      "A lock type"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "cursor"
+    ],
+    "explanation": "A cursor lets you process query results one row at a time in stored procedures."
+  },
+  {
+    "text": "What is the WAL (Write-Ahead Logging) protocol?",
+    "options": [
+      "Both written simultaneously",
+      "No logging needed",
+      "Data is written before log",
+      "Log is written before data"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Uber",
+    "tags": [
+      "wal",
+      "logging"
+    ],
+    "explanation": "WAL requires the log record to be written to stable storage before the actual data modification — ensuring recoverability."
+  },
+  {
+    "text": "Which SQL command is used to add a new column to an existing table?",
+    "options": [
+      "UPDATE",
+      "ALTER TABLE ADD",
+      "CREATE",
+      "INSERT"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in AMD",
+    "tags": [
+      "alter",
+      "add-column"
+    ],
+    "explanation": "ALTER TABLE table_name ADD column_name datatype adds a new column to an existing table."
+  },
+  {
+    "text": "What is a correlated subquery?",
+    "options": [
+      "A subquery that runs once",
+      "A subquery with joins",
+      "A subquery that references columns from the outer query",
+      "An uncorrelated query"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Apple",
+    "tags": [
+      "correlated-subquery"
+    ],
+    "explanation": "A correlated subquery references outer query columns, executing once for each outer row."
+  },
+  {
+    "text": "What is the phantom read problem?",
+    "options": [
+      "Reading uncommitted data",
+      "Reading deleted data",
+      "Missing columns in result",
+      "New rows appearing between two reads in a transaction"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Adobe",
+    "tags": [
+      "phantom-read",
+      "isolation"
+    ],
+    "explanation": "Phantom reads occur when new rows matching a query condition appear between two reads in the same transaction."
+  },
+  {
+    "text": "What is the purpose of a checkpoint in recovery?",
+    "options": [
+      "Stop the database",
+      "Mark a point where all committed changes are on disk",
+      "Delete old logs",
+      "Create a backup"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | TCS",
+    "tags": [
+      "checkpoint",
+      "recovery"
+    ],
+    "explanation": "A checkpoint records that all committed transactions' changes are persisted to disk, reducing recovery time."
+  },
+  {
+    "text": "Which of the following is true about bitmap indexes?",
+    "options": [
+      "Best for high-cardinality columns",
+      "Always faster than B-tree",
+      "Cannot be used with WHERE clauses",
+      "Best for low-cardinality columns like gender or status"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Accenture",
+    "tags": [
+      "bitmap-index"
+    ],
+    "explanation": "Bitmap indexes are efficient for low-cardinality columns with few distinct values, using bit vectors."
+  },
+  {
+    "text": "What is a materialized view?",
+    "options": [
+      "A temporary table",
+      "A synonym",
+      "Same as a regular view",
+      "A view that stores computed results physically"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Accenture",
+    "tags": [
+      "materialized-view"
+    ],
+    "explanation": "A materialized view physically stores query results, trading space for faster reads — needs periodic refresh."
+  },
+  {
+    "text": "What is the difference between a primary key and a unique key?",
+    "options": [
+      "Primary key can have duplicates",
+      "Unique key is faster",
+      "Primary key cannot be NULL, unique key allows one NULL",
+      "No difference"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Interview | Infosys",
+    "tags": [
+      "primary-key",
+      "unique-key"
+    ],
+    "explanation": "Primary keys enforce NOT NULL + UNIQUE. Unique keys allow one NULL value (varies by RDBMS)."
+  },
+  {
+    "text": "What is a self-join?",
+    "options": [
+      "A cross join",
+      "An automatic join",
+      "Joining a table with itself",
+      "Joining a table with its backup"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Oracle",
+    "tags": [
+      "self-join"
+    ],
+    "explanation": "A self-join joins a table with itself using aliases — useful for hierarchical data like employee-manager relationships."
+  },
+  {
+    "text": "What is timestamp-based concurrency control?",
+    "options": [
+      "Assigning timestamps to transactions and validating order",
+      "Timing query execution",
+      "Using system clock for queries",
+      "Using timestamps to order locks"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | AMD",
+    "tags": [
+      "timestamp",
+      "concurrency"
+    ],
+    "explanation": "Each transaction gets a timestamp. Operations are validated against timestamps — transactions violating order are rolled back."
+  },
+  {
+    "text": "What is the purpose of EXPLAIN in SQL?",
+    "options": [
+      "Debug syntax errors",
+      "Show the query execution plan",
+      "Explain a query in English",
+      "Run the query faster"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Flipkart",
+    "tags": [
+      "explain",
+      "query-plan"
+    ],
+    "explanation": "EXPLAIN shows how the database engine executes a query — which indexes it uses, join order, estimated costs."
+  },
+  {
+    "text": "What is a transaction log?",
+    "options": [
+      "User activity log",
+      "Error log",
+      "Audit trail only",
+      "Sequential record of all database modifications"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "transaction-log"
+    ],
+    "explanation": "The transaction log records all modifications (before/after values) for crash recovery and rollback."
+  },
+  {
+    "text": "What is sharding?",
+    "options": [
+      "Encrypting data",
+      "Normalizing tables",
+      "Creating backups",
+      "Horizontally partitioning data across multiple databases"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Oracle",
+    "tags": [
+      "sharding",
+      "distributed"
+    ],
+    "explanation": "Sharding distributes data across multiple database instances to scale horizontally."
+  },
+  {
+    "text": "What is the difference between CHAR and VARCHAR?",
+    "options": [
+      "No difference",
+      "CHAR is for numbers",
+      "VARCHAR is fixed-length",
+      "CHAR is fixed-length, VARCHAR is variable-length"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Cisco",
+    "tags": [
+      "char",
+      "varchar"
+    ],
+    "explanation": "CHAR allocates fixed space (padded), VARCHAR uses only needed space + length prefix — VARCHAR is more space-efficient for variable text."
+  },
+  {
+    "text": "What does the COALESCE function do?",
+    "options": [
+      "Merge columns",
+      "Return the first non-NULL value from a list",
+      "Join tables",
+      "Count rows"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Oracle",
+    "tags": [
+      "coalesce",
+      "null"
+    ],
+    "explanation": "COALESCE returns the first non-NULL argument — useful for providing default values."
+  },
+  {
+    "text": "What is a natural join?",
+    "options": [
+      "A cross join",
+      "A join on all common column names between tables",
+      "A self join",
+      "A join without conditions"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | AMD",
+    "tags": [
+      "natural-join"
+    ],
+    "explanation": "A natural join automatically joins on all columns with the same name in both tables."
+  },
+  {
+    "text": "What is the difference between WHERE and HAVING?",
+    "options": [
+      "WHERE filters rows before grouping, HAVING filters groups after",
+      "WHERE works on groups",
+      "No difference",
+      "HAVING is faster"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Interview | Oracle",
+    "tags": [
+      "where",
+      "having"
+    ],
+    "explanation": "WHERE filters individual rows before GROUP BY. HAVING filters aggregated groups after GROUP BY."
+  },
+  {
+    "text": "What is an entity-relationship diagram?",
+    "options": [
+      "A query optimizer",
+      "A file format",
+      "A database backup tool",
+      "A visual representation of entities, attributes, and relationships"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "er-diagram"
+    ],
+    "explanation": "An ER diagram models the database schema showing entities, their attributes, and relationships between them."
+  },
+  {
+    "text": "In MVCC (Multi-Version Concurrency Control), how are reads handled?",
+    "options": [
+      "Reads always get latest data",
+      "All reads are serialized",
+      "Readers block writers",
+      "Readers see a consistent snapshot without blocking"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Oracle",
+    "tags": [
+      "mvcc",
+      "snapshot"
+    ],
+    "explanation": "MVCC provides each transaction a consistent snapshot — readers never block writers and vice versa."
+  },
+  {
+    "text": "What is database normalization?",
+    "options": [
+      "Making the database faster",
+      "Compressing data",
+      "Creating indexes",
+      "Organizing data to reduce redundancy and improve integrity"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "normalization"
+    ],
+    "explanation": "Normalization decomposes tables to minimize redundancy and prevent update/insertion/deletion anomalies."
+  },
+  {
+    "text": "What is a cross join?",
+    "options": [
+      "A recursive join",
+      "A join with conditions",
+      "A filtered join",
+      "The Cartesian product of two tables"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "cross-join",
+      "cartesian"
+    ],
+    "explanation": "A cross join produces the Cartesian product — every row of table A paired with every row of table B."
+  },
+  {
+    "text": "What does the EXISTS keyword do in SQL?",
+    "options": [
+      "Creates a table if it doesn't exist",
+      "Checks if a table exists",
+      "Deletes if exists",
+      "Returns true if a subquery returns at least one row"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "exists",
+      "subquery"
+    ],
+    "explanation": "EXISTS returns TRUE if the subquery produces any rows. Often more efficient than IN for correlated subqueries."
+  },
+  {
+    "text": "What is the purpose of a database index?",
+    "options": [
+      "Speed up data retrieval at the cost of extra storage and write overhead",
+      "Encrypt data",
+      "Compress tables",
+      "Store backup data"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "index",
+      "performance"
+    ],
+    "explanation": "Indexes create sorted data structures for faster lookups, but add overhead for inserts, updates, and deletes."
+  },
+  {
+    "text": "Serial schedule means?",
+    "options": [
+      "Transactions are sorted",
+      "Transactions execute concurrently",
+      "Transactions execute one after another without interleaving",
+      "Transactions are parallel"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | IBM",
+    "tags": [
+      "serial-schedule"
+    ],
+    "explanation": "In a serial schedule, transactions execute sequentially — always correct but has poor throughput."
+  },
+  {
+    "text": "What is a lossless join decomposition?",
+    "options": [
+      "No data is lost during table split",
+      "All joins produce results",
+      "Joining is faster",
+      "The original table can be perfectly reconstructed by joining the decomposed tables"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Oracle",
+    "tags": [
+      "lossless-join"
+    ],
+    "explanation": "Lossless decomposition ensures that natural joining the decomposed tables gives exactly the original relation."
+  },
+  {
+    "text": "What is an OLAP cube?",
+    "options": [
+      "A backup format",
+      "A type of index",
+      "A multi-dimensional data structure for analytical queries",
+      "A 3D database"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "olap",
+      "analytics"
+    ],
+    "explanation": "OLAP cubes organize data across multiple dimensions for fast analytical queries like drill-down and roll-up."
+  },
+  {
+    "text": "What is database replication?",
+    "options": [
+      "Normalizing tables",
+      "Creating indexes",
+      "Compressing data",
+      "Copying a database to another location for redundancy and availability"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Cognizant",
+    "tags": [
+      "replication"
+    ],
+    "explanation": "Replication maintains copies of the database on multiple servers for high availability and disaster recovery."
+  },
+  {
+    "text": "What is a schema in a database?",
+    "options": [
+      "An index",
+      "A table",
+      "The logical structure/blueprint of the entire database",
+      "A query"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "schema"
+    ],
+    "explanation": "A schema defines the logical structure — tables, columns, data types, constraints, relationships."
+  },
+  {
+    "text": "What is the CAP theorem?",
+    "options": [
+      "A concurrency protocol",
+      "In distributed systems, you can only guarantee 2 of 3: Consistency, Availability, Partition tolerance",
+      "A database optimization technique",
+      "A normalization rule"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | AMD",
+    "tags": [
+      "cap-theorem",
+      "distributed"
+    ],
+    "explanation": "CAP theorem states that a distributed system can guarantee at most 2 of Consistency, Availability, and Partition Tolerance."
+  },
+  {
+    "text": "What is the purpose of GRANT and REVOKE in SQL?",
+    "options": [
+      "Sort data",
+      "Create tables",
+      "Control access permissions on database objects",
+      "Join tables"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Accenture",
+    "tags": [
+      "grant",
+      "revoke",
+      "dcl"
+    ],
+    "explanation": "GRANT gives permissions (SELECT, INSERT, etc.) to users. REVOKE removes permissions. Both are DCL commands."
+  },
+  {
+    "text": "An e-commerce platform queries get progressively slower as order table grows from 1M to 50M rows. The ORDER BY created_at DESC query takes 30 seconds. What's the primary fix?",
+    "options": [
+      "Upgrade CPU",
+      "Use NoSQL instead",
+      "Create a composite index on (created_at DESC) with covering columns",
+      "Add more RAM"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Goldman Sachs",
+    "tags": [
+      "query-optimization",
+      "indexing",
+      "case-study"
+    ],
+    "explanation": "A composite index covering the query columns avoids table lookups. Index on (created_at DESC, status, total) allows index-only scans."
+  },
+  {
+    "text": "A banking application processes 10,000 transactions/second. During peak hours, deadlocks occur frequently between transfer operations. How should the schema/application be designed to minimize deadlocks?",
+    "options": [
+      "Use READ UNCOMMITTED isolation",
+      "Reduce transaction count",
+      "Remove all locks",
+      "Always acquire locks on accounts in ascending account_id order"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | IBM",
+    "tags": [
+      "deadlock",
+      "banking",
+      "case-study"
+    ],
+    "explanation": "Consistent lock ordering (always lock lower account_id first) prevents circular wait — the key deadlock condition."
+  },
+  {
+    "text": "A social media app stores user posts in a single 'posts' table with 500M rows. Queries for a user's recent posts are slow. The table has userId, content, createdAt, likes. Propose an indexing strategy.",
+    "options": [
+      "Index on likes",
+      "Composite index on (userId, createdAt DESC)",
+      "No index needed with that data size",
+      "Index on content"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | NVIDIA",
+    "tags": [
+      "indexing-strategy",
+      "social-media",
+      "case-study"
+    ],
+    "explanation": "A composite index on (userId, createdAt DESC) lets the DB find all posts by a user sorted by time using a single index scan."
+  },
+  {
+    "text": "You have a denormalized 'orders' table with customer name repeated in every order row. The customer changes their name. What anomaly is this, and how to fix it?",
+    "options": [
+      "Insertion anomaly — add triggers",
+      "Update anomaly — normalize into separate customers and orders tables",
+      "Deletion anomaly — use soft deletes",
+      "No anomaly exists"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | Apple",
+    "tags": [
+      "update-anomaly",
+      "normalization",
+      "case-study"
+    ],
+    "explanation": "Updating customer name requires modifying every order row — classic update anomaly. Fix: normalize into customers + orders with foreign key."
+  },
+  {
+    "text": "A hospital management system needs to ensure that deleting a doctor record doesn't orphan patient appointments. What constraint mechanism handles this?",
+    "options": [
+      "CHECK constraint",
+      "ON DELETE CASCADE or ON DELETE SET NULL foreign key constraint",
+      "UNIQUE constraint",
+      "INDEX"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "referential-integrity",
+      "cascade",
+      "case-study"
+    ],
+    "explanation": "ON DELETE CASCADE deletes related appointments, ON DELETE SET NULL keeps them with null doctor_id. Choice depends on business logic."
+  },
+  {
+    "text": "An analytics dashboard runs complex aggregate queries on 100M rows, causing the production OLTP database to slow down. What architectural solution would you recommend?",
+    "options": [
+      "Add indexes to every column",
+      "Drop unused tables",
+      "Increase connection pool",
+      "Create a read replica or separate OLAP data warehouse"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Wipro",
+    "tags": [
+      "oltp-olap",
+      "read-replica",
+      "case-study"
+    ],
+    "explanation": "Separate OLTP (transactional) and OLAP (analytical) workloads. Use a read replica or data warehouse (e.g., ETL to a columnar store)."
+  },
+  {
+    "text": "A multi-tenant SaaS application stores all tenants' data in one database. Tenant A's slow query affects Tenant B. How do you isolate tenants?",
+    "options": [
+      "Use row-level partitioning with tenant_id in every table + connection pooling per tenant",
+      "Use separate databases per tenant",
+      "Upgrade server hardware",
+      "Limit query execution time"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Intel",
+    "tags": [
+      "multi-tenant",
+      "partitioning",
+      "case-study"
+    ],
+    "explanation": "Row-level partitioning with tenant_id prefix on all indexes + resource governor/connection pool per tenant provides isolation without separate DBs."
+  },
+  {
+    "text": "A news website's article table uses auto-increment integer IDs. After a database migration, two systems generate conflicting IDs. How to prevent ID collisions in a distributed setup?",
+    "options": [
+      "Use larger integers",
+      "Use negative IDs for one system",
+      "Manually assign IDs",
+      "Use UUIDs or distributed ID generators like Snowflake"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Oracle",
+    "tags": [
+      "uuid",
+      "distributed-id",
+      "case-study"
+    ],
+    "explanation": "UUIDs or Snowflake-style IDs (timestamp + machine + sequence) guarantee globally unique IDs without coordination."
+  },
+  {
+    "text": "Your application uses SELECT * FROM users WHERE email LIKE '%@gmail.com'. This query scans 10M rows. Why doesn't the index on email help?",
+    "options": [
+      "Index is corrupted",
+      "Leading wildcard '%...' prevents index usage — the DB must scan every row",
+      "The query syntax is wrong",
+      "Email shouldn't be indexed"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "like-query",
+      "index-scan",
+      "case-study"
+    ],
+    "explanation": "B-tree indexes work left-to-right. A leading wildcard (%) forces a full table scan. Solutions: reverse index, full-text search, or separate domain column."
+  },
+  {
+    "text": "A financial system must guarantee that a funds transfer (debit account A, credit account B) either fully completes or fully rolls back, even if the server crashes mid-operation. Which ACID property is most critical here?",
+    "options": [
+      "Atomicity",
+      "Isolation",
+      "Consistency",
+      "Durability"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "atomicity",
+      "acid",
+      "case-study"
+    ],
+    "explanation": "Atomicity ensures the transfer is all-or-nothing. If the debit succeeds but credit fails, the entire transaction rolls back."
+  },
+  {
+    "text": "What is the difference between INNER JOIN and LEFT JOIN?",
+    "options": [
+      "LEFT is faster",
+      "INNER returns more rows",
+      "No difference",
+      "INNER returns only matching rows, LEFT returns all left table rows with NULLs for non-matches"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "inner-join",
+      "left-join"
+    ],
+    "explanation": "INNER JOIN returns only matching rows from both tables. LEFT JOIN returns all left rows, padding NULLs where no right match exists."
+  },
+  {
+    "text": "What is a window function in SQL?",
+    "options": [
+      "A function that opens a window",
+      "A function that creates views",
+      "A function that handles NULLs",
+      "A function that performs calculations across a set of rows related to the current row"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Samsung",
+    "tags": [
+      "window-function"
+    ],
+    "explanation": "Window functions (ROW_NUMBER, RANK, LAG, LEAD) compute values across a group of rows without collapsing them into a single output row."
+  },
+  {
+    "text": "What is eventual consistency?",
+    "options": [
+      "Data is never consistent",
+      "Consistency is guaranteed immediately",
+      "Data is always consistent",
+      "All replicas will eventually converge to the same value given no new updates"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Uber",
+    "tags": [
+      "eventual-consistency",
+      "distributed"
+    ],
+    "explanation": "Eventual consistency allows temporary inconsistencies but guarantees all replicas converge — used in systems prioritizing availability (AP in CAP)."
+  },
+  {
+    "text": "What is a CTE (Common Table Expression)?",
+    "options": [
+      "A stored procedure",
+      "A type of index",
+      "A temporary named result set within a query, defined using WITH clause",
+      "A table constraint"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Infosys",
+    "tags": [
+      "cte",
+      "with-clause"
+    ],
+    "explanation": "CTEs (WITH clause) create readable temporary result sets within a query. They can be recursive for hierarchical data."
+  },
+  {
+    "text": "What is the purpose of SAVEPOINT in transactions?",
+    "options": [
+      "Checkpoint the log",
+      "Save the database",
+      "Create a point within a transaction to which you can roll back",
+      "Save query results"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Microsoft",
+    "tags": [
+      "savepoint",
+      "partial-rollback"
+    ],
+    "explanation": "SAVEPOINT allows partial rollback within a transaction — rolling back to the savepoint without aborting the entire transaction."
+  },
+  {
+    "text": "What is a covering index?",
+    "options": [
+      "An encrypted index",
+      "An index that contains all columns needed by a query, avoiding table lookups",
+      "A full-text index",
+      "An index that covers all tables"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Amazon",
+    "tags": [
+      "covering-index"
+    ],
+    "explanation": "A covering index includes all columns referenced in a query, allowing the DB to satisfy the query from the index alone."
+  },
+  {
+    "text": "What is write-ahead logging used for?",
+    "options": [
+      "Caching",
+      "Query optimization",
+      "Indexing",
+      "Ensuring durability and atomicity by logging changes before writing to data files"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Flipkart",
+    "tags": [
+      "wal",
+      "durability"
+    ],
+    "explanation": "WAL writes change logs before modifying data pages, ensuring recovery from crashes by replaying or undoing logged changes."
+  },
+  {
+    "text": "What is the difference between clustered and non-clustered indexes?",
+    "options": [
+      "Non-clustered is always faster",
+      "Clustered allows NULLs",
+      "Clustered orders data physically, non-clustered creates a separate lookup structure",
+      "No difference"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Amazon",
+    "tags": [
+      "clustered",
+      "non-clustered"
+    ],
+    "explanation": "A clustered index defines physical row order (one per table). Non-clustered indexes are separate structures with pointers to data rows."
+  },
+  {
+    "text": "What is a database connection pool?",
+    "options": [
+      "A type of index",
+      "A backup pool",
+      "A sharding strategy",
+      "A cache of reusable database connections to reduce overhead"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Uber",
+    "tags": [
+      "connection-pool"
+    ],
+    "explanation": "Connection pooling maintains reusable connections, avoiding the overhead of creating/destroying connections for each query."
+  },
+  {
+    "text": "Which normal form addresses join dependencies?",
+    "options": [
+      "4NF",
+      "BCNF",
+      "3NF",
+      "5NF (PJNF)"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Intel",
+    "tags": [
+      "5nf",
+      "pjnf"
+    ],
+    "explanation": "5NF (Project-Join Normal Form) handles join dependencies — a relation is in 5NF if every join dependency is implied by candidate keys."
+  },
+  {
+    "text": "What is SQL injection and how is it prevented?",
+    "options": [
+      "A join optimization — use EXPLAIN",
+      "Malicious SQL code inserted via user input — prevented by parameterized queries",
+      "A type of index — use B-tree",
+      "A backup technique"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "sql-injection",
+      "security"
+    ],
+    "explanation": "SQL injection inserts malicious SQL through user inputs. Prevention: parameterized queries/prepared statements, input validation, ORMs."
+  },
+  {
+    "text": "An e-commerce company migrates from MySQL to MongoDB for product catalog. Reviews that reference products by product_id start showing orphaned references. Why?",
+    "options": [
+      "The migration script failed",
+      "MongoDB doesn't enforce foreign key constraints — application-level checks or embedding is needed",
+      "MongoDB is broken",
+      "Network issue"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Wipro",
+    "tags": [
+      "nosql",
+      "referential-integrity",
+      "case-study"
+    ],
+    "explanation": "NoSQL databases like MongoDB don't enforce foreign keys. Solutions: embed reviews in product documents, or add application-level integrity checks."
+  },
+  {
+    "text": "Your production PostgreSQL database shows 'too many connections' errors during peak hours. Current max_connections is 100. What's the proper architectural fix?",
+    "options": [
+      "Use PgBouncer or similar connection pooler between app and database",
+      "Increase max_connections to 10000",
+      "Reduce query complexity",
+      "Restart the server"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Adobe",
+    "tags": [
+      "connection-pooling",
+      "pgbouncer",
+      "case-study"
+    ],
+    "explanation": "A connection pooler (PgBouncer) multiplexes many app connections to fewer DB connections. Each PostgreSQL connection uses ~10MB of RAM."
+  },
+  {
+    "text": "A reporting query joining 5 tables with multiple aggregations runs for 45 minutes. The same query ran in 2 minutes last month. What diagnostic steps should you take?",
+    "options": [
+      "EXPLAIN ANALYZE the query, check for missing indexes, verify table statistics are current, look for table bloat",
+      "Rewrite the query in NoSQL",
+      "Drop all indexes and recreate",
+      "Increase server RAM"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Intel",
+    "tags": [
+      "query-performance",
+      "explain-analyze",
+      "case-study"
+    ],
+    "explanation": "EXPLAIN ANALYZE reveals execution plan changes. Common causes: outdated statistics (run ANALYZE), missing indexes, table bloat, or plan regression."
+  },
+  {
+    "text": "What is database partitioning?",
+    "options": [
+      "Creating backups",
+      "Normalizing data",
+      "Splitting a database into multiple servers",
+      "Dividing a table into smaller, manageable pieces based on a partition key"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "partitioning"
+    ],
+    "explanation": "Partitioning splits a table into partitions (by range, list, or hash) for better query performance and maintenance."
+  },
+  {
+    "text": "What is an ORM?",
+    "options": [
+      "A SQL command",
+      "Object-Relational Mapping — a technique to interact with databases using object-oriented code",
+      "A database type",
+      "An index type"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Infosys",
+    "tags": [
+      "orm"
+    ],
+    "explanation": "ORMs (like Sequelize, Mongoose, Hibernate) map database tables to programming language objects, abstracting SQL."
+  },
+  {
+    "text": "What is the purpose of VACUUM in PostgreSQL?",
+    "options": [
+      "Compress the database",
+      "Delete all data",
+      "Clean the server room",
+      "Reclaim storage from dead tuples and update planner statistics"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Recovery",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | IBM",
+    "tags": [
+      "vacuum",
+      "postgresql"
+    ],
+    "explanation": "VACUUM reclaims space from deleted/updated rows (dead tuples) and updates statistics for the query planner."
+  },
+  {
+    "text": "Related to SQL - What does the COALESCE function do?",
+    "options": [
+      "Join tables",
+      "Count rows",
+      "Return the first non-NULL value from a list",
+      "Merge columns"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Adobe",
+    "tags": [
+      "coalesce",
+      "null"
+    ],
+    "explanation": "COALESCE returns the first non-NULL argument — useful for providing default values."
+  },
+  {
+    "text": "Related to Relational Model - What is a candidate key?",
+    "options": [
+      "Any column in a table",
+      "A foreign key",
+      "The primary key only",
+      "A minimal superkey that can uniquely identify rows"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Relational Model",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Adobe",
+    "tags": [
+      "candidate-key"
+    ],
+    "explanation": "A candidate key is a minimal set of attributes that uniquely identifies every tuple in a relation."
+  },
+  {
+    "text": "Related to Indexing - Which of the following is true about bitmap indexes?",
+    "options": [
+      "Cannot be used with WHERE clauses",
+      "Best for high-cardinality columns",
+      "Always faster than B-tree",
+      "Best for low-cardinality columns like gender or status"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "bitmap-index"
+    ],
+    "explanation": "Bitmap indexes are efficient for low-cardinality columns with few distinct values, using bit vectors."
+  },
+  {
+    "text": "Related to SQL - What is the purpose of the GROUP BY clause?",
+    "options": [
+      "Join tables",
+      "Sort results",
+      "Filter rows",
+      "Group rows with same values for aggregate functions"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Apple",
+    "tags": [
+      "group-by"
+    ],
+    "explanation": "GROUP BY groups rows sharing specified column values so aggregate functions operate on each group."
+  },
+  {
+    "text": "Related to Concurrency Control - Two-phase locking protocol ensures?",
+    "options": [
+      "Serializability",
+      "Atomicity",
+      "Recovery",
+      "Deadlock freedom"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Concurrency Control",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Walmart",
+    "tags": [
+      "2pl",
+      "serializability"
+    ],
+    "explanation": "2PL (growing and shrinking phases) guarantees conflict-serializable schedules."
+  },
+  {
+    "text": "Related to Indexing - What is sharding?",
+    "options": [
+      "Normalizing tables",
+      "Encrypting data",
+      "Creating backups",
+      "Horizontally partitioning data across multiple databases"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Goldman Sachs",
+    "tags": [
+      "sharding",
+      "distributed"
+    ],
+    "explanation": "Sharding distributes data across multiple database instances to scale horizontally."
+  },
+  {
+    "text": "Related to SQL - Which of the following is a DDL command?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "UPDATE",
+      "ALTER"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | NVIDIA",
+    "tags": [
+      "ddl",
+      "alter"
+    ],
+    "explanation": "ALTER modifies table structure (DDL). SELECT/INSERT/UPDATE are DML commands."
+  },
+  {
+    "text": "Related to Normalization - What is database normalization?",
+    "options": [
+      "Compressing data",
+      "Creating indexes",
+      "Organizing data to reduce redundancy and improve integrity",
+      "Making the database faster"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | TCS",
+    "tags": [
+      "normalization"
+    ],
+    "explanation": "Normalization decomposes tables to minimize redundancy and prevent update/insertion/deletion anomalies."
+  },
+  {
+    "text": "Related to SQL - What is a cursor in SQL?",
+    "options": [
+      "A pointer on screen",
+      "A lock type",
+      "A mechanism to traverse result sets row by row",
+      "An index"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Adobe",
+    "tags": [
+      "cursor"
+    ],
+    "explanation": "A cursor lets you process query results one row at a time in stored procedures."
+  },
+  {
+    "text": "Related to Transactions - What is the purpose of SAVEPOINT in transactions?",
+    "options": [
+      "Checkpoint the log",
+      "Save the database",
+      "Create a point within a transaction to which you can roll back",
+      "Save query results"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Transactions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "savepoint",
+      "partial-rollback"
+    ],
+    "explanation": "SAVEPOINT allows partial rollback within a transaction — rolling back to the savepoint without aborting the entire transaction."
+  },
+  {
+    "text": "Related to Indexing - Which type of index stores data rows in the order of the index key?",
+    "options": [
+      "Bitmap",
+      "Non-clustered",
+      "Clustered",
+      "Hash"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Amazon",
+    "tags": [
+      "clustered-index"
+    ],
+    "explanation": "A clustered index physically orders data rows by the index key — only one per table."
+  },
+  {
+    "text": "Related to Indexing - What is database partitioning?",
+    "options": [
+      "Splitting a database into multiple servers",
+      "Normalizing data",
+      "Creating backups",
+      "Dividing a table into smaller, manageable pieces based on a partition key"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Oracle",
+    "tags": [
+      "partitioning"
+    ],
+    "explanation": "Partitioning splits a table into partitions (by range, list, or hash) for better query performance and maintenance."
+  },
+  {
+    "text": "Related to Indexing - Which of the following is true about a hash index?",
+    "options": [
+      "Orders data physically",
+      "Supports range queries efficiently",
+      "Only supports equality lookups",
+      "Uses tree structure"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Walmart",
+    "tags": [
+      "hash-index"
+    ],
+    "explanation": "Hash indexes map keys to buckets via a hash function — fast for equality but don't support range queries."
+  },
+  {
+    "text": "Related to Indexing - In a B-tree of order 5, the minimum number of keys in a non-root internal node is?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Accenture",
+    "tags": [
+      "b-tree",
+      "minimum-keys"
+    ],
+    "explanation": "For order m, minimum keys = ceil(m/2) - 1 = ceil(5/2) - 1 = 2."
+  },
+  {
+    "text": "Related to Indexing - What is sharding?",
+    "options": [
+      "Normalizing tables",
+      "Creating backups",
+      "Encrypting data",
+      "Horizontally partitioning data across multiple databases"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Meta",
+    "tags": [
+      "sharding",
+      "distributed"
+    ],
+    "explanation": "Sharding distributes data across multiple database instances to scale horizontally."
+  },
+  {
+    "text": "Related to Indexing - Which type of index stores data rows in the order of the index key?",
+    "options": [
+      "Hash",
+      "Non-clustered",
+      "Clustered",
+      "Bitmap"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Amazon",
+    "tags": [
+      "clustered-index"
+    ],
+    "explanation": "A clustered index physically orders data rows by the index key — only one per table."
+  },
+  {
+    "text": "Related to Indexing - Which type of index stores data rows in the order of the index key?",
+    "options": [
+      "Non-clustered",
+      "Clustered",
+      "Hash",
+      "Bitmap"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Indexing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Samsung",
+    "tags": [
+      "clustered-index"
+    ],
+    "explanation": "A clustered index physically orders data rows by the index key — only one per table."
+  },
+  {
+    "text": "Related to SQL - What is a correlated subquery?",
+    "options": [
+      "An uncorrelated query",
+      "A subquery that references columns from the outer query",
+      "A subquery with joins",
+      "A subquery that runs once"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "SQL",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Apple",
+    "tags": [
+      "correlated-subquery"
+    ],
+    "explanation": "A correlated subquery references outer query columns, executing once for each outer row."
+  },
+  {
+    "text": "What does ACID stand for?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Atomicity, Customization, Isolation, Durability",
+      "Accuracy, Consistency, Isolation, Durability",
+      "None of the above"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Transactions & ACID",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Oracle",
+    "tags": [
+      "acid"
+    ]
+  },
+  {
+    "text": "Which normal form deals with multivalued dependencies?",
+    "options": [
+      "2NF",
+      "3NF",
+      "BCNF",
+      "4NF"
+    ],
+    "correct": 3,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2014",
+    "tags": [
+      "normalization",
+      "4nf"
+    ]
+  },
+  {
+    "text": "What is the main difference between document databases and relational databases?",
+    "options": [
+      "Document databases use tables",
+      "Document databases use JSON-like documents",
+      "Relational databases are schema-less",
+      "There is no difference"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "NoSQL Databases",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "MongoDB",
+    "tags": [
+      "nosql"
+    ]
+  },
+  {
+    "text": "Which of the following describes a transaction that cannot be rolled back?",
+    "options": [
+      "Committed",
+      "Active",
+      "Failed",
+      "Partially Committed"
+    ],
+    "correct": 0,
+    "subject": "DBMS",
+    "topic": "Crash Recovery Systems",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Amazon",
+    "tags": [
+      "transaction"
+    ]
+  },
+  {
+    "text": "What is theta join in relational algebra?",
+    "options": [
+      "Natural join",
+      "Outer join",
+      "Equi join with arbitrary condition",
+      "Cartesian product"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Relational Algebra",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2016",
+    "tags": [
+      "theta"
+    ]
+  },
+  {
+    "text": "B+ trees are commonly used for?",
+    "options": [
+      "Sorting",
+      "Hashing",
+      "Indexing",
+      "Searching"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing & B-Trees",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Microsoft",
+    "tags": [
+      "btree"
+    ]
+  },
+  {
+    "text": "Given relation R(A, B, C, D) with functional dependencies {A -> B, B -> C, C -> D}. What is the highest normal form of R?",
+    "options": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Normalization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2015",
+    "tags": [
+      "normalization"
+    ]
+  },
+  {
+    "text": "Which isolation level prevents Dirty Reads but allows Non-Repeatable Reads?",
+    "options": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Serializable"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Transactions & ACID",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Netflix Interview",
+    "tags": [
+      "isolation"
+    ]
+  },
+  {
+    "text": "In an Extendible Hashing scheme, if the global depth is 3, what is the maximum number of directory entries?",
+    "options": [
+      "3",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Indexing & B-Trees",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2008",
+    "tags": [
+      "hashing"
+    ]
+  },
+  {
+    "text": "What is the primary mechanism used by write-ahead logging (WAL) for crash recovery?",
+    "options": [
+      "Data pages are written to disk before log records",
+      "Log records are written to disk before data pages",
+      "Both are written simultaneously",
+      "Only log records are written"
+    ],
+    "correct": 1,
+    "subject": "DBMS",
+    "topic": "Crash Recovery Systems",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Google Interview",
+    "tags": [
+      "wal",
+      "recovery"
+    ]
+  },
+  {
+    "text": "Cassandra and DynamoDB are examples of which type of NoSQL database?",
+    "options": [
+      "Document",
+      "Key-Value",
+      "Wide-Column",
+      "Graph"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "NoSQL Databases",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Amazon Review",
+    "tags": [
+      "nosql",
+      "column-family"
+    ]
+  },
+  {
+    "text": "Consider the following schedule for transactions T1, T2 and T3: r1(X); r2(Z); r1(Z); r3(X); r3(Y); w1(X); c1; w3(Y); c3; r2(Y); w2(Z); w2(Y); c2; Which of the following is true?",
+    "options": [
+      "Schedule is conflict serializable",
+      "Schedule is view serializable but not conflict serializable",
+      "Schedule is not serializable",
+      "None"
+    ],
+    "correct": 2,
+    "subject": "DBMS",
+    "topic": "Transactions & ACID",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2017",
+    "tags": [
+      "serializability"
+    ]
+  }
+]

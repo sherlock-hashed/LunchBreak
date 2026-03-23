@@ -1,0 +1,2024 @@
+[
+  {
+    "text": "Which OOP principle allows a class to inherit from multiple interfaces?",
+    "options": [
+      "Abstraction",
+      "Encapsulation",
+      "Multiple Interface Implementation",
+      "Polymorphism"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Oracle",
+    "tags": [
+      "interface",
+      "multiple-inheritance"
+    ],
+    "explanation": "Languages like Java/C# don't support multiple class inheritance but allow implementing multiple interfaces."
+  },
+  {
+    "text": "What is polymorphism?",
+    "options": [
+      "Same interface, different implementations based on object type",
+      "Hiding data",
+      "Creating objects",
+      "Creating multiple classes"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Meta",
+    "tags": [
+      "polymorphism"
+    ],
+    "explanation": "Polymorphism allows objects of different classes to respond differently to the same method call."
+  },
+  {
+    "text": "What is encapsulation?",
+    "options": [
+      "Creating multiple objects",
+      "Inheriting properties",
+      "Overriding methods",
+      "Bundling data and methods that operate on that data within a single unit"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Goldman Sachs",
+    "tags": [
+      "encapsulation"
+    ],
+    "explanation": "Encapsulation bundles data (attributes) and methods (functions) in a class, restricting direct access to internal state."
+  },
+  {
+    "text": "What is the difference between method overloading and method overriding?",
+    "options": [
+      "No difference",
+      "Overloading is runtime",
+      "Overriding is compile-time",
+      "Overloading: same name different params in same class; Overriding: redefine parent method in child class"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Samsung",
+    "tags": [
+      "overloading",
+      "overriding"
+    ],
+    "explanation": "Overloading: compile-time, same class, different signatures. Overriding: runtime, subclass redefines parent's method."
+  },
+  {
+    "text": "What is an abstract class?",
+    "options": [
+      "A class that is private",
+      "A class with only static methods",
+      "A class that cannot be instantiated and may contain abstract methods",
+      "A class with no methods"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Cisco",
+    "tags": [
+      "abstract-class"
+    ],
+    "explanation": "Abstract classes define a template with abstract methods (no body) that subclasses must implement. Cannot be instantiated directly."
+  },
+  {
+    "text": "What is the 'this' keyword in OOP?",
+    "options": [
+      "A global variable",
+      "A destructor",
+      "A constructor",
+      "A reference to the current instance of the class"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in TCS",
+    "tags": [
+      "this",
+      "self"
+    ],
+    "explanation": "'this' (or 'self' in Python) refers to the current object instance, used to access its attributes and methods."
+  },
+  {
+    "text": "What is a constructor?",
+    "options": [
+      "A static method",
+      "A special method called when an object is created to initialize it",
+      "A private method",
+      "A method to destroy objects"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Meta",
+    "tags": [
+      "constructor"
+    ],
+    "explanation": "Constructors initialize object state during creation. They have the same name as the class (or __init__ in Python)."
+  },
+  {
+    "text": "What is the diamond problem in multiple inheritance?",
+    "options": [
+      "A testing issue",
+      "A design pattern",
+      "Ambiguity when a class inherits from two classes that both inherit from a common base",
+      "A compilation error"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | TCS",
+    "tags": [
+      "diamond-problem",
+      "multiple-inheritance"
+    ],
+    "explanation": "The diamond problem creates ambiguity about which parent's method to call. Solved by interfaces (Java) or virtual inheritance (C++)."
+  },
+  {
+    "text": "What is the Liskov Substitution Principle?",
+    "options": [
+      "A testing principle",
+      "A design pattern",
+      "Subtypes must be substitutable for their base types without altering program correctness",
+      "A data structure"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Infosys",
+    "tags": [
+      "lsp",
+      "solid"
+    ],
+    "explanation": "LSP ensures subclass objects can replace parent objects without breaking functionality — the 'L' in SOLID."
+  },
+  {
+    "text": "What is the difference between an interface and an abstract class?",
+    "options": [
+      "Interface has no implementation, abstract class can have partial implementation",
+      "Abstract classes are faster",
+      "Interfaces can have constructors",
+      "No difference"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "interface",
+      "abstract-class"
+    ],
+    "explanation": "Interfaces define contracts (pure method signatures). Abstract classes can have both abstract and concrete methods."
+  },
+  {
+    "text": "What is a destructor?",
+    "options": [
+      "A private constructor",
+      "A static method",
+      "A constructor that fails",
+      "A method called when an object is destroyed to clean up resources"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "destructor",
+      "cleanup"
+    ],
+    "explanation": "Destructors release resources (memory, file handles) when an object is destroyed. Called ~ClassName() in C++, __del__ in Python."
+  },
+  {
+    "text": "What is the difference between composition and inheritance?",
+    "options": [
+      "Inheritance is more flexible",
+      "Same concept",
+      "Composition is slower",
+      "Inheritance is 'is-a', composition is 'has-a' relationship"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Goldman Sachs",
+    "tags": [
+      "composition",
+      "inheritance"
+    ],
+    "explanation": "Inheritance: Dog 'is-a' Animal. Composition: Car 'has-a' Engine. Composition is often preferred for flexibility."
+  },
+  {
+    "text": "What is a static method?",
+    "options": [
+      "A virtual method",
+      "A method that can't be changed",
+      "A private method",
+      "A method that belongs to the class rather than any instance"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "static",
+      "class-method"
+    ],
+    "explanation": "Static methods belong to the class itself, called without creating an instance. They can't access instance variables."
+  },
+  {
+    "text": "What are access modifiers?",
+    "options": [
+      "Loop constructs",
+      "Method types",
+      "Keywords that set access levels for classes, methods, and variables (public, private, protected)",
+      "Error handlers"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "access-modifiers"
+    ],
+    "explanation": "Public: accessible everywhere. Private: only within class. Protected: within class and subclasses."
+  },
+  {
+    "text": "What is the Open/Closed Principle?",
+    "options": [
+      "Files should be opened then closed",
+      "Variables should be closed",
+      "Classes should be open for extension but closed for modification",
+      "Methods should be open"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Wipro",
+    "tags": [
+      "ocp",
+      "solid"
+    ],
+    "explanation": "OCP says you should be able to add new behavior by extending classes (inheritance/composition) without modifying existing code."
+  },
+  {
+    "text": "What is a virtual function?",
+    "options": [
+      "A private function",
+      "A static function",
+      "A function that doesn't exist",
+      "A function declared in base class that can be overridden in derived classes for runtime polymorphism"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Cognizant",
+    "tags": [
+      "virtual-function",
+      "runtime"
+    ],
+    "explanation": "Virtual functions enable runtime polymorphism — the correct derived class method is called based on actual object type."
+  },
+  {
+    "text": "What is the Singleton design pattern?",
+    "options": [
+      "A single inheritance pattern",
+      "A pattern that ensures a class has exactly one instance with global access",
+      "A testing pattern",
+      "A class with one method"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | AMD",
+    "tags": [
+      "singleton",
+      "design-pattern"
+    ],
+    "explanation": "Singleton restricts class instantiation to one object. Used for loggers, configurations, connection pools."
+  },
+  {
+    "text": "What is dependency injection?",
+    "options": [
+      "Providing dependencies to objects from outside rather than creating them internally",
+      "A compilation technique",
+      "A testing framework",
+      "Injecting bugs"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "di",
+      "dependency-injection"
+    ],
+    "explanation": "DI provides dependencies externally (via constructor/setter/interface), promoting loose coupling and testability."
+  },
+  {
+    "text": "What is the Factory design pattern?",
+    "options": [
+      "A data structure",
+      "Creates objects without specifying the exact class, using a factory method",
+      "A testing pattern",
+      "A pattern for creating factories"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Oracle",
+    "tags": [
+      "factory",
+      "design-pattern"
+    ],
+    "explanation": "Factory pattern delegates object creation to factory methods, decoupling client code from concrete classes."
+  },
+  {
+    "text": "What is the difference between deep copy and shallow copy?",
+    "options": [
+      "Shallow copy uses more memory",
+      "Deep copy is faster",
+      "Shallow copy copies references, deep copy creates independent copies of nested objects",
+      "No difference"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "deep-copy",
+      "shallow-copy"
+    ],
+    "explanation": "Shallow: copies references (shared nested objects). Deep: recursively copies all nested objects (independent clone)."
+  },
+  {
+    "text": "What is the Observer design pattern?",
+    "options": [
+      "A surveillance pattern",
+      "A creational pattern",
+      "A structural pattern",
+      "A pattern where objects subscribe to and get notified about state changes in another object"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Google",
+    "tags": [
+      "observer",
+      "design-pattern"
+    ],
+    "explanation": "Observer defines a one-to-many dependency — when the subject changes state, all observers are notified. Used in event systems."
+  },
+  {
+    "text": "What is early binding vs late binding?",
+    "options": [
+      "Early binding is only for Java",
+      "Late binding is faster",
+      "Early binding: compile-time method resolution; Late binding: runtime method resolution",
+      "Same thing"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Accenture",
+    "tags": [
+      "early-binding",
+      "late-binding"
+    ],
+    "explanation": "Early/static binding resolves at compile time (overloading). Late/dynamic binding resolves at runtime (overriding with virtual functions)."
+  },
+  {
+    "text": "What is the Single Responsibility Principle?",
+    "options": [
+      "A class should have only one reason to change",
+      "A class should do everything",
+      "Methods should have one line",
+      "Files should have one class"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Google",
+    "tags": [
+      "srp",
+      "solid"
+    ],
+    "explanation": "SRP: each class should have one responsibility/reason to change. Keeps classes focused and maintainable."
+  },
+  {
+    "text": "What is the purpose of the 'final' keyword in Java?",
+    "options": [
+      "Prevent inheritance (class), overriding (method), or reassignment (variable)",
+      "End the program",
+      "Create final output",
+      "Mark the end of code"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "final",
+      "java"
+    ],
+    "explanation": "final class: can't be subclassed. final method: can't be overridden. final variable: can't be reassigned."
+  },
+  {
+    "text": "What is the Strategy design pattern?",
+    "options": [
+      "A data structure",
+      "A testing strategy",
+      "Defines a family of algorithms, encapsulates each, makes them interchangeable at runtime",
+      "A planning tool"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Samsung",
+    "tags": [
+      "strategy",
+      "design-pattern"
+    ],
+    "explanation": "Strategy pattern lets you select an algorithm at runtime by encapsulating each in a separate class implementing a common interface."
+  },
+  {
+    "text": "What is an abstract method?",
+    "options": [
+      "A complex method",
+      "A method declared without implementation that must be overridden in subclasses",
+      "A private method",
+      "A static method"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "abstract-method"
+    ],
+    "explanation": "Abstract methods have no body — subclasses must provide their own implementation."
+  },
+  {
+    "text": "What is the difference between aggregation and composition?",
+    "options": [
+      "Composition is weaker",
+      "Both are has-a; in composition the child can't exist without parent, in aggregation it can",
+      "Aggregation is stronger",
+      "Same thing"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | PayPal",
+    "tags": [
+      "aggregation",
+      "composition"
+    ],
+    "explanation": "Composition: strong ownership (room dies with house). Aggregation: weak association (student exists without university)."
+  },
+  {
+    "text": "What is a friend function in C++?",
+    "options": [
+      "A recursive function",
+      "A helper function",
+      "A public method",
+      "A function granted access to a class's private and protected members despite not being a member"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Oracle",
+    "tags": [
+      "friend-function",
+      "cpp"
+    ],
+    "explanation": "Friend functions are declared with the 'friend' keyword inside a class, allowing access to its private members."
+  },
+  {
+    "text": "What is the Decorator design pattern?",
+    "options": [
+      "Dynamically adds behavior to objects without modifying their class",
+      "UI decoration",
+      "An anti-pattern",
+      "A structural pattern for databases"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Infosys",
+    "tags": [
+      "decorator",
+      "design-pattern"
+    ],
+    "explanation": "Decorator wraps objects to add new behavior dynamically. Like adding scrollbars to a window or compression to a stream."
+  },
+  {
+    "text": "What is operator overloading?",
+    "options": [
+      "Defining custom behavior for operators (+, -, ==, etc.) when used with user-defined types",
+      "A performance issue",
+      "Using too many operators",
+      "A syntax error"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Uber",
+    "tags": [
+      "operator-overloading"
+    ],
+    "explanation": "Operator overloading lets you define how operators work with your classes (e.g., adding two Vector objects with +)."
+  },
+  {
+    "text": "What is the Interface Segregation Principle?",
+    "options": [
+      "Interfaces should be large",
+      "Use only one interface",
+      "Clients should not be forced to depend on interfaces they don't use",
+      "Separate interfaces from classes"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | PayPal",
+    "tags": [
+      "isp",
+      "solid"
+    ],
+    "explanation": "ISP: split large interfaces into smaller, specific ones so clients only implement what they need."
+  },
+  {
+    "text": "What is the Dependency Inversion Principle?",
+    "options": [
+      "Reverse dependencies",
+      "Use only concrete classes",
+      "Avoid all dependencies",
+      "High-level modules should depend on abstractions, not low-level modules"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Flipkart",
+    "tags": [
+      "dip",
+      "solid"
+    ],
+    "explanation": "DIP: depend on abstractions (interfaces), not concrete implementations. Both high and low-level modules depend on abstractions."
+  },
+  {
+    "text": "What is type casting in OOP?",
+    "options": [
+      "Converting an object from one type to another (upcasting or downcasting)",
+      "Creating new types",
+      "Removing types",
+      "Type checking"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Intel",
+    "tags": [
+      "type-casting",
+      "upcasting",
+      "downcasting"
+    ],
+    "explanation": "Upcasting: child→parent (safe, implicit). Downcasting: parent→child (requires explicit cast, can fail)."
+  },
+  {
+    "text": "What is a pure virtual function in C++?",
+    "options": [
+      "A very good function",
+      "A constant function",
+      "A virtual function with = 0 that has no implementation and forces subclasses to implement it",
+      "A static function"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Cisco",
+    "tags": [
+      "pure-virtual",
+      "cpp"
+    ],
+    "explanation": "Pure virtual (= 0) makes the class abstract — it can't be instantiated and subclasses must override the function."
+  },
+  {
+    "text": "What is the MVC architecture?",
+    "options": [
+      "Model-View-Controller: separates data, UI, and logic into three components",
+      "A testing framework",
+      "A database type",
+      "A programming language"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Uber",
+    "tags": [
+      "mvc",
+      "architecture"
+    ],
+    "explanation": "Model: data/logic. View: UI/presentation. Controller: handles input and coordinates Model-View. Promotes separation of concerns."
+  },
+  {
+    "text": "What is the Template Method pattern?",
+    "options": [
+      "A creational pattern",
+      "Defines the skeleton of an algorithm in a base class, letting subclasses override specific steps",
+      "A testing template",
+      "A C++ template"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Wipro",
+    "tags": [
+      "template-method",
+      "design-pattern"
+    ],
+    "explanation": "Template Method defines algorithm structure in base class with hook methods — subclasses customize specific steps."
+  },
+  {
+    "text": "What is the difference between an object and a class?",
+    "options": [
+      "Class is an instance",
+      "Class is a blueprint/template, object is a specific instance of that class",
+      "Object is a blueprint",
+      "Same thing"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "class",
+      "object"
+    ],
+    "explanation": "Class: defines structure and behavior (blueprint). Object: a concrete instance created from that blueprint."
+  },
+  {
+    "text": "What is cohesion in OOP?",
+    "options": [
+      "Number of dependencies",
+      "How closely related the responsibilities of a single module/class are",
+      "Number of methods in a class",
+      "How classes interact"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Accenture",
+    "tags": [
+      "cohesion"
+    ],
+    "explanation": "High cohesion means a class is focused on a single purpose. Low cohesion means it does too many unrelated things."
+  },
+  {
+    "text": "What is coupling in OOP?",
+    "options": [
+      "The degree of interdependence between software modules",
+      "Connecting two computers",
+      "A testing metric",
+      "A design pattern"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | AMD",
+    "tags": [
+      "coupling"
+    ],
+    "explanation": "Low coupling is desirable — modules should be independent. Tight coupling makes changes ripple across the system."
+  },
+  {
+    "text": "What is an anonymous class?",
+    "options": [
+      "A private class",
+      "A static class",
+      "A deleted class",
+      "A class with no name, defined inline, often used for one-time implementations"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Cognizant",
+    "tags": [
+      "anonymous-class"
+    ],
+    "explanation": "Anonymous classes are defined inline without a name — common for event handlers and simple interface implementations."
+  },
+  {
+    "text": "What is the Adapter design pattern?",
+    "options": [
+      "Converts the interface of a class into another interface clients expect",
+      "A power adapter",
+      "A testing adapter",
+      "A creational pattern"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Adobe",
+    "tags": [
+      "adapter",
+      "design-pattern"
+    ],
+    "explanation": "Adapter wraps an existing class with a new interface, making incompatible classes work together."
+  },
+  {
+    "text": "What is method chaining?",
+    "options": [
+      "Exception chaining",
+      "Calling methods in a loop",
+      "Error handling",
+      "Calling multiple methods sequentially on the same object by returning 'this'"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in TCS",
+    "tags": [
+      "method-chaining",
+      "fluent"
+    ],
+    "explanation": "Method chaining: each method returns 'this', allowing builder.setName('x').setAge(25).build(). Creates fluent APIs."
+  },
+  {
+    "text": "What is the Prototype design pattern?",
+    "options": [
+      "A prototype model",
+      "A UI mockup",
+      "Creates new objects by cloning existing instances rather than constructing from scratch",
+      "A testing prototype"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Wipro",
+    "tags": [
+      "prototype",
+      "design-pattern"
+    ],
+    "explanation": "Prototype pattern clones existing objects to create new ones — useful when object creation is expensive."
+  },
+  {
+    "text": "What is the SOLID principle?",
+    "options": [
+      "Writing solid code",
+      "A development methodology",
+      "A testing framework",
+      "Five design principles: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Goldman Sachs",
+    "tags": [
+      "solid"
+    ],
+    "explanation": "SOLID principles guide OOP design for maintainable, extensible, loosely-coupled software."
+  },
+  {
+    "text": "What is the difference between association, aggregation, and composition?",
+    "options": [
+      "Association: general relationship; Aggregation: weak ownership; Composition: strong ownership with lifecycle dependency",
+      "Association is strongest",
+      "Composition is weakest",
+      "All are the same"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | NVIDIA",
+    "tags": [
+      "association",
+      "aggregation",
+      "composition"
+    ],
+    "explanation": "Association: knows-about. Aggregation: has-a (independent lifecycles). Composition: has-a (dependent lifecycle — part dies with whole)."
+  },
+  {
+    "text": "What is a mixin?",
+    "options": [
+      "A design pattern",
+      "A testing utility",
+      "A class that provides reusable behavior to other classes through multiple inheritance without being a primary base class",
+      "A cocktail recipe"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "mixin"
+    ],
+    "explanation": "Mixins are utility classes that provide specific behavior to be mixed into other classes (e.g., Serializable, Comparable)."
+  },
+  {
+    "text": "What is the Command design pattern?",
+    "options": [
+      "CLI commands",
+      "A creational pattern",
+      "A network command",
+      "Encapsulates a request as an object, enabling parameterization, queuing, and undo operations"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "command",
+      "design-pattern"
+    ],
+    "explanation": "Command pattern wraps requests in objects supporting undo, redo, queuing, and logging of operations."
+  },
+  {
+    "text": "What is the difference between a class variable and an instance variable?",
+    "options": [
+      "Class variable: shared among all instances; Instance variable: unique to each object",
+      "Instance variable is shared",
+      "Same thing",
+      "Class variable is private"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "class-variable",
+      "instance-variable"
+    ],
+    "explanation": "Class variables (static) are shared by all instances. Instance variables belong to a specific object."
+  },
+  {
+    "text": "What is duck typing?",
+    "options": [
+      "A syntax error",
+      "A testing technique",
+      "A design pattern",
+      "If an object has the right methods/properties, it's accepted regardless of its actual type"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Infosys",
+    "tags": [
+      "duck-typing",
+      "dynamic"
+    ],
+    "explanation": "'If it walks like a duck and quacks like a duck, it's a duck.' Focus on behavior rather than type — common in Python/JavaScript."
+  },
+  {
+    "text": "What is RTTI (Run-Time Type Information)?",
+    "options": [
+      "A file format",
+      "A networking protocol",
+      "Mechanism to determine the type of an object at runtime (e.g., typeof, instanceof)",
+      "A database system"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Amazon",
+    "tags": [
+      "rtti",
+      "runtime"
+    ],
+    "explanation": "RTTI (dynamic_cast, typeid in C++; instanceof in Java) checks or converts object types at runtime."
+  },
+  {
+    "text": "What is the Facade design pattern?",
+    "options": [
+      "Building facade",
+      "A creational pattern",
+      "A testing pattern",
+      "Provides a simplified interface to a complex subsystem"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | IBM",
+    "tags": [
+      "facade",
+      "design-pattern"
+    ],
+    "explanation": "Facade provides a simple, unified interface to a set of interfaces in a subsystem, reducing complexity for clients."
+  },
+  {
+    "text": "What is object serialization?",
+    "options": [
+      "Converting an object's state to a byte stream for storage or transmission",
+      "Object counting",
+      "Creating objects in order",
+      "Sorting objects"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "serialization"
+    ],
+    "explanation": "Serialization converts objects to byte streams (JSON, binary, XML). Deserialization reconstructs objects from streams."
+  },
+  {
+    "text": "What is the difference between IS-A and HAS-A relationships?",
+    "options": [
+      "IS-A is composition",
+      "HAS-A is inheritance",
+      "Same thing",
+      "IS-A: inheritance (Dog IS-A Animal); HAS-A: composition (Car HAS-A Engine)"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "is-a",
+      "has-a"
+    ],
+    "explanation": "IS-A = inheritance hierarchy. HAS-A = composition/containment. Choose based on the real-world relationship."
+  },
+  {
+    "text": "What is a getter and setter?",
+    "options": [
+      "Methods that provide controlled access to private fields",
+      "Constructors",
+      "Static methods",
+      "Network protocols"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Meta",
+    "tags": [
+      "getter",
+      "setter"
+    ],
+    "explanation": "Getters read private fields, setters modify them with validation — implementing encapsulation."
+  },
+  {
+    "text": "What is the Builder design pattern?",
+    "options": [
+      "A structural pattern",
+      "Separates construction of complex objects from their representation, allowing step-by-step creation",
+      "An anti-pattern",
+      "A construction tool"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Goldman Sachs",
+    "tags": [
+      "builder",
+      "design-pattern"
+    ],
+    "explanation": "Builder constructs complex objects step-by-step (e.g., building a meal: burger, drink, side). Avoids telescoping constructors."
+  },
+  {
+    "text": "What is multiple dispatch?",
+    "options": [
+      "Multiple interfaces",
+      "Multiple inheritance",
+      "Sending multiple messages",
+      "Selecting method implementation based on the runtime types of multiple arguments"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "multiple-dispatch"
+    ],
+    "explanation": "Multiple dispatch (supported in Julia, CLOS) chooses method based on all argument types, not just the receiver."
+  },
+  {
+    "text": "A payment processing system has PayPal, Stripe, and RazorPay integrations, each with different APIs. Adding a new gateway requires changes in 15 places. Which pattern fixes this?",
+    "options": [
+      "Observer",
+      "Singleton",
+      "Strategy pattern — define a PaymentGateway interface, implement per-gateway, inject as needed",
+      "Prototype"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "strategy",
+      "payment",
+      "case-study"
+    ],
+    "explanation": "Strategy pattern: define PaymentGateway interface with process(). Each gateway (PayPal, Stripe) implements it. Adding a new one = one new class."
+  },
+  {
+    "text": "A notification system sends alerts via Email, SMS, and Push. A new requirement adds WhatsApp and Slack. The existing NotificationService class has if-else chains for each channel. How to refactor?",
+    "options": [
+      "Use Observer pattern — each channel subscribes to events and handles notifications independently",
+      "Use inheritance only",
+      "Add more if-else branches",
+      "Create separate microservices"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Flipkart",
+    "tags": [
+      "observer",
+      "open-closed",
+      "case-study"
+    ],
+    "explanation": "Observer pattern: each channel (Email, SMS, Push, WhatsApp) implements NotificationObserver. Adding channels doesn't modify the NotificationService."
+  },
+  {
+    "text": "A game engine has enemy types: Zombie, Vampire, Robot. Each has different attack and movement behaviors that can be combined freely. Using inheritance leads to a class explosion. What's the better design?",
+    "options": [
+      "Composition with Strategy pattern — inject AttackBehavior and MoveBehavior interfaces",
+      "Use multiple inheritance",
+      "More subclasses",
+      "Use switch statements"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Goldman Sachs",
+    "tags": [
+      "strategy",
+      "composition-over-inheritance",
+      "case-study"
+    ],
+    "explanation": "Favor composition over inheritance. Define AttackBehavior (melee, ranged) and MoveBehavior (walk, fly) interfaces. Inject combinations into enemy objects."
+  },
+  {
+    "text": "An e-commerce application calculates shipping costs differently for Standard, Express, and International orders. The calculation logic is embedded in a single method with nested if-else. What OOP principle does this violate?",
+    "options": [
+      "Abstraction",
+      "Encapsulation",
+      "Single Responsibility",
+      "Open/Closed Principle — should use polymorphism with a ShippingStrategy interface"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "ocp",
+      "shipping",
+      "case-study"
+    ],
+    "explanation": "Violates OCP: modifying the method for each new shipping type. Fix: ShippingCalculator interface with Standard, Express, International implementations."
+  },
+  {
+    "text": "A logging library is needed across the entire application. Multiple logger instances cause duplicate log entries and resource contention. Which pattern solves this?",
+    "options": [
+      "Strategy",
+      "Factory",
+      "Singleton pattern — single logger instance with thread-safe initialization",
+      "Observer"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | PayPal",
+    "tags": [
+      "singleton",
+      "logging",
+      "case-study"
+    ],
+    "explanation": "Singleton ensures one logger instance application-wide, preventing duplicate entries and managing the file handle consistently."
+  },
+  {
+    "text": "A restaurant ordering system has Order objects that can have various toppings, sides, and options added. Creating subclasses for each combination is impractical. Which pattern allows dynamic addition of features?",
+    "options": [
+      "Observer",
+      "Factory",
+      "Singleton",
+      "Decorator pattern — wrap the base order with topping/side decorators"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "decorator",
+      "case-study"
+    ],
+    "explanation": "Decorator: BaseOrder wrapped by CheeseDecorator, BaconDecorator, etc. Each adds to price/description dynamically."
+  },
+  {
+    "text": "A data processing pipeline transforms data through multiple steps: validate, clean, transform, aggregate. The steps vary per data source. How to design this for flexibility?",
+    "options": [
+      "Template Method pattern — define pipeline skeleton in base class, override steps in subclasses",
+      "Hardcode all pipelines",
+      "Use global functions",
+      "One giant method"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | IBM",
+    "tags": [
+      "template-method",
+      "pipeline",
+      "case-study"
+    ],
+    "explanation": "Template Method: BasePipeline.process() calls validate(), clean(), transform(), aggregate(). Each data source subclass overrides specific steps."
+  },
+  {
+    "text": "An application needs to support multiple database backends (MySQL, PostgreSQL, MongoDB). The business logic should not depend on the specific database chosen. Which principle and pattern apply?",
+    "options": [
+      "Use database-specific code everywhere",
+      "Observer pattern",
+      "Dependency Inversion Principle + Repository pattern — depend on abstract repository, inject concrete implementation",
+      "Singleton for each DB"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Cisco",
+    "tags": [
+      "dip",
+      "repository",
+      "case-study"
+    ],
+    "explanation": "DIP: business logic depends on IRepository interface. Concrete MySQLRepo, PostgresRepo, MongoRepo are injected. Switching DB = change injection config."
+  },
+  {
+    "text": "A UI component library has Button, TextBox, and Checkbox that need to look different across Windows, Mac, and Linux themes. Which pattern avoids theme-specific subclasses exponentially growing?",
+    "options": [
+      "More subclasses",
+      "Strategy",
+      "Command",
+      "Abstract Factory — create families of related theme-specific components"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Apple",
+    "tags": [
+      "abstract-factory",
+      "ui",
+      "case-study"
+    ],
+    "explanation": "Abstract Factory: WindowsUIFactory, MacUIFactory each produce themed Button, TextBox, Checkbox. Adding a theme = one new factory class."
+  },
+  {
+    "text": "A chat application stores messages in memory. As users request message history, the app creates thousands of message objects consuming excessive memory. Many messages have the same sender/format. How to optimize?",
+    "options": [
+      "Use strings instead of objects",
+      "Flyweight pattern — share common message structures, store unique data externally",
+      "Limit history",
+      "Compress messages"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Microsoft",
+    "tags": [
+      "flyweight",
+      "memory-optimization",
+      "case-study"
+    ],
+    "explanation": "Flyweight shares intrinsic state (sender name, format) across messages. Extrinsic state (timestamp, content) is stored per message."
+  },
+  {
+    "text": "A system sends API requests to third-party services. Tests are slow because they hit real APIs. How do you design the code for testability?",
+    "options": [
+      "Test only in production",
+      "Use global API client",
+      "Use Dependency Injection with an interface — inject mock/stub implementations during testing",
+      "Skip testing"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | Flipkart",
+    "tags": [
+      "di",
+      "testing",
+      "mock",
+      "case-study"
+    ],
+    "explanation": "Define an interface (e.g., IPaymentService). In production, inject the real implementation. In tests, inject a mock that returns predefined responses."
+  },
+  {
+    "text": "What is a class hierarchy?",
+    "options": [
+      "A database schema",
+      "A tree structure of classes connected through inheritance relationships",
+      "A file system",
+      "A network topology"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "class-hierarchy"
+    ],
+    "explanation": "Class hierarchy organizes classes in an inheritance tree — base class at root, derived classes as branches."
+  },
+  {
+    "text": "What is the difference between throw and throws in Java?",
+    "options": [
+      "throw: actually throws an exception; throws: declares what exceptions a method might throw",
+      "throws raises exceptions",
+      "Same thing",
+      "throw is compile-time"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Cognizant",
+    "tags": [
+      "throw",
+      "throws",
+      "exception"
+    ],
+    "explanation": "throw new Exception() actually throws. throws IOException declares the method might throw it — for checked exceptions."
+  },
+  {
+    "text": "What is covariant return types?",
+    "options": [
+      "Allowing a subclass to override a method with a more specific return type",
+      "A data type",
+      "A compilation error",
+      "A design pattern"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Asked in Wipro",
+    "tags": [
+      "covariant",
+      "return-type"
+    ],
+    "explanation": "Covariant return: if base method returns Animal, derived can return Dog (a subtype of Animal). Supported in Java/C++."
+  },
+  {
+    "text": "What is the Law of Demeter?",
+    "options": [
+      "A physics law",
+      "A testing law",
+      "A design guideline: an object should only interact with its immediate friends, not friends of friends",
+      "A naming convention"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "law-of-demeter",
+      "coupling"
+    ],
+    "explanation": "Law of Demeter (principle of least knowledge): don't call methods on objects returned by other methods (avoid train wrecks like a.getB().getC().doSomething())."
+  },
+  {
+    "text": "What is a sealed class?",
+    "options": [
+      "A final class",
+      "An encrypted class",
+      "A private class",
+      "A class that restricts which classes can extend it, defined at compile time"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Cisco",
+    "tags": [
+      "sealed-class",
+      "kotlin",
+      "java"
+    ],
+    "explanation": "Sealed classes (Kotlin, Java 17+) restrict inheritance to a defined set of subclasses, enabling exhaustive when/switch checks."
+  },
+  {
+    "text": "What is the Proxy design pattern?",
+    "options": [
+      "A testing mock",
+      "A creational pattern",
+      "An object that acts as a placeholder/surrogate for another object to control access",
+      "A network proxy"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "proxy",
+      "design-pattern"
+    ],
+    "explanation": "Proxy controls access to another object — used for lazy loading, access control, logging, or remote access."
+  },
+  {
+    "text": "What is the Mediator design pattern?",
+    "options": [
+      "A creational pattern",
+      "Defines an object that encapsulates how a set of objects interact, reducing direct coupling",
+      "A testing pattern",
+      "A negotiation technique"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Wipro",
+    "tags": [
+      "mediator",
+      "design-pattern"
+    ],
+    "explanation": "Mediator centralizes complex communications between objects. Instead of each object knowing all others, they communicate through the mediator."
+  },
+  {
+    "text": "What is the difference between abstract class and concrete class?",
+    "options": [
+      "Abstract has no methods",
+      "Same thing",
+      "Concrete is faster",
+      "Abstract: can't be instantiated, may have abstract methods; Concrete: can be instantiated, all methods implemented"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Abstraction",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Accenture",
+    "tags": [
+      "abstract",
+      "concrete"
+    ],
+    "explanation": "Abstract classes serve as templates — concrete classes provide full implementations and can create objects."
+  },
+  {
+    "text": "Related to Inheritance - What is the difference between IS-A and HAS-A relationships?",
+    "options": [
+      "IS-A: inheritance (Dog IS-A Animal); HAS-A: composition (Car HAS-A Engine)",
+      "HAS-A is inheritance",
+      "Same thing",
+      "IS-A is composition"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Inheritance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | NVIDIA",
+    "tags": [
+      "is-a",
+      "has-a"
+    ],
+    "explanation": "IS-A = inheritance hierarchy. HAS-A = composition/containment. Choose based on the real-world relationship."
+  },
+  {
+    "text": "Related to SOLID Principles - An application needs to support multiple database backends (MySQL, PostgreSQL, MongoDB). The business logic should not depend on the specific database chosen. Which principle and pattern apply?",
+    "options": [
+      "Singleton for each DB",
+      "Use database-specific code everywhere",
+      "Observer pattern",
+      "Dependency Inversion Principle + Repository pattern — depend on abstract repository, inject concrete implementation"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Standard Practice | Goldman Sachs",
+    "tags": [
+      "dip",
+      "repository",
+      "case-study"
+    ],
+    "explanation": "DIP: business logic depends on IRepository interface. Concrete MySQLRepo, PostgresRepo, MongoRepo are injected. Switching DB = change injection config."
+  },
+  {
+    "text": "Related to Design Patterns - What is the Proxy design pattern?",
+    "options": [
+      "A network proxy",
+      "An object that acts as a placeholder/surrogate for another object to control access",
+      "A testing mock",
+      "A creational pattern"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Microsoft",
+    "tags": [
+      "proxy",
+      "design-pattern"
+    ],
+    "explanation": "Proxy controls access to another object — used for lazy loading, access control, logging, or remote access."
+  },
+  {
+    "text": "Related to Encapsulation - What is a friend function in C++?",
+    "options": [
+      "A function granted access to a class's private and protected members despite not being a member",
+      "A recursive function",
+      "A public method",
+      "A helper function"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | PayPal",
+    "tags": [
+      "friend-function",
+      "cpp"
+    ],
+    "explanation": "Friend functions are declared with the 'friend' keyword inside a class, allowing access to its private members."
+  },
+  {
+    "text": "Related to Design Patterns - What is the Singleton design pattern?",
+    "options": [
+      "A pattern that ensures a class has exactly one instance with global access",
+      "A class with one method",
+      "A testing pattern",
+      "A single inheritance pattern"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | TCS",
+    "tags": [
+      "singleton",
+      "design-pattern"
+    ],
+    "explanation": "Singleton restricts class instantiation to one object. Used for loggers, configurations, connection pools."
+  },
+  {
+    "text": "Related to Polymorphism - What is polymorphism?",
+    "options": [
+      "Creating objects",
+      "Hiding data",
+      "Same interface, different implementations based on object type",
+      "Creating multiple classes"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | AMD",
+    "tags": [
+      "polymorphism"
+    ],
+    "explanation": "Polymorphism allows objects of different classes to respond differently to the same method call."
+  },
+  {
+    "text": "Related to Polymorphism - What is covariant return types?",
+    "options": [
+      "A compilation error",
+      "Allowing a subclass to override a method with a more specific return type",
+      "A design pattern",
+      "A data type"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | NVIDIA",
+    "tags": [
+      "covariant",
+      "return-type"
+    ],
+    "explanation": "Covariant return: if base method returns Animal, derived can return Dog (a subtype of Animal). Supported in Java/C++."
+  },
+  {
+    "text": "Related to SOLID Principles - An application needs to support multiple database backends (MySQL, PostgreSQL, MongoDB). The business logic should not depend on the specific database chosen. Which principle and pattern apply?",
+    "options": [
+      "Dependency Inversion Principle + Repository pattern — depend on abstract repository, inject concrete implementation",
+      "Singleton for each DB",
+      "Use database-specific code everywhere",
+      "Observer pattern"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Standard Practice | Uber",
+    "tags": [
+      "dip",
+      "repository",
+      "case-study"
+    ],
+    "explanation": "DIP: business logic depends on IRepository interface. Concrete MySQLRepo, PostgresRepo, MongoRepo are injected. Switching DB = change injection config."
+  },
+  {
+    "text": "Related to Encapsulation - What is a destructor?",
+    "options": [
+      "A private constructor",
+      "A constructor that fails",
+      "A static method",
+      "A method called when an object is destroyed to clean up resources"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Oracle",
+    "tags": [
+      "destructor",
+      "cleanup"
+    ],
+    "explanation": "Destructors release resources (memory, file handles) when an object is destroyed. Called ~ClassName() in C++, __del__ in Python."
+  },
+  {
+    "text": "Related to Design Patterns - What is the Command design pattern?",
+    "options": [
+      "A network command",
+      "Encapsulates a request as an object, enabling parameterization, queuing, and undo operations",
+      "CLI commands",
+      "A creational pattern"
+    ],
+    "correct": 1,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Samsung",
+    "tags": [
+      "command",
+      "design-pattern"
+    ],
+    "explanation": "Command pattern wraps requests in objects supporting undo, redo, queuing, and logging of operations."
+  },
+  {
+    "text": "Related to Encapsulation - What is a friend function in C++?",
+    "options": [
+      "A public method",
+      "A recursive function",
+      "A helper function",
+      "A function granted access to a class's private and protected members despite not being a member"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Accenture",
+    "tags": [
+      "friend-function",
+      "cpp"
+    ],
+    "explanation": "Friend functions are declared with the 'friend' keyword inside a class, allowing access to its private members."
+  },
+  {
+    "text": "Related to Design Patterns - What is the Facade design pattern?",
+    "options": [
+      "Provides a simplified interface to a complex subsystem",
+      "A creational pattern",
+      "A testing pattern",
+      "Building facade"
+    ],
+    "correct": 0,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "facade",
+      "design-pattern"
+    ],
+    "explanation": "Facade provides a simple, unified interface to a set of interfaces in a subsystem, reducing complexity for clients."
+  },
+  {
+    "text": "Related to Design Patterns - A logging library is needed across the entire application. Multiple logger instances cause duplicate log entries and resource contention. Which pattern solves this?",
+    "options": [
+      "Observer",
+      "Factory",
+      "Strategy",
+      "Singleton pattern — single logger instance with thread-safe initialization"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Standard Practice | Cisco",
+    "tags": [
+      "singleton",
+      "logging",
+      "case-study"
+    ],
+    "explanation": "Singleton ensures one logger instance application-wide, preventing duplicate entries and managing the file handle consistently."
+  },
+  {
+    "text": "Related to Polymorphism - What is a virtual function?",
+    "options": [
+      "A static function",
+      "A function that doesn't exist",
+      "A private function",
+      "A function declared in base class that can be overridden in derived classes for runtime polymorphism"
+    ],
+    "correct": 3,
+    "subject": "OOPs",
+    "topic": "Polymorphism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Intel",
+    "tags": [
+      "virtual-function",
+      "runtime"
+    ],
+    "explanation": "Virtual functions enable runtime polymorphism — the correct derived class method is called based on actual object type."
+  },
+  {
+    "text": "Related to Encapsulation - What is a constructor?",
+    "options": [
+      "A private method",
+      "A static method",
+      "A special method called when an object is created to initialize it",
+      "A method to destroy objects"
+    ],
+    "correct": 2,
+    "subject": "OOPs",
+    "topic": "Encapsulation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Flipkart",
+    "tags": [
+      "constructor"
+    ],
+    "explanation": "Constructors initialize object state during creation. They have the same name as the class (or __init__ in Python)."
+  },
+  {
+    "text": "Which SOLID principle states that a class should have one reason to change?",
+    "options": [
+      "Open/Closed",
+      "Single Responsibility",
+      "Liskov Substitution",
+      "Interface Segregation"
+    ],
+    "correct": 1,
+    "subject": "OOPS",
+    "topic": "Single Responsibility Deep Dive",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "ThoughtWorks",
+    "tags": [
+      "solid",
+      "srp"
+    ]
+  },
+  {
+    "text": "What design pattern ensures a class only has one instance?",
+    "options": [
+      "Factory",
+      "Observer",
+      "Singleton",
+      "Decorator"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Amazon",
+    "tags": [
+      "singleton"
+    ]
+  },
+  {
+    "text": "Which feature of OOP allows an object to take many forms?",
+    "options": [
+      "Encapsulation",
+      "Polymorphism",
+      "Abstraction",
+      "Inheritance"
+    ],
+    "correct": 1,
+    "subject": "OOPS",
+    "topic": "Polymorphism Deep Dive",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Google",
+    "tags": [
+      "polymorphism"
+    ]
+  },
+  {
+    "text": "In UML, a dashed arrow with a hollow triangle head represents:",
+    "options": [
+      "Association",
+      "Inheritance",
+      "Realization/Implementation",
+      "Dependency"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "UML Diagrams",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019",
+    "tags": [
+      "uml"
+    ]
+  },
+  {
+    "text": "What happens to objects without references in Java?",
+    "options": [
+      "They live forever",
+      "They cause a crash",
+      "They are garbage collected",
+      "They throw an exception"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Memory Management in OOP",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Oracle",
+    "tags": [
+      "garbagecollection"
+    ]
+  },
+  {
+    "text": "In a try-catch-finally block, when is finally executed?",
+    "options": [
+      "Only when an exception occurs",
+      "Only when no exception occurs",
+      "Always executed",
+      "Never executed"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Exception Handling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Infosys",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "text": "Which SOLID principle is violated when a subclass throws an exception for a method defined in its base class?",
+    "options": [
+      "Single Responsibility",
+      "Open/Closed",
+      "Liskov Substitution",
+      "Interface Segregation"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "SOLID Principles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Microsoft Interview",
+    "tags": [
+      "liskov",
+      "solid"
+    ]
+  },
+  {
+    "text": "In Java, what is the impact of catching an Error (like OutOfMemoryError)?",
+    "options": [
+      "It is recommended practice",
+      "It allows the application to recover safely",
+      "It is heavily discouraged as the JVM state might be unstable",
+      "It is a compile-time error"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Exception Handling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Oracle Interview",
+    "tags": [
+      "exceptions"
+    ]
+  },
+  {
+    "text": "What is the purpose of the Protected access modifier?",
+    "options": [
+      "Visible only to the same class",
+      "Visible to classes in the same package and subclasses",
+      "Visible to everyone",
+      "Visible only to subclasses regardless of package"
+    ],
+    "correct": 1,
+    "subject": "OOPS",
+    "topic": "OOP Pillars",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Infosys Interview",
+    "tags": [
+      "access-modifiers"
+    ]
+  },
+  {
+    "text": "In C++, virtual destructors are required when:",
+    "options": [
+      "You want to construct a derived object",
+      "You delete a derived class object through a base class pointer",
+      "You overload the delete operator",
+      "You use multiple inheritance"
+    ],
+    "correct": 1,
+    "subject": "OOPS",
+    "topic": "Memory Management in OOP",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2020",
+    "tags": [
+      "cpp",
+      "virtual"
+    ]
+  },
+  {
+    "text": "Which design pattern is used to add new functionality to an existing object without altering its structure?",
+    "options": [
+      "Adapter",
+      "Bridge",
+      "Decorator",
+      "Facade"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Design Patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Adobe Interview",
+    "tags": [
+      "decorator",
+      "patterns"
+    ]
+  },
+  {
+    "text": "Which of the following describes the difference between an abstract class and an interface in Java 8+?",
+    "options": [
+      "Interfaces cannot have static variables",
+      "Abstract classes cannot have default methods",
+      "A class can implement multiple interfaces but extend only one abstract class",
+      "Interfaces can maintain state variables"
+    ],
+    "correct": 2,
+    "subject": "OOPS",
+    "topic": "Abstraction vs Interfaces",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "IBM Interview",
+    "tags": [
+      "abstract",
+      "interface"
+    ]
+  }
+]

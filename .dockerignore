@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+server/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+.tsbuildinfo
+
+# Ignore Git files in the docker image
+.git/
+.gitignore
+
+# Notice that .env is NOT ignored! 
+# We need it so Vite can inject the VITE_ variables during the build phase inside Dockerfile.frontend.

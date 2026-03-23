@@ -1,0 +1,2998 @@
+[
+  {
+    "text": "Which scheduling algorithm gives minimum average waiting time?",
+    "options": [
+      "Round Robin",
+      "SJF",
+      "FCFS",
+      "Priority"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Infosys",
+    "tags": [
+      "scheduling",
+      "sjf"
+    ],
+    "explanation": "SJF (Shortest Job First) minimizes average waiting time by always picking the process with the shortest burst time."
+  },
+  {
+    "text": "Banker's Algorithm is used for?",
+    "options": [
+      "Deadlock Prevention",
+      "Deadlock Recovery",
+      "Deadlock Detection",
+      "Deadlock Avoidance"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Goldman Sachs",
+    "tags": [
+      "deadlock",
+      "bankers"
+    ],
+    "explanation": "Banker's Algorithm checks resource allocation for safe states, avoiding deadlock."
+  },
+  {
+    "text": "Page fault occurs when?",
+    "options": [
+      "Page is in memory",
+      "Page is not in memory",
+      "Page is pinned",
+      "Page is dirty"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Wipro",
+    "tags": [
+      "paging",
+      "page-fault"
+    ],
+    "explanation": "A page fault occurs when the referenced page is not present in main memory."
+  },
+  {
+    "text": "Which page replacement algorithm suffers from Belady's anomaly?",
+    "options": [
+      "FIFO",
+      "LFU",
+      "Optimal",
+      "LRU"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2014 | Meta",
+    "tags": [
+      "page-replacement",
+      "belady"
+    ],
+    "explanation": "FIFO can exhibit Belady's anomaly where more frames cause more page faults."
+  },
+  {
+    "text": "The minimum number of semaphores needed to solve the producer-consumer problem is?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | Amazon",
+    "tags": [
+      "semaphore",
+      "producer-consumer"
+    ],
+    "explanation": "Three semaphores: mutex, empty, full are needed for the bounded-buffer problem."
+  },
+  {
+    "text": "Which of the following is NOT a necessary condition for deadlock?",
+    "options": [
+      "Preemption",
+      "Hold and Wait",
+      "Circular Wait",
+      "Mutual Exclusion"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Walmart",
+    "tags": [
+      "deadlock",
+      "conditions"
+    ],
+    "explanation": "Preemption is NOT a condition for deadlock — No Preemption is the actual condition."
+  },
+  {
+    "text": "In a system with 5 processes and 3 resource types, what is the minimum resources needed to prevent deadlock if max need is [7,5,3]?",
+    "options": [
+      "12",
+      "14",
+      "13",
+      "15"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Samsung",
+    "tags": [
+      "deadlock",
+      "resource-allocation"
+    ],
+    "explanation": "Min resources = Sum(MaxNeed - 1) + 1 for each type to guarantee at least one process can finish."
+  },
+  {
+    "text": "Which disk scheduling algorithm causes starvation?",
+    "options": [
+      "C-SCAN",
+      "SSTF",
+      "FCFS",
+      "SCAN"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Infosys",
+    "tags": [
+      "disk",
+      "sstf"
+    ],
+    "explanation": "SSTF (Shortest Seek Time First) can starve requests far from the current head position."
+  },
+  {
+    "text": "What is the purpose of TLB in memory management?",
+    "options": [
+      "Cache page table entries",
+      "Store virtual addresses",
+      "Handle page faults",
+      "Manage swap space"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Meta",
+    "tags": [
+      "tlb",
+      "paging"
+    ],
+    "explanation": "TLB caches recently used page table entries to speed up address translation."
+  },
+  {
+    "text": "Which of these is a preemptive scheduling algorithm?",
+    "options": [
+      "SJF",
+      "FCFS",
+      "SRTF",
+      "Priority (non-preemptive)"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Flipkart",
+    "tags": [
+      "scheduling",
+      "preemptive"
+    ],
+    "explanation": "SRTF (Shortest Remaining Time First) is the preemptive version of SJF."
+  },
+  {
+    "text": "A process in the 'ready' state transitions to 'running' when?",
+    "options": [
+      "Interrupt occurs",
+      "Scheduler dispatches it",
+      "I/O completes",
+      "Page fault occurs"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Accenture",
+    "tags": [
+      "process",
+      "state-transition"
+    ],
+    "explanation": "The OS scheduler dispatches a ready process to the CPU for execution."
+  },
+  {
+    "text": "Internal fragmentation occurs in which memory allocation scheme?",
+    "options": [
+      "Paging",
+      "Both",
+      "Segmentation",
+      "Neither"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Microsoft",
+    "tags": [
+      "fragmentation",
+      "paging"
+    ],
+    "explanation": "Paging causes internal fragmentation because the last page may not be fully used."
+  },
+  {
+    "text": "Thrashing occurs when?",
+    "options": [
+      "CPU utilization is very high",
+      "No page faults occur",
+      "All pages are in memory",
+      "Degree of multiprogramming is too high"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | IBM",
+    "tags": [
+      "thrashing",
+      "multiprogramming"
+    ],
+    "explanation": "Thrashing happens when too many processes compete for limited memory, causing constant page faults."
+  },
+  {
+    "text": "Which system call creates a new process in Unix?",
+    "options": [
+      "exec()",
+      "exit()",
+      "fork()",
+      "wait()"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2012 | Accenture",
+    "tags": [
+      "system-call",
+      "fork"
+    ],
+    "explanation": "fork() creates a child process that is a copy of the parent process."
+  },
+  {
+    "text": "The convoy effect is associated with which scheduling algorithm?",
+    "options": [
+      "FCFS",
+      "Multilevel Queue",
+      "SJF",
+      "Round Robin"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Flipkart",
+    "tags": [
+      "scheduling",
+      "convoy"
+    ],
+    "explanation": "FCFS causes convoy effect where short processes wait behind a long CPU-bound process."
+  },
+  {
+    "text": "What is the time complexity of the Optimal Page Replacement algorithm?",
+    "options": [
+      "O(1)",
+      "O(n log n)",
+      "Not implementable in practice",
+      "O(n)"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Wipro",
+    "tags": [
+      "page-replacement",
+      "optimal"
+    ],
+    "explanation": "Optimal algorithm requires future knowledge of page references, making it impractical."
+  },
+  {
+    "text": "In Round Robin scheduling with quantum q, if q is very large, it behaves like?",
+    "options": [
+      "Priority",
+      "SJF",
+      "SRTF",
+      "FCFS"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Goldman Sachs",
+    "tags": [
+      "round-robin",
+      "quantum"
+    ],
+    "explanation": "With a very large quantum, each process completes before timeout — behaving like FCFS."
+  },
+  {
+    "text": "Which of the following is not a valid process state?",
+    "options": [
+      "Executing",
+      "Blocked",
+      "Terminated",
+      "New"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "process",
+      "states"
+    ],
+    "explanation": "Standard process states are New, Ready, Running, Waiting/Blocked, Terminated — 'Executing' is not the standard term."
+  },
+  {
+    "text": "Peterson's solution is used for?",
+    "options": [
+      "Memory management",
+      "Disk scheduling",
+      "Mutual exclusion",
+      "Deadlock avoidance"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2014 | Walmart",
+    "tags": [
+      "peterson",
+      "mutual-exclusion"
+    ],
+    "explanation": "Peterson's solution provides mutual exclusion for two processes using shared variables."
+  },
+  {
+    "text": "Which memory management technique suffers from external fragmentation?",
+    "options": [
+      "Segmentation",
+      "Demand Paging",
+      "Virtual Memory",
+      "Paging"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Accenture",
+    "tags": [
+      "segmentation",
+      "fragmentation"
+    ],
+    "explanation": "Segmentation allocates variable-sized blocks, leading to external fragmentation."
+  },
+  {
+    "text": "The working set model is related to?",
+    "options": [
+      "Disk scheduling",
+      "File system",
+      "Page replacement",
+      "CPU scheduling"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Google",
+    "tags": [
+      "working-set",
+      "page-replacement"
+    ],
+    "explanation": "Working set model tracks the set of pages a process is actively using."
+  },
+  {
+    "text": "In a multilevel feedback queue, a process moves to a lower priority queue when?",
+    "options": [
+      "It completes",
+      "It does I/O",
+      "It uses its full time quantum",
+      "It is starved"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | IBM",
+    "tags": [
+      "mlfq",
+      "scheduling"
+    ],
+    "explanation": "CPU-bound processes that use their full quantum are demoted to lower priority queues."
+  },
+  {
+    "text": "What does the 'nice' value in Unix represent?",
+    "options": [
+      "Process ID",
+      "Memory allocation",
+      "I/O priority",
+      "Priority hint"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "unix",
+      "nice",
+      "priority"
+    ],
+    "explanation": "The nice value is a priority hint — higher nice values mean lower scheduling priority."
+  },
+  {
+    "text": "Which condition must hold for a system to be in a safe state?",
+    "options": [
+      "There exists a safe sequence",
+      "No process is waiting",
+      "No deadlock exists",
+      "All resources are allocated"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Apple",
+    "tags": [
+      "safe-state",
+      "deadlock"
+    ],
+    "explanation": "A safe state exists if there's at least one sequence in which all processes can complete."
+  },
+  {
+    "text": "Copy-on-write is an optimization for which system call?",
+    "options": [
+      "exec()",
+      "fork()",
+      "wait()",
+      "open()"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | NVIDIA",
+    "tags": [
+      "cow",
+      "fork"
+    ],
+    "explanation": "Copy-on-write delays copying parent pages during fork() until a write occurs."
+  },
+  {
+    "text": "What is the purpose of the 'modify' (dirty) bit in page table?",
+    "options": [
+      "Mark page as read-only",
+      "Indicate page is in TLB",
+      "Mark page for write-back",
+      "Track page access"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Samsung",
+    "tags": [
+      "dirty-bit",
+      "page-table"
+    ],
+    "explanation": "The dirty bit indicates the page has been modified and needs to be written back to disk."
+  },
+  {
+    "text": "In a two-level page table with 32-bit address, 4KB pages, and 4B entries, how many bits for first-level index?",
+    "options": [
+      "8",
+      "12",
+      "20",
+      "10"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | Walmart",
+    "tags": [
+      "two-level-paging",
+      "address-translation"
+    ],
+    "explanation": "12 bits offset, 20 bits for page number, split 10+10 for two levels."
+  },
+  {
+    "text": "Which scheduling algorithm is used in modern Linux kernels?",
+    "options": [
+      "CFS (Completely Fair Scheduler)",
+      "Round Robin",
+      "Priority",
+      "FCFS"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in AMD",
+    "tags": [
+      "linux",
+      "cfs"
+    ],
+    "explanation": "Linux uses CFS which uses a red-black tree to balance CPU time fairly among processes."
+  },
+  {
+    "text": "The zombie process state occurs when?",
+    "options": [
+      "Process is waiting for I/O",
+      "Process is swapped out",
+      "Child has exited but parent hasn't called wait()",
+      "Process is in ready queue"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "zombie",
+      "process"
+    ],
+    "explanation": "A zombie is a terminated process whose exit status hasn't been collected by its parent."
+  },
+  {
+    "text": "Which IPC mechanism transfers data through kernel memory?",
+    "options": [
+      "Both",
+      "Neither",
+      "Message Passing",
+      "Shared Memory"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2014 | Flipkart",
+    "tags": [
+      "ipc",
+      "message-passing"
+    ],
+    "explanation": "Message passing involves kernel-mediated data transfer between processes."
+  },
+  {
+    "text": "In demand paging, a page is loaded into memory when?",
+    "options": [
+      "All pages are loaded at once",
+      "Process starts",
+      "Page is first referenced",
+      "System boots"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Accenture",
+    "tags": [
+      "demand-paging"
+    ],
+    "explanation": "Demand paging loads pages only when they are actually referenced, reducing initial load time."
+  },
+  {
+    "text": "What is the maximum number of page faults using LRU on reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2017 | NVIDIA",
+    "tags": [
+      "lru",
+      "page-faults"
+    ],
+    "explanation": "Trace through LRU: each replacement counts as a page fault, yielding 10 faults with 3 frames."
+  },
+  {
+    "text": "Starvation can be prevented by?",
+    "options": [
+      "Deadlock avoidance",
+      "Preemption",
+      "Mutual exclusion",
+      "Aging"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Uber",
+    "tags": [
+      "starvation",
+      "aging"
+    ],
+    "explanation": "Aging gradually increases priority of waiting processes to prevent indefinite starvation."
+  },
+  {
+    "text": "Which of the following is a real-time scheduling algorithm?",
+    "options": [
+      "FCFS",
+      "Rate Monotonic Scheduling",
+      "Round Robin",
+      "SJF"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2019 | AMD",
+    "tags": [
+      "real-time",
+      "rms"
+    ],
+    "explanation": "RMS assigns priorities based on period — shorter period tasks get higher priority."
+  },
+  {
+    "text": "The dispatcher module gives control of the CPU to the process selected by?",
+    "options": [
+      "I/O scheduler",
+      "Long-term scheduler",
+      "Medium-term scheduler",
+      "Short-term scheduler"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | PayPal",
+    "tags": [
+      "dispatcher",
+      "scheduler"
+    ],
+    "explanation": "The dispatcher hands control to the process chosen by the short-term (CPU) scheduler."
+  },
+  {
+    "text": "A counting semaphore can be used to solve?",
+    "options": [
+      "Neither",
+      "Mutual exclusion only",
+      "Deadlock only",
+      "Bounded buffer problem"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Uber",
+    "tags": [
+      "semaphore",
+      "counting"
+    ],
+    "explanation": "Counting semaphores track available resources — perfect for bounded buffer problems."
+  },
+  {
+    "text": "What is the effect of reducing the time quantum in Round Robin?",
+    "options": [
+      "Less responsive",
+      "Better throughput",
+      "Less context switching",
+      "More context switching"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Walmart",
+    "tags": [
+      "round-robin",
+      "context-switch"
+    ],
+    "explanation": "Smaller quantum means more frequent context switches, increasing overhead."
+  },
+  {
+    "text": "Which of the following is NOT a type of kernel?",
+    "options": [
+      "Hybrid",
+      "Microkernel",
+      "Parallel",
+      "Monolithic"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "kernel",
+      "types"
+    ],
+    "explanation": "Monolithic, microkernel, and hybrid are kernel types. 'Parallel' is not a kernel type."
+  },
+  {
+    "text": "Virtual memory allows?",
+    "options": [
+      "Eliminating page faults",
+      "Faster CPU execution",
+      "Running programs larger than physical memory",
+      "Direct disk access"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Microsoft",
+    "tags": [
+      "virtual-memory"
+    ],
+    "explanation": "Virtual memory maps logical addresses to physical, letting programs exceed physical RAM size."
+  },
+  {
+    "text": "Which of the following is true about monitors?",
+    "options": [
+      "Only one process can be active inside at a time",
+      "They use busy waiting",
+      "They are hardware constructs",
+      "They don't support condition variables"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | TCS",
+    "tags": [
+      "monitor",
+      "synchronization"
+    ],
+    "explanation": "Monitors enforce mutual exclusion — only one process executes within the monitor at any time."
+  },
+  {
+    "text": "What is a race condition?",
+    "options": [
+      "CPU and I/O overlap",
+      "A process runs faster than another",
+      "Two processes running simultaneously",
+      "Output depends on the order of execution of processes"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Amazon",
+    "tags": [
+      "race-condition"
+    ],
+    "explanation": "A race condition occurs when the result depends on the non-deterministic timing of processes."
+  },
+  {
+    "text": "In the Readers-Writers problem, which has priority in the first variant?",
+    "options": [
+      "Equal priority",
+      "Writers",
+      "Readers",
+      "Neither"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | PayPal",
+    "tags": [
+      "readers-writers"
+    ],
+    "explanation": "In the first readers-writers problem, readers have priority — no reader waits unless a writer has access."
+  },
+  {
+    "text": "The Dining Philosophers problem illustrates?",
+    "options": [
+      "Deadlock and starvation",
+      "I/O management",
+      "Memory issues",
+      "Starvation only"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Wipro",
+    "tags": [
+      "dining-philosophers"
+    ],
+    "explanation": "The problem demonstrates both deadlock (all grab left fork) and starvation (continuously bypassed)."
+  },
+  {
+    "text": "Effective Access Time (EAT) with TLB hit ratio h, TLB time t, and memory time m is?",
+    "options": [
+      "h*m + (1-h)*2m",
+      "t + m",
+      "h*t + (1-h)*m",
+      "h*(t+m) + (1-h)*(t+2m)"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Walmart",
+    "tags": [
+      "eat",
+      "tlb"
+    ],
+    "explanation": "On TLB hit: t+m, on miss: t+2m (one for page table, one for data). EAT = h(t+m) + (1-h)(t+2m)."
+  },
+  {
+    "text": "What is the purpose of swapping in OS?",
+    "options": [
+      "Move processes between main memory and disk",
+      "Manage file system",
+      "Speed up CPU",
+      "Handle interrupts"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Meta",
+    "tags": [
+      "swapping"
+    ],
+    "explanation": "Swapping moves entire processes between main memory and disk to free up memory."
+  },
+  {
+    "text": "A thread shares which of the following with other threads of the same process?",
+    "options": [
+      "Program counter",
+      "Code and data sections",
+      "Stack",
+      "Registers"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Flipkart",
+    "tags": [
+      "threads",
+      "shared-resources"
+    ],
+    "explanation": "Threads share code, data, and files but have their own stack, registers, and PC."
+  },
+  {
+    "text": "What is a spinlock?",
+    "options": [
+      "A hardware lock only",
+      "A lock where the process busy-waits",
+      "A lock using semaphores",
+      "A lock that puts the process to sleep"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "spinlock",
+      "busy-wait"
+    ],
+    "explanation": "A spinlock loops (busy-waits) checking if the lock is available — useful for short critical sections."
+  },
+  {
+    "text": "Which file allocation method suffers from both internal and external fragmentation?",
+    "options": [
+      "Contiguous",
+      "Indexed",
+      "Linked",
+      "None"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "File System",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Amazon",
+    "tags": [
+      "file-allocation",
+      "contiguous"
+    ],
+    "explanation": "Contiguous allocation suffers from external fragmentation (gaps) and internal fragmentation (over-allocation)."
+  },
+  {
+    "text": "The inode structure in Unix stores?",
+    "options": [
+      "File metadata and disk block pointers",
+      "Directory entries",
+      "File name",
+      "File data"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "File System",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "inode",
+      "unix"
+    ],
+    "explanation": "The inode stores metadata (permissions, size, timestamps) and pointers to data blocks."
+  },
+  {
+    "text": "What type of scheduling decision is made when a process switches from running to ready?",
+    "options": [
+      "Non-preemptive",
+      "Both",
+      "Preemptive",
+      "Cooperative"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Flipkart",
+    "tags": [
+      "preemptive",
+      "scheduling"
+    ],
+    "explanation": "Moving from running to ready (e.g., due to interrupt/timer) is a preemptive scheduling decision."
+  },
+  {
+    "text": "LOOK disk scheduling algorithm is a variation of?",
+    "options": [
+      "SSTF",
+      "SCAN",
+      "FCFS",
+      "C-LOOK"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Apple",
+    "tags": [
+      "look",
+      "scan"
+    ],
+    "explanation": "LOOK is like SCAN but doesn't go to the end of the disk — it reverses at the last request."
+  },
+  {
+    "text": "What is the main advantage of multilevel page tables over single-level?",
+    "options": [
+      "Less memory usage for page table",
+      "Simpler implementation",
+      "Faster access",
+      "No page faults"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Oracle",
+    "tags": [
+      "multilevel-paging"
+    ],
+    "explanation": "Multilevel page tables reduce memory overhead — unused address ranges don't need page table entries."
+  },
+  {
+    "text": "Priority inversion problem can be solved by?",
+    "options": [
+      "Priority inheritance protocol",
+      "Round Robin",
+      "FCFS scheduling",
+      "Increasing time quantum"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Wipro",
+    "tags": [
+      "priority-inversion",
+      "inheritance"
+    ],
+    "explanation": "Priority inheritance temporarily boosts a low-priority process holding a lock needed by a high-priority process."
+  },
+  {
+    "text": "Which of the following is an advantage of user-level threads over kernel-level threads?",
+    "options": [
+      "Can utilize multiple CPUs",
+      "Thread switching is faster",
+      "Preemptive scheduling",
+      "Better I/O handling"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "threads",
+      "user-level"
+    ],
+    "explanation": "User-level thread switching doesn't involve kernel calls, making it significantly faster."
+  },
+  {
+    "text": "In the buddy system of memory allocation, a block of 64KB is split into?",
+    "options": [
+      "Four 16KB blocks",
+      "One 32KB and two 16KB",
+      "Two 32KB blocks",
+      "Eight 8KB blocks"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Samsung",
+    "tags": [
+      "buddy-system"
+    ],
+    "explanation": "The buddy system always splits a block into two equal halves (buddies)."
+  },
+  {
+    "text": "What is the purpose of a PCB (Process Control Block)?",
+    "options": [
+      "Handle interrupts",
+      "Store file data",
+      "Store all information about a process",
+      "Manage I/O devices"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | PayPal",
+    "tags": [
+      "pcb",
+      "process"
+    ],
+    "explanation": "PCB contains process state, PC, registers, memory info, I/O status, and scheduling information."
+  },
+  {
+    "text": "Which of the following is true about RAID 5?",
+    "options": [
+      "Uses triple replication",
+      "Uses striping with distributed parity",
+      "Uses mirroring",
+      "Uses no redundancy"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "raid",
+      "raid5"
+    ],
+    "explanation": "RAID 5 distributes parity blocks across all disks with striping for performance and fault tolerance."
+  },
+  {
+    "text": "Earliest Deadline First (EDF) scheduling is?",
+    "options": [
+      "Dynamic priority",
+      "Non-preemptive only",
+      "Static priority",
+      "Used only for batch jobs"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Cisco",
+    "tags": [
+      "edf",
+      "real-time"
+    ],
+    "explanation": "EDF dynamically assigns priority based on deadline — closest deadline gets highest priority."
+  },
+  {
+    "text": "What is the maximum degree of multiprogramming in a paging system with 64 frames and each process needing minimum 4 frames?",
+    "options": [
+      "32",
+      "64",
+      "15",
+      "16"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Microsoft",
+    "tags": [
+      "multiprogramming",
+      "paging"
+    ],
+    "explanation": "64 frames / 4 frames per process = 16 processes maximum."
+  },
+  {
+    "text": "The test-and-set instruction is used for implementing?",
+    "options": [
+      "I/O scheduling",
+      "Mutual exclusion",
+      "Virtual memory",
+      "File systems"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | PayPal",
+    "tags": [
+      "test-and-set",
+      "hardware"
+    ],
+    "explanation": "Test-and-set is an atomic hardware instruction used to implement locks for mutual exclusion."
+  },
+  {
+    "text": "In C-SCAN disk scheduling, after reaching the end of the disk, the head?",
+    "options": [
+      "Jumps to the beginning without servicing",
+      "Reverses direction",
+      "Stops",
+      "Services in reverse"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Apple",
+    "tags": [
+      "c-scan",
+      "disk"
+    ],
+    "explanation": "C-SCAN jumps back to the beginning and starts servicing from there — providing uniform wait times."
+  },
+  {
+    "text": "What is the difference between logical and physical address?",
+    "options": [
+      "Physical is generated by CPU",
+      "No difference in modern systems",
+      "They are always the same",
+      "Logical is generated by CPU, physical is actual memory location"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Accenture",
+    "tags": [
+      "logical-address",
+      "physical-address"
+    ],
+    "explanation": "CPU generates logical (virtual) addresses; MMU maps them to physical addresses in RAM."
+  },
+  {
+    "text": "Which scheduling criteria aims to maximize the number of processes completed per time unit?",
+    "options": [
+      "Waiting time",
+      "Throughput",
+      "Response time",
+      "Turnaround time"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Microsoft",
+    "tags": [
+      "throughput",
+      "scheduling"
+    ],
+    "explanation": "Throughput measures how many processes complete execution per unit of time."
+  },
+  {
+    "text": "In a system with 4 processes and 1 resource type with 12 instances, if current allocation is [3,2,4,1] and max need is [6,5,7,4], is the system in a safe state?",
+    "options": [
+      "Cannot determine",
+      "Deadlocked",
+      "Yes",
+      "No"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | Meta",
+    "tags": [
+      "bankers",
+      "safe-state"
+    ],
+    "explanation": "Available = 12-10 = 2. Need = [3,3,3,3]. P3 can finish (need 3, avail 2+1=3 after release), then others follow."
+  },
+  {
+    "text": "What is a critical section?",
+    "options": [
+      "Code that accesses shared resources",
+      "The main function",
+      "The most important code",
+      "Code that handles I/O"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Goldman Sachs",
+    "tags": [
+      "critical-section"
+    ],
+    "explanation": "A critical section is code that accesses shared resources and must be executed atomically."
+  },
+  {
+    "text": "Segmentation with paging combines the advantages of?",
+    "options": [
+      "Both of the above",
+      "None of the above",
+      "Logical division and fixed-size allocation",
+      "Contiguous and non-contiguous allocation"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2017 | Meta",
+    "tags": [
+      "segmentation",
+      "paging"
+    ],
+    "explanation": "Segmentation provides logical divisions while paging provides fixed-size allocation within segments."
+  },
+  {
+    "text": "In interprocess communication, what is a pipe?",
+    "options": [
+      "A file type",
+      "A hardware connection",
+      "A unidirectional byte stream between processes",
+      "A network protocol"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "pipe",
+      "ipc"
+    ],
+    "explanation": "A pipe is a unidirectional communication channel for byte-stream data between processes."
+  },
+  {
+    "text": "What is the main purpose of the MMU (Memory Management Unit)?",
+    "options": [
+      "Schedule processes",
+      "Handle interrupts",
+      "Manage disk I/O",
+      "Translate virtual addresses to physical addresses"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Apple",
+    "tags": [
+      "mmu",
+      "address-translation"
+    ],
+    "explanation": "The MMU translates virtual/logical addresses to physical addresses at runtime."
+  },
+  {
+    "text": "Which of the following is true about microkernel architecture?",
+    "options": [
+      "All services run in kernel mode",
+      "It is faster than monolithic",
+      "It has no user-space services",
+      "Only essential services run in kernel mode"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Intel",
+    "tags": [
+      "microkernel",
+      "architecture"
+    ],
+    "explanation": "Microkernels keep only essential services (IPC, memory, scheduling) in kernel mode, moving others to user space."
+  },
+  {
+    "text": "What is the turnaround time of a process?",
+    "options": [
+      "Time from submission to start",
+      "Time spent waiting in ready queue",
+      "Time from submission to completion",
+      "Time spent in I/O"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | AMD",
+    "tags": [
+      "turnaround-time"
+    ],
+    "explanation": "Turnaround time = Completion time - Arrival time."
+  },
+  {
+    "text": "Which of these is a necessary condition for mutual exclusion using software?",
+    "options": [
+      "Busy waiting",
+      "Progress and bounded waiting",
+      "Hardware support",
+      "None of these"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Accenture",
+    "tags": [
+      "mutual-exclusion",
+      "conditions"
+    ],
+    "explanation": "A correct mutual exclusion solution must satisfy progress (no unnecessary blocking) and bounded waiting."
+  },
+  {
+    "text": "In inverted page table, there is one entry per?",
+    "options": [
+      "Physical frame",
+      "Segment",
+      "Process",
+      "Virtual page"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Intel",
+    "tags": [
+      "inverted-page-table"
+    ],
+    "explanation": "Inverted page tables have one entry per physical frame, reducing table size for large address spaces."
+  },
+  {
+    "text": "What is the purpose of the fork() return value?",
+    "options": [
+      "To distinguish parent from child process",
+      "Error handling only",
+      "To set priority",
+      "To allocate memory"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Infosys",
+    "tags": [
+      "fork",
+      "return-value"
+    ],
+    "explanation": "fork() returns 0 in child process and child's PID in parent process for differentiation."
+  },
+  {
+    "text": "Which memory allocation strategy leads to best utilization of memory?",
+    "options": [
+      "Best Fit",
+      "First Fit",
+      "Worst Fit",
+      "Next Fit"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | TCS",
+    "tags": [
+      "memory-allocation",
+      "best-fit"
+    ],
+    "explanation": "Best Fit finds the smallest sufficient hole, minimizing wasted space — though it can create tiny unusable fragments."
+  },
+  {
+    "text": "Which signal in Unix terminates a process immediately and cannot be caught?",
+    "options": [
+      "SIGHUP",
+      "SIGINT",
+      "SIGKILL",
+      "SIGTERM"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Google",
+    "tags": [
+      "signal",
+      "sigkill"
+    ],
+    "explanation": "SIGKILL (signal 9) immediately terminates a process and cannot be caught or ignored."
+  },
+  {
+    "text": "What is the time quantum typically set to in modern OS Round Robin implementations?",
+    "options": [
+      "10-100 ms",
+      "1 ms",
+      "10 seconds",
+      "1 second"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "round-robin",
+      "quantum"
+    ],
+    "explanation": "Typical time quanta range from 10-100ms to balance responsiveness and context-switch overhead."
+  },
+  {
+    "text": "The compare-and-swap (CAS) instruction is?",
+    "options": [
+      "An atomic hardware instruction",
+      "A scheduling algorithm",
+      "A software construct",
+      "A kernel system call"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "cas",
+      "atomic"
+    ],
+    "explanation": "CAS atomically compares and swaps a memory value — used for lock-free data structures."
+  },
+  {
+    "text": "A server system experiences sudden performance degradation and high disk I/O despite having multiple processes running. The CPU utilization drops to 5%. What is most likely happening?",
+    "options": [
+      "CPU overheating",
+      "Disk failure",
+      "Thrashing due to excessive multiprogramming",
+      "Network congestion"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Meta",
+    "tags": [
+      "thrashing",
+      "performance",
+      "case-study"
+    ],
+    "explanation": "Low CPU utilization + high disk I/O + many processes = classic thrashing symptoms. The system spends most time swapping pages in and out."
+  },
+  {
+    "text": "You're designing an embedded system for a real-time sensor that must process readings every 10ms. Which scheduling approach would you choose?",
+    "options": [
+      "Rate Monotonic with period-based priorities",
+      "FCFS for simplicity",
+      "Round Robin with 5ms quantum",
+      "Random scheduling"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | NVIDIA",
+    "tags": [
+      "real-time",
+      "embedded",
+      "rms",
+      "case-study"
+    ],
+    "explanation": "Rate Monotonic Scheduling assigns fixed priorities based on period — ideal for periodic real-time tasks with known deadlines."
+  },
+  {
+    "text": "A database application spawns a process per request. After running for days, the system shows thousands of entries in the process table but low CPU usage. What's the issue?",
+    "options": [
+      "Too many threads",
+      "Memory leak",
+      "CPU throttling",
+      "Zombie processes not being reaped"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Oracle",
+    "tags": [
+      "zombie",
+      "process-table",
+      "case-study"
+    ],
+    "explanation": "Parent processes not calling wait() on terminated children creates zombie processes that consume process table entries."
+  },
+  {
+    "text": "A web server handles 10,000 concurrent connections. Using one process per connection would be too expensive. What's the most efficient approach?",
+    "options": [
+      "One thread per connection",
+      "Use bigger time quantum",
+      "Event-driven I/O with non-blocking sockets",
+      "Increase RAM to handle more processes"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "event-driven",
+      "c10k",
+      "case-study"
+    ],
+    "explanation": "Event-driven (epoll/kqueue) with non-blocking I/O handles thousands of connections with minimal threads — the basis of Node.js and Nginx."
+  },
+  {
+    "text": "In a multi-threaded application, two threads cause intermittent data corruption in a shared counter. The bug only appears under high load. What's the root cause?",
+    "options": [
+      "Memory leak",
+      "Race condition on the shared counter",
+      "Thread stack overflow",
+      "Deadlock"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Walmart",
+    "tags": [
+      "race-condition",
+      "threading",
+      "case-study"
+    ],
+    "explanation": "Intermittent corruption of shared data under load is a classic race condition — the counter increment is not atomic."
+  },
+  {
+    "text": "A system uses 2-level paging with 32-bit virtual addresses, 4KB pages, and 4-byte PTEs. Calculate the total page table memory for a process using 1GB of virtual address space.",
+    "options": [
+      "4KB + 4KB",
+      "Depends on physical memory",
+      "4MB + 4KB",
+      "4MB only"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "GATE | Uber",
+    "tags": [
+      "two-level-paging",
+      "calculation",
+      "case-study"
+    ],
+    "explanation": "1GB = 256K pages. Second-level tables: 256K × 4B = 1MB per table, need 256 of them = 1MB total. First-level: 1 table of 4KB. Total ≈ 4MB + 4KB."
+  },
+  {
+    "text": "Your application creates 5 threads that each need exclusive access to 3 resources (A, B, C) but acquire them in different orders. What design pattern prevents deadlock?",
+    "options": [
+      "Resource ordering — all threads acquire in the same order",
+      "Use more resources",
+      "Kill threads if they wait too long",
+      "Use polling instead of locking"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Google",
+    "tags": [
+      "deadlock-prevention",
+      "resource-ordering",
+      "case-study"
+    ],
+    "explanation": "Resource ordering breaks circular wait — all threads must acquire locks in a consistent order (e.g., A→B→C)."
+  },
+  {
+    "text": "An OS kernel panics when a high-priority task is blocked waiting for a mutex held by a low-priority task, while a medium-priority task runs continuously. Name this problem and the solution.",
+    "options": [
+      "Deadlock — use resource ordering",
+      "Livelock — use backoff",
+      "Starvation — use aging",
+      "Priority inversion — use priority inheritance"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Cognizant",
+    "tags": [
+      "priority-inversion",
+      "mars-pathfinder",
+      "case-study"
+    ],
+    "explanation": "This is priority inversion (famously caused issues on Mars Pathfinder). Priority inheritance temporarily raises the low-priority task's priority."
+  },
+  {
+    "text": "A container orchestration system needs to limit a container to 512MB of physical memory. Which OS mechanism enables this?",
+    "options": [
+      "Segmentation faults",
+      "Page table restrictions",
+      "Virtual memory limits",
+      "cgroups (control groups)"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Infosys",
+    "tags": [
+      "cgroups",
+      "containers",
+      "case-study"
+    ],
+    "explanation": "Linux cgroups allow per-process-group resource limits including memory, CPU, and I/O — the foundation of Docker containers."
+  },
+  {
+    "text": "Your build system runs 8 parallel compilation tasks on a 4-core machine. Should you increase to 16 tasks for faster builds?",
+    "options": [
+      "It depends on available RAM only",
+      "No — diminishing returns and context-switch overhead beyond core count",
+      "Yes — if each task is I/O bound",
+      "Yes — more parallelism is always better"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | PayPal",
+    "tags": [
+      "parallelism",
+      "context-switching",
+      "case-study"
+    ],
+    "explanation": "If tasks are I/O bound (reading files), more tasks can overlap I/O with CPU work. For CPU-bound tasks, exceeding core count adds overhead."
+  },
+  {
+    "text": "In a distributed system, a node's clock drifts causing timestamps to be slightly off, leading to stale cache entries being served. What OS-level mechanism handles this?",
+    "options": [
+      "NTP (Network Time Protocol) clock synchronization",
+      "Virtual memory",
+      "Context switching",
+      "Process scheduling"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | TCS",
+    "tags": [
+      "clock-synchronization",
+      "distributed",
+      "case-study"
+    ],
+    "explanation": "NTP synchronizes system clocks across the network. Clock drift can cause issues in distributed caches, logs, and consensus protocols."
+  },
+  {
+    "text": "A file server uses indexed allocation and a file keeps growing beyond the initial index block capacity. How does the OS handle this?",
+    "options": [
+      "Compress the file",
+      "Deny further writes",
+      "Move the entire file",
+      "Use linked index blocks (multi-level indexing)"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "File System",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | Uber",
+    "tags": [
+      "indexed-allocation",
+      "multi-level",
+      "case-study"
+    ],
+    "explanation": "Multi-level indexing (like Unix indirect blocks) chains index blocks together to support files larger than one index block can track."
+  },
+  {
+    "text": "What problem does the Sleeping Barber problem illustrate?",
+    "options": [
+      "File allocation",
+      "Memory management",
+      "Synchronization between producer and consumer with limited waiting space",
+      "CPU scheduling"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "sleeping-barber",
+      "synchronization"
+    ],
+    "explanation": "The Sleeping Barber is a synchronization problem with a limited waiting room, similar to bounded buffer."
+  },
+  {
+    "text": "What does ASLR (Address Space Layout Randomization) prevent?",
+    "options": [
+      "Page faults",
+      "Buffer overflow attacks",
+      "Thrashing",
+      "Memory leaks"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "aslr",
+      "security"
+    ],
+    "explanation": "ASLR randomizes the layout of stack, heap, and libraries to make exploitation of memory vulnerabilities harder."
+  },
+  {
+    "text": "Which of the following is NOT a benefit of multithreading?",
+    "options": [
+      "Responsiveness",
+      "Increased complexity",
+      "Economy",
+      "Resource sharing"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "multithreading",
+      "benefits"
+    ],
+    "explanation": "Increased complexity is a disadvantage, not a benefit of multithreading."
+  },
+  {
+    "text": "What is the difference between a binary semaphore and a mutex?",
+    "options": [
+      "No difference",
+      "Mutex can count to more than 1",
+      "Binary semaphore is faster",
+      "Mutex has ownership concept, binary semaphore doesn't"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | TCS",
+    "tags": [
+      "mutex",
+      "binary-semaphore"
+    ],
+    "explanation": "A mutex can only be unlocked by the thread that locked it (ownership), while a binary semaphore can be signaled by any thread."
+  },
+  {
+    "text": "In Unix, what does the exec() system call do?",
+    "options": [
+      "Waits for child process",
+      "Replaces the current process image with a new program",
+      "Creates a new process",
+      "Terminates the process"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "exec",
+      "system-call"
+    ],
+    "explanation": "exec() replaces the current process's memory space with a new program without creating a new process."
+  },
+  {
+    "text": "Which page replacement algorithm is also known as the 'clairvoyant' algorithm?",
+    "options": [
+      "LRU",
+      "Clock",
+      "FIFO",
+      "Optimal (OPT)"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Accenture",
+    "tags": [
+      "optimal",
+      "page-replacement"
+    ],
+    "explanation": "The Optimal algorithm is 'clairvoyant' because it requires knowledge of future page references."
+  },
+  {
+    "text": "What is the clock page replacement algorithm?",
+    "options": [
+      "Based on time of day",
+      "Based on CPU clock speed",
+      "An approximation of LRU using a circular list and reference bit",
+      "Same as FIFO"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Uber",
+    "tags": [
+      "clock",
+      "page-replacement"
+    ],
+    "explanation": "The Clock algorithm uses a circular buffer with reference bits — giving a second chance before replacement."
+  },
+  {
+    "text": "What is the response time of a process?",
+    "options": [
+      "Time for I/O completion",
+      "Total execution time",
+      "Time from submission to first response",
+      "Time waiting in queue"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Google",
+    "tags": [
+      "response-time",
+      "scheduling"
+    ],
+    "explanation": "Response time measures how quickly a process produces its first output after submission."
+  },
+  {
+    "text": "What is a memory-mapped file?",
+    "options": [
+      "A cached file",
+      "A file stored in RAM",
+      "A file accessed through virtual memory addresses instead of read/write system calls",
+      "A temporary file"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "mmap",
+      "memory-mapped"
+    ],
+    "explanation": "Memory-mapped files map file contents into the process's virtual address space for direct access."
+  },
+  {
+    "text": "Which of these is true about kernel threads?",
+    "options": [
+      "Cannot block independently",
+      "Scheduled directly by the OS kernel",
+      "Managed entirely in user space",
+      "Faster to create than user threads"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "kernel-threads"
+    ],
+    "explanation": "Kernel threads are managed and scheduled by the OS kernel, allowing independent blocking."
+  },
+  {
+    "text": "What is the purpose of the dirty bit in cache memory?",
+    "options": [
+      "Indicate error",
+      "Show cache is full",
+      "Indicate cache miss",
+      "Mark modified data for write-back"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "dirty-bit",
+      "cache"
+    ],
+    "explanation": "The dirty bit indicates that cached data has been modified and must be written back to the next level."
+  },
+  {
+    "text": "What is thrashing in the context of TLB?",
+    "options": [
+      "TLB is disabled",
+      "TLB runs out of entries and constantly evicts needed mappings",
+      "TLB is too large",
+      "TLB never gets a miss"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Google",
+    "tags": [
+      "tlb-thrashing"
+    ],
+    "explanation": "TLB thrashing occurs when a process's working set exceeds TLB capacity, causing constant TLB misses."
+  },
+  {
+    "text": "In a preemptive priority system, a process with priority 1 (highest) arrives while priority 3 is running. What happens?",
+    "options": [
+      "System deadlocks",
+      "Priority 1 preempts priority 3",
+      "Priority 3 continues",
+      "Priority 1 waits"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "preemptive",
+      "priority"
+    ],
+    "explanation": "In preemptive priority scheduling, a higher priority process immediately preempts the currently running lower-priority process."
+  },
+  {
+    "text": "What is the advantage of using semaphores over busy-waiting?",
+    "options": [
+      "CPU is not wasted on spinning",
+      "No context switching",
+      "Simpler implementation",
+      "Faster execution"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Meta",
+    "tags": [
+      "semaphore",
+      "vs-busy-wait"
+    ],
+    "explanation": "Semaphores put waiting processes to sleep, freeing the CPU for other work instead of wasting cycles spinning."
+  },
+  {
+    "text": "Which of the following is true about daemon processes?",
+    "options": [
+      "They run in the background without terminal",
+      "They require user interaction",
+      "They have highest priority",
+      "They only exist in Windows"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Flipkart",
+    "tags": [
+      "daemon",
+      "background"
+    ],
+    "explanation": "Daemons are background processes (like httpd, sshd) that run without user interaction or a controlling terminal."
+  },
+  {
+    "text": "What is the difference between hard and soft real-time systems?",
+    "options": [
+      "Hard RT has absolute deadlines, soft RT allows occasional misses",
+      "Hard RT is for hardware, soft RT for software",
+      "Soft RT is faster",
+      "No difference"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "real-time",
+      "hard-soft"
+    ],
+    "explanation": "Hard real-time systems guarantee absolute deadlines (e.g., ABS brakes). Soft RT tolerates occasional misses (e.g., video streaming)."
+  },
+  {
+    "text": "In a system using segmentation, a segment table entry contains?",
+    "options": [
+      "File name",
+      "Only segment number",
+      "Page number",
+      "Base address and limit"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Apple",
+    "tags": [
+      "segmentation",
+      "segment-table"
+    ],
+    "explanation": "Each segment table entry contains the base address (where it starts) and limit (its length) for bounds checking."
+  },
+  {
+    "text": "What is the purpose of the interrupt vector table?",
+    "options": [
+      "Store process information",
+      "Schedule processes",
+      "Map interrupt numbers to handler addresses",
+      "Manage memory allocation"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "interrupt",
+      "ivt"
+    ],
+    "explanation": "The IVT maps each interrupt number to the address of its corresponding interrupt service routine (ISR)."
+  },
+  {
+    "text": "What happens during a context switch?",
+    "options": [
+      "Only program counter is saved",
+      "Disk is accessed",
+      "State of current process is saved, state of next process is loaded",
+      "Memory is freed"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | AMD",
+    "tags": [
+      "context-switch"
+    ],
+    "explanation": "Context switch saves the current process's registers, PC, etc. to its PCB and loads the next process's state."
+  },
+  {
+    "text": "Which of the following is an advantage of contiguous memory allocation?",
+    "options": [
+      "No internal fragmentation",
+      "Flexible growth",
+      "Simple address translation and fast access",
+      "No external fragmentation"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "contiguous",
+      "memory-allocation"
+    ],
+    "explanation": "Contiguous allocation allows simple base+offset translation and sequential disk access for fast I/O."
+  },
+  {
+    "text": "What is the role of the long-term scheduler?",
+    "options": [
+      "Manage memory",
+      "Control degree of multiprogramming",
+      "Select process for CPU",
+      "Handle I/O requests"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Samsung",
+    "tags": [
+      "long-term-scheduler"
+    ],
+    "explanation": "The long-term (job) scheduler selects which processes to load into memory, controlling multiprogramming degree."
+  },
+  {
+    "text": "In RAID 1, data is?",
+    "options": [
+      "Mirrored on two disks",
+      "Split with parity",
+      "Compressed",
+      "Striped across disks"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Walmart",
+    "tags": [
+      "raid1",
+      "mirroring"
+    ],
+    "explanation": "RAID 1 mirrors data on two disks for redundancy — read performance improves but storage capacity is halved."
+  },
+  {
+    "text": "What is the orphan process?",
+    "options": [
+      "A process in deadlock",
+      "A process without resources",
+      "A process waiting for I/O",
+      "A child process whose parent has terminated"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Oracle",
+    "tags": [
+      "orphan",
+      "process"
+    ],
+    "explanation": "When a parent process terminates, its children become orphans and are adopted by the init process (PID 1)."
+  },
+  {
+    "text": "Which of the following is NOT a function of an operating system?",
+    "options": [
+      "File management",
+      "Compiling programs",
+      "Memory management",
+      "Process management"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "os-functions"
+    ],
+    "explanation": "Compiling programs is done by a compiler, not the operating system. The OS manages processes, memory, files, and I/O."
+  },
+  {
+    "text": "A company's Docker containers keep getting OOM-killed. Each container is limited to 256MB but the Java applications inside have a 512MB heap configured. How should this be resolved?",
+    "options": [
+      "Increase container memory limit to 1GB",
+      "Disable OOM killer",
+      "Use swap space instead",
+      "Set JVM max heap (-Xmx) to 200MB to stay within container limit"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Apple",
+    "tags": [
+      "containers",
+      "oom",
+      "jvm",
+      "case-study"
+    ],
+    "explanation": "JVM heap must fit within the container's cgroup memory limit. Set -Xmx below the container limit (leaving room for non-heap memory)."
+  },
+  {
+    "text": "A CI/CD pipeline creates a new process for each build step. After 1000 builds, the system runs out of PIDs. What's happening and how to fix it?",
+    "options": [
+      "Upgrade hardware",
+      "Check for zombie processes — add proper wait() calls in the pipeline script",
+      "Increase ulimit for files",
+      "Change scheduler"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | Walmart",
+    "tags": [
+      "zombie",
+      "pid-exhaustion",
+      "case-study"
+    ],
+    "explanation": "Zombie processes accumulate when parent processes don't call wait(). Fix: add proper child reaping or use signal(SIGCHLD, SIG_IGN)."
+  },
+  {
+    "text": "Related to Scheduling - What is the response time of a process?",
+    "options": [
+      "Time for I/O completion",
+      "Time waiting in queue",
+      "Time from submission to first response",
+      "Total execution time"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "response-time",
+      "scheduling"
+    ],
+    "explanation": "Response time measures how quickly a process produces its first output after submission."
+  },
+  {
+    "text": "Related to Process Management - A thread shares which of the following with other threads of the same process?",
+    "options": [
+      "Registers",
+      "Stack",
+      "Code and data sections",
+      "Program counter"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Cisco",
+    "tags": [
+      "threads",
+      "shared-resources"
+    ],
+    "explanation": "Threads share code, data, and files but have their own stack, registers, and PC."
+  },
+  {
+    "text": "Related to Memory Management - What is the clock page replacement algorithm?",
+    "options": [
+      "Based on CPU clock speed",
+      "Based on time of day",
+      "Same as FIFO",
+      "An approximation of LRU using a circular list and reference bit"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | IBM",
+    "tags": [
+      "clock",
+      "page-replacement"
+    ],
+    "explanation": "The Clock algorithm uses a circular buffer with reference bits — giving a second chance before replacement."
+  },
+  {
+    "text": "Related to Process Management - A process in the 'ready' state transitions to 'running' when?",
+    "options": [
+      "I/O completes",
+      "Interrupt occurs",
+      "Page fault occurs",
+      "Scheduler dispatches it"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Microsoft",
+    "tags": [
+      "process",
+      "state-transition"
+    ],
+    "explanation": "The OS scheduler dispatches a ready process to the CPU for execution."
+  },
+  {
+    "text": "Related to Disk Scheduling - Which disk scheduling algorithm causes starvation?",
+    "options": [
+      "C-SCAN",
+      "SSTF",
+      "SCAN",
+      "FCFS"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Oracle",
+    "tags": [
+      "disk",
+      "sstf"
+    ],
+    "explanation": "SSTF (Shortest Seek Time First) can starve requests far from the current head position."
+  },
+  {
+    "text": "Related to Scheduling - What is the effect of reducing the time quantum in Round Robin?",
+    "options": [
+      "Less responsive",
+      "Less context switching",
+      "Better throughput",
+      "More context switching"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Goldman Sachs",
+    "tags": [
+      "round-robin",
+      "context-switch"
+    ],
+    "explanation": "Smaller quantum means more frequent context switches, increasing overhead."
+  },
+  {
+    "text": "Related to Memory Management - In the buddy system of memory allocation, a block of 64KB is split into?",
+    "options": [
+      "Four 16KB blocks",
+      "Eight 8KB blocks",
+      "Two 32KB blocks",
+      "One 32KB and two 16KB"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "buddy-system"
+    ],
+    "explanation": "The buddy system always splits a block into two equal halves (buddies)."
+  },
+  {
+    "text": "Related to Process Synchronization - What problem does the Sleeping Barber problem illustrate?",
+    "options": [
+      "Memory management",
+      "Synchronization between producer and consumer with limited waiting space",
+      "CPU scheduling",
+      "File allocation"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Cisco",
+    "tags": [
+      "sleeping-barber",
+      "synchronization"
+    ],
+    "explanation": "The Sleeping Barber is a synchronization problem with a limited waiting room, similar to bounded buffer."
+  },
+  {
+    "text": "Related to Memory Management - Segmentation with paging combines the advantages of?",
+    "options": [
+      "Both of the above",
+      "None of the above",
+      "Contiguous and non-contiguous allocation",
+      "Logical division and fixed-size allocation"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Meta",
+    "tags": [
+      "segmentation",
+      "paging"
+    ],
+    "explanation": "Segmentation provides logical divisions while paging provides fixed-size allocation within segments."
+  },
+  {
+    "text": "Related to Process Management - A web server handles 10,000 concurrent connections. Using one process per connection would be too expensive. What's the most efficient approach?",
+    "options": [
+      "One thread per connection",
+      "Use bigger time quantum",
+      "Increase RAM to handle more processes",
+      "Event-driven I/O with non-blocking sockets"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Standard Practice | AMD",
+    "tags": [
+      "event-driven",
+      "c10k",
+      "case-study"
+    ],
+    "explanation": "Event-driven (epoll/kqueue) with non-blocking I/O handles thousands of connections with minimal threads — the basis of Node.js and Nginx."
+  },
+  {
+    "text": "Related to Memory Management - Page fault occurs when?",
+    "options": [
+      "Page is dirty",
+      "Page is not in memory",
+      "Page is in memory",
+      "Page is pinned"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Infosys",
+    "tags": [
+      "paging",
+      "page-fault"
+    ],
+    "explanation": "A page fault occurs when the referenced page is not present in main memory."
+  },
+  {
+    "text": "Related to Process Management - In Unix, what does the exec() system call do?",
+    "options": [
+      "Creates a new process",
+      "Replaces the current process image with a new program",
+      "Terminates the process",
+      "Waits for child process"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Uber",
+    "tags": [
+      "exec",
+      "system-call"
+    ],
+    "explanation": "exec() replaces the current process's memory space with a new program without creating a new process."
+  },
+  {
+    "text": "Related to Process Synchronization - The Dining Philosophers problem illustrates?",
+    "options": [
+      "Deadlock and starvation",
+      "I/O management",
+      "Starvation only",
+      "Memory issues"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Intel",
+    "tags": [
+      "dining-philosophers"
+    ],
+    "explanation": "The problem demonstrates both deadlock (all grab left fork) and starvation (continuously bypassed)."
+  },
+  {
+    "text": "Related to Process Synchronization - What is the advantage of using semaphores over busy-waiting?",
+    "options": [
+      "No context switching",
+      "CPU is not wasted on spinning",
+      "Faster execution",
+      "Simpler implementation"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Infosys",
+    "tags": [
+      "semaphore",
+      "vs-busy-wait"
+    ],
+    "explanation": "Semaphores put waiting processes to sleep, freeing the CPU for other work instead of wasting cycles spinning."
+  },
+  {
+    "text": "Related to Memory Management - Which memory management technique suffers from external fragmentation?",
+    "options": [
+      "Paging",
+      "Virtual Memory",
+      "Demand Paging",
+      "Segmentation"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Flipkart",
+    "tags": [
+      "segmentation",
+      "fragmentation"
+    ],
+    "explanation": "Segmentation allocates variable-sized blocks, leading to external fragmentation."
+  },
+  {
+    "text": "Related to Process Synchronization - What is a race condition?",
+    "options": [
+      "Output depends on the order of execution of processes",
+      "A process runs faster than another",
+      "CPU and I/O overlap",
+      "Two processes running simultaneously"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | TCS",
+    "tags": [
+      "race-condition"
+    ],
+    "explanation": "A race condition occurs when the result depends on the non-deterministic timing of processes."
+  },
+  {
+    "text": "Related to Process Management - Which of the following is an advantage of user-level threads over kernel-level threads?",
+    "options": [
+      "Thread switching is faster",
+      "Better I/O handling",
+      "Can utilize multiple CPUs",
+      "Preemptive scheduling"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | NVIDIA",
+    "tags": [
+      "threads",
+      "user-level"
+    ],
+    "explanation": "User-level thread switching doesn't involve kernel calls, making it significantly faster."
+  },
+  {
+    "text": "Related to Process Synchronization - What is the difference between a binary semaphore and a mutex?",
+    "options": [
+      "No difference",
+      "Mutex can count to more than 1",
+      "Binary semaphore is faster",
+      "Mutex has ownership concept, binary semaphore doesn't"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | TCS",
+    "tags": [
+      "mutex",
+      "binary-semaphore"
+    ],
+    "explanation": "A mutex can only be unlocked by the thread that locked it (ownership), while a binary semaphore can be signaled by any thread."
+  },
+  {
+    "text": "Related to Disk Scheduling - In C-SCAN disk scheduling, after reaching the end of the disk, the head?",
+    "options": [
+      "Services in reverse",
+      "Stops",
+      "Reverses direction",
+      "Jumps to the beginning without servicing"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Disk Scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | PayPal",
+    "tags": [
+      "c-scan",
+      "disk"
+    ],
+    "explanation": "C-SCAN jumps back to the beginning and starts servicing from there — providing uniform wait times."
+  },
+  {
+    "text": "Related to Process Synchronization - What problem does the Sleeping Barber problem illustrate?",
+    "options": [
+      "Memory management",
+      "Synchronization between producer and consumer with limited waiting space",
+      "File allocation",
+      "CPU scheduling"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Synchronization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Cisco",
+    "tags": [
+      "sleeping-barber",
+      "synchronization"
+    ],
+    "explanation": "The Sleeping Barber is a synchronization problem with a limited waiting room, similar to bounded buffer."
+  },
+  {
+    "text": "Related to File System - The inode structure in Unix stores?",
+    "options": [
+      "File data",
+      "File name",
+      "File metadata and disk block pointers",
+      "Directory entries"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "File System",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Cognizant",
+    "tags": [
+      "inode",
+      "unix"
+    ],
+    "explanation": "The inode stores metadata (permissions, size, timestamps) and pointers to data blocks."
+  },
+  {
+    "text": "Related to Memory Management - What is the purpose of swapping in OS?",
+    "options": [
+      "Move processes between main memory and disk",
+      "Handle interrupts",
+      "Manage file system",
+      "Speed up CPU"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Wipro",
+    "tags": [
+      "swapping"
+    ],
+    "explanation": "Swapping moves entire processes between main memory and disk to free up memory."
+  },
+  {
+    "text": "Related to Deadlock - Which condition must hold for a system to be in a safe state?",
+    "options": [
+      "No deadlock exists",
+      "No process is waiting",
+      "All resources are allocated",
+      "There exists a safe sequence"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Deadlock",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Uber",
+    "tags": [
+      "safe-state",
+      "deadlock"
+    ],
+    "explanation": "A safe state exists if there's at least one sequence in which all processes can complete."
+  },
+  {
+    "text": "Which of the following is an example of a spooling device?",
+    "options": [
+      "Keyboard",
+      "Mouse",
+      "Printer",
+      "Monitor"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "I/O Hardware & OS",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2012",
+    "tags": [
+      "spooling"
+    ]
+  },
+  {
+    "text": "What is the maximum file size supported by FAT32?",
+    "options": [
+      "2GB",
+      "4GB",
+      "8GB",
+      "16GB"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Storage & File Systems",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Amazon",
+    "tags": [
+      "fat32"
+    ]
+  },
+  {
+    "text": "In Unix, which system call is used to replace the current process image with a new process image?",
+    "options": [
+      "fork()",
+      "exec()",
+      "wait()",
+      "exit()"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015",
+    "tags": [
+      "exec"
+    ]
+  },
+  {
+    "text": "Which memory allocation policy completely avoids external fragmentation?",
+    "options": [
+      "Paging",
+      "Segmentation",
+      "First-fit",
+      "Best-fit"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Google",
+    "tags": [
+      "paging"
+    ]
+  },
+  {
+    "text": "A thread is also known as what?",
+    "options": [
+      "Heavyweight process",
+      "Lightweight process",
+      "Interrupt",
+      "System call"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Threads & Concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Microsoft",
+    "tags": [
+      "thread"
+    ]
+  },
+  {
+    "text": "What is the main advantage of multiprogramming?",
+    "options": [
+      "Increased CPU utilization",
+      "Decreased memory usage",
+      "Faster compilation",
+      "Better graphics"
+    ],
+    "correct": 0,
+    "subject": "OS",
+    "topic": "OS Security & Protection",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2018",
+    "tags": [
+      "multiprogramming"
+    ]
+  },
+  {
+    "text": "Consider a paging system with the page table stored in memory. If a memory reference takes 50ns, how long does a paged memory reference take assuming no TLB?",
+    "options": [
+      "50ns",
+      "100ns",
+      "150ns",
+      "200ns"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2004",
+    "tags": [
+      "paging",
+      "memory-access"
+    ]
+  },
+  {
+    "text": "Which of the following is NOT true about kernel-level threads compared to user-level threads?",
+    "options": [
+      "Kernel threads are slower to switch",
+      "If one kernel thread blocks, others can continue",
+      "They require hardware support",
+      "They are managed by the OS"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Threads & Concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Amazon Interview",
+    "tags": [
+      "threads",
+      "kernel"
+    ]
+  },
+  {
+    "text": "In a system with 3 processes sharing 4 resource instances of the same type, what is the maximum resource need of each process that guarantees deadlock-free operation?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Deadlocks",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2011",
+    "tags": [
+      "deadlock"
+    ]
+  },
+  {
+    "text": "The time taken to switch between user mode and kernel mode is known as:",
+    "options": [
+      "Context Switch Time",
+      "Mode Switch Time",
+      "Turnaround Time",
+      "Dispatch Latency"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Process Management",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Microsoft Interview",
+    "tags": [
+      "mode-switch"
+    ]
+  },
+  {
+    "text": "Which of the following disk scheduling algorithms is primarily designed to prevent starvation?",
+    "options": [
+      "SSTF",
+      "SCAN",
+      "LOOK",
+      "FCFS"
+    ],
+    "correct": 3,
+    "subject": "OS",
+    "topic": "Storage & File Systems",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2013",
+    "tags": [
+      "disk-scheduling"
+    ]
+  },
+  {
+    "text": "A system uses FIFO policy for page replacement. It has 4 page frames with no pages loaded to begin with. The system first accesses 100 distinct pages in some order and then accesses the same 100 pages but now in the reverse order. How many page faults will occur?",
+    "options": [
+      "192",
+      "196",
+      "195",
+      "200"
+    ],
+    "correct": 1,
+    "subject": "OS",
+    "topic": "Memory Management",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2010",
+    "tags": [
+      "page-replacement",
+      "fifo"
+    ]
+  },
+  {
+    "text": "Which synchronization tool is typically implemented using atomic hardware instructions like TestAndSet or CompareAndSwap?",
+    "options": [
+      "Monitors",
+      "Semaphores",
+      "Mutxes / Spinlocks",
+      "Condition Variables"
+    ],
+    "correct": 2,
+    "subject": "OS",
+    "topic": "Synchronization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Google Interview",
+    "tags": [
+      "locks",
+      "hardware"
+    ]
+  }
+]

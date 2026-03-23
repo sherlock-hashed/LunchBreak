@@ -1,0 +1,2066 @@
+[
+  {
+    "text": "What is the size of IPv4 address?",
+    "options": [
+      "32 bits",
+      "128 bits",
+      "16 bits",
+      "64 bits"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Intel",
+    "tags": [
+      "ipv4",
+      "addressing"
+    ],
+    "explanation": "IPv4 addresses are 32 bits (4 bytes), typically written in dotted-decimal notation."
+  },
+  {
+    "text": "Which protocol operates at the Transport layer?",
+    "options": [
+      "TCP",
+      "IP",
+      "ARP",
+      "HTTP"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Wipro",
+    "tags": [
+      "tcp",
+      "transport"
+    ],
+    "explanation": "TCP operates at Layer 4 (Transport). HTTP is Application, IP is Network, ARP is Data Link."
+  },
+  {
+    "text": "The maximum data rate of a noiseless channel with bandwidth B and L signal levels is?",
+    "options": [
+      "B log₂ L",
+      "2B log₂ L",
+      "B × L",
+      "2B × L"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Physical Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Adobe",
+    "tags": [
+      "nyquist",
+      "data-rate"
+    ],
+    "explanation": "Nyquist theorem: Max data rate = 2B log₂ L for a noiseless channel."
+  },
+  {
+    "text": "Which layer is responsible for end-to-end delivery of the entire message?",
+    "options": [
+      "Transport",
+      "Network",
+      "Session",
+      "Data Link"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | NVIDIA",
+    "tags": [
+      "transport",
+      "end-to-end"
+    ],
+    "explanation": "The Transport layer ensures complete end-to-end message delivery with error recovery and flow control."
+  },
+  {
+    "text": "ARP resolves?",
+    "options": [
+      "IP to MAC",
+      "MAC to IP",
+      "Domain to IP",
+      "IP to Domain"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Cisco",
+    "tags": [
+      "arp",
+      "address-resolution"
+    ],
+    "explanation": "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses on a local network."
+  },
+  {
+    "text": "In TCP, a 3-way handshake uses which flags?",
+    "options": [
+      "PSH, URG, ACK",
+      "SYN, SYN-ACK, ACK",
+      "FIN, ACK, RST",
+      "SYN, ACK, FIN"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Amazon",
+    "tags": [
+      "tcp",
+      "handshake"
+    ],
+    "explanation": "TCP connection: Client→SYN, Server→SYN-ACK, Client→ACK."
+  },
+  {
+    "text": "Subnet mask 255.255.255.224 supports how many hosts per subnet?",
+    "options": [
+      "62",
+      "32",
+      "30",
+      "64"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | PayPal",
+    "tags": [
+      "subnetting",
+      "mask"
+    ],
+    "explanation": "224 = 11100000, so 5 host bits → 2⁵ - 2 = 30 usable hosts (subtract network and broadcast)."
+  },
+  {
+    "text": "Which routing algorithm uses Dijkstra's algorithm?",
+    "options": [
+      "OSPF",
+      "RIP",
+      "IGRP",
+      "BGP"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | PayPal",
+    "tags": [
+      "ospf",
+      "dijkstra"
+    ],
+    "explanation": "OSPF uses Dijkstra's shortest-path algorithm (link-state routing). RIP uses Bellman-Ford (distance-vector)."
+  },
+  {
+    "text": "In Go-Back-N ARQ with window size N, how many frames can be sent before an ACK is needed?",
+    "options": [
+      "2N",
+      "N-1",
+      "N+1",
+      "N"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2019 | Goldman Sachs",
+    "tags": [
+      "go-back-n",
+      "arq"
+    ],
+    "explanation": "In Go-Back-N, the sender can transmit up to N frames without waiting for an acknowledgment."
+  },
+  {
+    "text": "Which protocol is connectionless?",
+    "options": [
+      "FTP",
+      "UDP",
+      "SMTP",
+      "TCP"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2013 | Infosys",
+    "tags": [
+      "udp",
+      "connectionless"
+    ],
+    "explanation": "UDP is connectionless — no handshake, no guaranteed delivery, lower overhead than TCP."
+  },
+  {
+    "text": "CSMA/CD is used in which type of network?",
+    "options": [
+      "Token Ring",
+      "Ethernet",
+      "ATM",
+      "Wi-Fi"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Wipro",
+    "tags": [
+      "csma-cd",
+      "ethernet"
+    ],
+    "explanation": "CSMA/CD (Carrier Sense Multiple Access/Collision Detection) is the access method for wired Ethernet networks."
+  },
+  {
+    "text": "What is the maximum payload size of an Ethernet frame?",
+    "options": [
+      "1500 bytes",
+      "2000 bytes",
+      "1000 bytes",
+      "1518 bytes"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Cisco",
+    "tags": [
+      "ethernet",
+      "mtu"
+    ],
+    "explanation": "Standard Ethernet MTU is 1500 bytes. The full frame (with header/trailer) is 1518 bytes."
+  },
+  {
+    "text": "DNS uses which transport layer protocol primarily for queries?",
+    "options": [
+      "DCCP",
+      "TCP",
+      "SCTP",
+      "UDP"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2014 | Meta",
+    "tags": [
+      "dns",
+      "udp"
+    ],
+    "explanation": "DNS uses UDP (port 53) for standard queries (fast, small packets). TCP is used for zone transfers and large responses."
+  },
+  {
+    "text": "What is the purpose of NAT?",
+    "options": [
+      "Translate private IP addresses to public IP addresses",
+      "Route packets",
+      "Compress data",
+      "Encrypt traffic"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "nat",
+      "ip-translation"
+    ],
+    "explanation": "NAT maps private IPs to public IPs, conserving IPv4 addresses and providing basic security."
+  },
+  {
+    "text": "What layer does a switch operate at?",
+    "options": [
+      "Network",
+      "Transport",
+      "Physical",
+      "Data Link"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "switch",
+      "layer-2"
+    ],
+    "explanation": "Switches operate at Layer 2 (Data Link), forwarding frames based on MAC addresses."
+  },
+  {
+    "text": "What layer does a router operate at?",
+    "options": [
+      "Data Link",
+      "Physical",
+      "Network",
+      "Transport"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Wipro",
+    "tags": [
+      "router",
+      "layer-3"
+    ],
+    "explanation": "Routers operate at Layer 3 (Network), forwarding packets based on IP addresses."
+  },
+  {
+    "text": "What is the purpose of DHCP?",
+    "options": [
+      "Send emails",
+      "Resolve domain names",
+      "Automatically assign IP addresses to devices",
+      "Transfer files"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "dhcp",
+      "ip-assignment"
+    ],
+    "explanation": "DHCP dynamically assigns IP addresses, subnet masks, gateways, and DNS servers to network devices."
+  },
+  {
+    "text": "Which protocol is used for secure web browsing?",
+    "options": [
+      "SMTP",
+      "HTTPS",
+      "FTP",
+      "HTTP"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Google",
+    "tags": [
+      "https",
+      "security"
+    ],
+    "explanation": "HTTPS = HTTP over TLS/SSL, encrypting communication between browser and server."
+  },
+  {
+    "text": "What is the difference between IPv4 and IPv6?",
+    "options": [
+      "IPv6 is slower",
+      "IPv4 is 32-bit, IPv6 is 128-bit",
+      "IPv4 has more addresses",
+      "No difference"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Infosys",
+    "tags": [
+      "ipv4",
+      "ipv6"
+    ],
+    "explanation": "IPv4: 32-bit (4.3B addresses). IPv6: 128-bit (3.4×10³⁸ addresses). IPv6 also simplifies headers."
+  },
+  {
+    "text": "What is a VLAN?",
+    "options": [
+      "A VPN type",
+      "A cable type",
+      "Virtual Local Area Network — logically segments a physical network",
+      "A protocol"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Adobe",
+    "tags": [
+      "vlan"
+    ],
+    "explanation": "VLANs logically partition a physical LAN into separate broadcast domains using switch configuration."
+  },
+  {
+    "text": "What is the purpose of ICMP?",
+    "options": [
+      "Send error messages and diagnostic info about IP packets",
+      "Transfer files",
+      "Assign IPs",
+      "Resolve names"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE 2015 | Samsung",
+    "tags": [
+      "icmp",
+      "ping"
+    ],
+    "explanation": "ICMP reports errors (destination unreachable, time exceeded) and handles diagnostic tools like ping and traceroute."
+  },
+  {
+    "text": "What is the sliding window protocol?",
+    "options": [
+      "A routing algorithm",
+      "An encryption method",
+      "A GUI feature",
+      "Flow control mechanism allowing multiple frames in transit"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Accenture",
+    "tags": [
+      "sliding-window",
+      "flow-control"
+    ],
+    "explanation": "Sliding window protocols allow senders to transmit multiple frames before receiving an ACK, improving throughput."
+  },
+  {
+    "text": "What is multiplexing in networking?",
+    "options": [
+      "Routing packets",
+      "Combining multiple signals on a single channel",
+      "Splitting a signal",
+      "Encrypting data"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Physical Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Infosys",
+    "tags": [
+      "multiplexing"
+    ],
+    "explanation": "Multiplexing combines multiple signals on one channel (TDM, FDM, WDM, CDM)."
+  },
+  {
+    "text": "What is the difference between TCP and UDP?",
+    "options": [
+      "UDP is slower",
+      "No difference",
+      "TCP is connectionless, UDP is connection-oriented",
+      "TCP is reliable and connection-oriented, UDP is unreliable and connectionless"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Oracle",
+    "tags": [
+      "tcp-vs-udp"
+    ],
+    "explanation": "TCP: reliable, ordered, connection-oriented. UDP: unreliable, unordered, connectionless but faster."
+  },
+  {
+    "text": "What is the purpose of BGP?",
+    "options": [
+      "Internal routing",
+      "Exchange routing information between autonomous systems",
+      "Transfer files",
+      "Assign IPs"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | Infosys",
+    "tags": [
+      "bgp",
+      "autonomous-systems"
+    ],
+    "explanation": "BGP (Border Gateway Protocol) is the inter-domain routing protocol that connects autonomous systems on the internet."
+  },
+  {
+    "text": "What is a socket in networking?",
+    "options": [
+      "An endpoint defined by IP address + port number for communication",
+      "A physical port",
+      "A cable connector",
+      "A protocol"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "socket"
+    ],
+    "explanation": "A socket is an IP:port pair that serves as an endpoint for network communication."
+  },
+  {
+    "text": "What is the purpose of CRC?",
+    "options": [
+      "Detect errors in transmitted data",
+      "Compress data",
+      "Route packets",
+      "Encrypt data"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Meta",
+    "tags": [
+      "crc",
+      "error-detection"
+    ],
+    "explanation": "CRC (Cyclic Redundancy Check) appends check bits to data for detecting transmission errors."
+  },
+  {
+    "text": "Which protocol is used for email sending?",
+    "options": [
+      "FTP",
+      "POP3",
+      "SMTP",
+      "IMAP"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Google",
+    "tags": [
+      "smtp",
+      "email"
+    ],
+    "explanation": "SMTP (Simple Mail Transfer Protocol) sends emails. POP3/IMAP are for receiving/reading."
+  },
+  {
+    "text": "What is the default port for HTTP?",
+    "options": [
+      "25",
+      "21",
+      "80",
+      "443"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "http",
+      "port"
+    ],
+    "explanation": "HTTP uses port 80 by default. HTTPS uses 443, FTP uses 21, SMTP uses 25."
+  },
+  {
+    "text": "What is congestion control in TCP?",
+    "options": [
+      "Routing optimization",
+      "Mechanisms to prevent network overload by adjusting sending rate",
+      "Error correction",
+      "Preventing data loss"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Apple",
+    "tags": [
+      "congestion-control",
+      "tcp"
+    ],
+    "explanation": "TCP congestion control (slow start, congestion avoidance, fast retransmit/recovery) prevents network congestion."
+  },
+  {
+    "text": "What is the purpose of a firewall?",
+    "options": [
+      "Assign IPs",
+      "Speed up network",
+      "Filter network traffic based on security rules",
+      "Resolve DNS"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "firewall",
+      "security"
+    ],
+    "explanation": "Firewalls filter incoming/outgoing traffic based on rules — blocking unauthorized access while permitting legitimate traffic."
+  },
+  {
+    "text": "What is a MAC address?",
+    "options": [
+      "A software address",
+      "An IP alias",
+      "A routing protocol",
+      "A 48-bit hardware address uniquely identifying a network interface"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Wipro",
+    "tags": [
+      "mac-address"
+    ],
+    "explanation": "MAC (Media Access Control) addresses are 48-bit hardware identifiers burned into network interface cards."
+  },
+  {
+    "text": "What is the Shannon capacity formula?",
+    "options": [
+      "C = B/SNR",
+      "C = 2B log₂ L",
+      "C = B × SNR",
+      "C = B log₂(1+SNR)"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Physical Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2018 | AMD",
+    "tags": [
+      "shannon",
+      "capacity"
+    ],
+    "explanation": "Shannon-Hartley: C = B log₂(1 + S/N), giving the maximum data rate for a noisy channel."
+  },
+  {
+    "text": "What is a proxy server?",
+    "options": [
+      "A file server",
+      "An intermediary that handles client requests to other servers",
+      "A DNS server",
+      "A backup server"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "proxy"
+    ],
+    "explanation": "Proxy servers act as intermediaries — providing caching, anonymity, filtering, and load balancing."
+  },
+  {
+    "text": "What is the purpose of the TTL field in an IP packet?",
+    "options": [
+      "Encrypt the packet",
+      "Specify destination",
+      "Set packet priority",
+      "Limit packet lifetime to prevent infinite loops"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Amazon",
+    "tags": [
+      "ttl",
+      "ip"
+    ],
+    "explanation": "TTL is decremented at each hop. When it reaches 0, the packet is discarded, preventing routing loops."
+  },
+  {
+    "text": "What is Selective Repeat ARQ?",
+    "options": [
+      "Only retransmit the specific frames that were lost or errored",
+      "Retransmit all frames",
+      "No retransmission",
+      "Retransmit in reverse order"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | AMD",
+    "tags": [
+      "selective-repeat",
+      "arq"
+    ],
+    "explanation": "Selective Repeat retransmits only the specific frames that failed — more efficient than Go-Back-N."
+  },
+  {
+    "text": "What is the difference between hub, switch, and router?",
+    "options": [
+      "Switch uses IP, router uses MAC",
+      "All are the same",
+      "Router broadcasts, hub uses IP",
+      "Hub broadcasts, switch uses MAC, router uses IP"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "hub",
+      "switch",
+      "router"
+    ],
+    "explanation": "Hub: L1 broadcast. Switch: L2 MAC-based forwarding. Router: L3 IP-based routing between networks."
+  },
+  {
+    "text": "What is TCP flow control?",
+    "options": [
+      "Error detection",
+      "Congestion avoidance",
+      "Packet filtering",
+      "Receiver advertises window size to control sender's rate"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2018 | Apple",
+    "tags": [
+      "flow-control",
+      "window"
+    ],
+    "explanation": "TCP flow control uses the receiver's advertised window to prevent the sender from overwhelming the receiver's buffer."
+  },
+  {
+    "text": "What is the size of an IPv6 address?",
+    "options": [
+      "128 bits",
+      "256 bits",
+      "64 bits",
+      "32 bits"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Uber",
+    "tags": [
+      "ipv6"
+    ],
+    "explanation": "IPv6 addresses are 128 bits (16 bytes), written as eight groups of four hexadecimal digits."
+  },
+  {
+    "text": "What is a VPN?",
+    "options": [
+      "A programming language",
+      "A protocol only",
+      "Virtual Private Network — creates encrypted tunnel over public network",
+      "A database"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in AMD",
+    "tags": [
+      "vpn",
+      "encryption"
+    ],
+    "explanation": "VPNs create encrypted tunnels over the public internet, providing secure private network access."
+  },
+  {
+    "text": "What is OSPF?",
+    "options": [
+      "A transport protocol",
+      "A physical layer standard",
+      "An interior gateway protocol using link-state routing",
+      "An application layer protocol"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Oracle",
+    "tags": [
+      "ospf",
+      "link-state"
+    ],
+    "explanation": "OSPF is a link-state IGP where routers build a complete topology map and use Dijkstra's algorithm."
+  },
+  {
+    "text": "What is the purpose of DNS caching?",
+    "options": [
+      "Store routing tables",
+      "Store web pages",
+      "Cache email attachments",
+      "Store previously resolved domain-to-IP mappings to reduce DNS query time"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Apple",
+    "tags": [
+      "dns",
+      "caching"
+    ],
+    "explanation": "DNS caching stores resolved name-to-IP mappings locally to avoid repeated DNS lookups for the same domain."
+  },
+  {
+    "text": "What is a broadcast address?",
+    "options": [
+      "A MAC address",
+      "An address that sends packets to all hosts in a subnet",
+      "Address of the router",
+      "The first address in a subnet"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in IBM",
+    "tags": [
+      "broadcast",
+      "subnet"
+    ],
+    "explanation": "The broadcast address (all host bits = 1) delivers a packet to every host in the subnet."
+  },
+  {
+    "text": "What is the difference between half-duplex and full-duplex?",
+    "options": [
+      "Full-duplex is slower",
+      "No difference",
+      "Half-duplex is wireless only",
+      "Half-duplex is one direction at a time, full-duplex is both simultaneously"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Physical Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Wipro",
+    "tags": [
+      "duplex"
+    ],
+    "explanation": "Half-duplex: data flows one direction at a time (walkie-talkie). Full-duplex: both directions simultaneously (phone call)."
+  },
+  {
+    "text": "What is CIDR notation?",
+    "options": [
+      "A MAC format",
+      "A DNS format",
+      "A routing algorithm",
+      "IP address followed by /prefix_length to specify subnet mask"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "cidr",
+      "subnetting"
+    ],
+    "explanation": "CIDR (e.g., 192.168.1.0/24) specifies IP and subnet mask length, replacing classful addressing."
+  },
+  {
+    "text": "What is the TCP slow start algorithm?",
+    "options": [
+      "TCP begins with small congestion window, doubling it each RTT until threshold",
+      "TCP sends one packet at a time",
+      "TCP delays all packets",
+      "TCP starts transmitting slowly and linearly increases"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Microsoft",
+    "tags": [
+      "slow-start",
+      "congestion"
+    ],
+    "explanation": "Slow start begins with cwnd=1 MSS, doubling each RTT (exponential growth) until reaching ssthresh."
+  },
+  {
+    "text": "What is an AS (Autonomous System)?",
+    "options": [
+      "A server type",
+      "A collection of networks under one administrative authority with a unified routing policy",
+      "A single computer",
+      "A protocol"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2017 | Amazon",
+    "tags": [
+      "autonomous-system"
+    ],
+    "explanation": "An AS is a set of routers/networks managed by a single organization with a consistent routing policy."
+  },
+  {
+    "text": "What is the purpose of the checksum field in TCP?",
+    "options": [
+      "Verify data integrity of the segment",
+      "Measure latency",
+      "Count packets",
+      "Encrypt data"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016 | Apple",
+    "tags": [
+      "checksum",
+      "tcp"
+    ],
+    "explanation": "The TCP checksum verifies that the segment wasn't corrupted during transmission."
+  },
+  {
+    "text": "What is the difference between static and dynamic routing?",
+    "options": [
+      "Static is only for large networks",
+      "Dynamic is less efficient",
+      "Static is manually configured, dynamic uses protocols to automatically update routes",
+      "No difference"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Amazon",
+    "tags": [
+      "static-routing",
+      "dynamic-routing"
+    ],
+    "explanation": "Static: admin configures routes manually. Dynamic: protocols (OSPF, RIP, BGP) automatically discover and update routes."
+  },
+  {
+    "text": "What is the purpose of the SYN flag in TCP?",
+    "options": [
+      "Reset connection",
+      "Initiate a connection by synchronizing sequence numbers",
+      "Signal data end",
+      "Acknowledge data"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Microsoft",
+    "tags": [
+      "syn",
+      "tcp"
+    ],
+    "explanation": "SYN synchronizes sequence numbers between client and server to establish a TCP connection."
+  },
+  {
+    "text": "What is port forwarding?",
+    "options": [
+      "Closing a port",
+      "Scanning ports",
+      "Redirecting traffic from one IP:port to another IP:port",
+      "Sending data to multiple ports"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Intel",
+    "tags": [
+      "port-forwarding",
+      "nat"
+    ],
+    "explanation": "Port forwarding redirects incoming traffic on a specific port to a different host/port — common with NAT."
+  },
+  {
+    "text": "What is the OSI model?",
+    "options": [
+      "A routing protocol",
+      "A 7-layer reference model for network communication",
+      "A database model",
+      "A programming framework"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in NVIDIA",
+    "tags": [
+      "osi-model"
+    ],
+    "explanation": "OSI: Physical, Data Link, Network, Transport, Session, Presentation, Application — 7 layers abstracting network communication."
+  },
+  {
+    "text": "What is the TCP/IP model?",
+    "options": [
+      "A routing protocol",
+      "A 4-layer practical model: Link, Internet, Transport, Application",
+      "A 3-layer model",
+      "Same as OSI"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Samsung",
+    "tags": [
+      "tcp-ip-model"
+    ],
+    "explanation": "The TCP/IP model has 4 layers: Network Access (Link), Internet, Transport, Application."
+  },
+  {
+    "text": "What is the purpose of a load balancer?",
+    "options": [
+      "Distribute network traffic across multiple servers for performance and reliability",
+      "Balance storage",
+      "Compress data",
+      "Balance electrical load"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Samsung",
+    "tags": [
+      "load-balancer"
+    ],
+    "explanation": "Load balancers distribute incoming requests across server pools using algorithms like round-robin, least connections, or weighted."
+  },
+  {
+    "text": "What is the maximum number of hosts in a /24 network?",
+    "options": [
+      "256",
+      "255",
+      "254",
+      "128"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in PayPal",
+    "tags": [
+      "subnetting",
+      "cidr"
+    ],
+    "explanation": "/24 = 8 host bits → 2⁸ - 2 = 254 usable hosts (minus network and broadcast addresses)."
+  },
+  {
+    "text": "What is QoS (Quality of Service)?",
+    "options": [
+      "Mechanisms to prioritize certain types of network traffic",
+      "Network speed measurement",
+      "A routing algorithm",
+      "A protocol"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Intel",
+    "tags": [
+      "qos"
+    ],
+    "explanation": "QoS prioritizes traffic types (VoIP, video, data) to ensure performance for latency-sensitive applications."
+  },
+  {
+    "text": "What is the difference between unicast, multicast, and broadcast?",
+    "options": [
+      "Multicast is fastest",
+      "All are the same",
+      "Unicast: one-to-one, Multicast: one-to-group, Broadcast: one-to-all",
+      "Broadcast is most secure"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in Meta",
+    "tags": [
+      "unicast",
+      "multicast",
+      "broadcast"
+    ],
+    "explanation": "Unicast: single destination. Multicast: specific group. Broadcast: all hosts on subnet."
+  },
+  {
+    "text": "What is TCP Reno?",
+    "options": [
+      "A network device",
+      "A routing algorithm",
+      "A TCP version that uses fast retransmit and fast recovery to handle congestion",
+      "A new protocol"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Accenture",
+    "tags": [
+      "tcp-reno",
+      "congestion"
+    ],
+    "explanation": "TCP Reno adds fast retransmit (triple duplicate ACKs) and fast recovery, halving cwnd instead of resetting to 1."
+  },
+  {
+    "text": "What is HTTP/2's main improvement over HTTP/1.1?",
+    "options": [
+      "New request methods",
+      "Encryption only",
+      "Different port",
+      "Multiplexing multiple requests over a single TCP connection"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | TCS",
+    "tags": [
+      "http2",
+      "multiplexing"
+    ],
+    "explanation": "HTTP/2 multiplexes requests on one TCP connection, uses header compression, and supports server push."
+  },
+  {
+    "text": "What is the purpose of RARP?",
+    "options": [
+      "Resolve IP to MAC",
+      "Route packets",
+      "Resolve MAC to IP — used by diskless workstations to obtain their IP",
+      "Detect errors"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2015 | Walmart",
+    "tags": [
+      "rarp"
+    ],
+    "explanation": "RARP (Reverse ARP) maps MAC addresses to IP addresses — primarily for diskless stations. Replaced by DHCP."
+  },
+  {
+    "text": "A company's website responds normally to local users but international users experience 5-second delays. CDN is not configured. What's the primary issue and solution?",
+    "options": [
+      "DNS failure",
+      "Firewall blocking",
+      "Server is slow — upgrade hardware",
+      "High latency due to geographic distance — implement a CDN with edge servers"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Intel",
+    "tags": [
+      "cdn",
+      "latency",
+      "case-study"
+    ],
+    "explanation": "Geographic distance increases RTT. A CDN caches content at edge locations near users, reducing latency."
+  },
+  {
+    "text": "A TCP connection between a client and server keeps sending data but the receiver's buffer fills up and segments are dropped. What TCP mechanism should handle this?",
+    "options": [
+      "Flow control using receiver window (rwnd)",
+      "Routing",
+      "Congestion control",
+      "NAT"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "GATE | Meta",
+    "tags": [
+      "flow-control",
+      "rwnd",
+      "case-study"
+    ],
+    "explanation": "TCP flow control: receiver advertises its available buffer space (rwnd). Sender must not send more than rwnd bytes unacknowledged."
+  },
+  {
+    "text": "During a DDoS attack, a web server receives 1 million TCP SYN packets per second but no connections complete. What type of attack is this and what's the mitigation?",
+    "options": [
+      "MITM attack — use encryption",
+      "SQL injection — sanitize input",
+      "DNS poisoning — clear cache",
+      "SYN flood attack — use SYN cookies or rate limiting"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | TCS",
+    "tags": [
+      "syn-flood",
+      "ddos",
+      "case-study"
+    ],
+    "explanation": "SYN flood fills the server's half-open connection table. SYN cookies generate the ISN from a hash, eliminating the need to store state."
+  },
+  {
+    "text": "A company has offices in Mumbai and Bangalore. They need 50 hosts in Mumbai and 100 in Bangalore from the 192.168.10.0/24 block. Design the subnetting.",
+    "options": [
+      "Use separate /24 for each",
+      "Give /25 to both",
+      "Give /24 to Bangalore and /28 to Mumbai",
+      "Bangalore: 192.168.10.0/25 (126 hosts), Mumbai: 192.168.10.128/26 (62 hosts)"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Samsung",
+    "tags": [
+      "subnetting",
+      "vlsm",
+      "case-study"
+    ],
+    "explanation": "VLSM: Bangalore needs 100 hosts → /25 (126 hosts), Mumbai needs 50 → /26 (62 hosts). Allocate largest first."
+  },
+  {
+    "text": "A microservices application deployed on Kubernetes has services that can't communicate across pods. Pods are scheduled on different nodes. DNS resolution within the cluster works. What's likely wrong?",
+    "options": [
+      "Kubernetes is misconfigured",
+      "Network policies or firewall rules blocking inter-node pod traffic",
+      "Services are on different ports",
+      "DNS is broken"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Meta",
+    "tags": [
+      "kubernetes",
+      "network-policy",
+      "case-study"
+    ],
+    "explanation": "Kubernetes Network Policies or underlying firewall rules can block pod-to-pod traffic across nodes. Check CNI plugin config and network policies."
+  },
+  {
+    "text": "A video call application uses TCP for media streams. Users complain about freezing and audio gaps. What protocol change would improve quality?",
+    "options": [
+      "Use FTP",
+      "Use HTTP instead",
+      "Add more TCP connections",
+      "Switch to UDP with RTP for media streaming"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | AMD",
+    "tags": [
+      "rtp",
+      "udp",
+      "real-time",
+      "case-study"
+    ],
+    "explanation": "TCP's retransmissions cause delays unacceptable for real-time media. UDP + RTP provides low-latency streaming with tolerable packet loss."
+  },
+  {
+    "text": "An organization's DNS is returning stale IP addresses after migrating their website to a new server. The old IP still receives traffic hours after DNS records were updated. What's happening?",
+    "options": [
+      "The server is wrong",
+      "DNS is broken",
+      "ISP is blocking",
+      "DNS caches at various levels still hold the old record (respect TTL)"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | Infosys",
+    "tags": [
+      "dns-cache",
+      "ttl",
+      "case-study"
+    ],
+    "explanation": "DNS records are cached at multiple levels (browser, OS, ISP resolvers). Old records persist until their TTL expires. Solution: set low TTL before migration."
+  },
+  {
+    "text": "A REST API is served over HTTPS but a security audit reveals it's vulnerable to a man-in-the-middle attack. The server uses a self-signed certificate. What's the fix?",
+    "options": [
+      "Add a firewall",
+      "Switch to HTTP",
+      "Use a CA-signed TLS certificate and implement certificate pinning",
+      "Use a VPN"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | Wipro",
+    "tags": [
+      "tls",
+      "mitm",
+      "certificate",
+      "case-study"
+    ],
+    "explanation": "Self-signed certificates aren't trusted by clients — they accept any certificate. Use CA-signed certs and consider HPKP/certificate pinning."
+  },
+  {
+    "text": "A company's internal network experiences broadcast storms causing network-wide slowdown. All 500 workstations are on a single flat LAN. What's the solution?",
+    "options": [
+      "Add more hubs",
+      "Replace all cables",
+      "Segment the network into VLANs to create separate broadcast domains",
+      "Increase bandwidth"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "Case Based Scenario",
+    "source": "Interview | IBM",
+    "tags": [
+      "vlan",
+      "broadcast-storm",
+      "case-study"
+    ],
+    "explanation": "VLANs segment the flat network into smaller broadcast domains, containing broadcast traffic within each VLAN."
+  },
+  {
+    "text": "A WebSocket-based chat application works on localhost but fails when deployed behind an Nginx reverse proxy. HTTP works fine. What configuration is likely missing?",
+    "options": [
+      "CORS headers",
+      "Port forwarding",
+      "Nginx WebSocket proxy configuration (Upgrade and Connection headers)",
+      "SSL certificate"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Hard",
+    "type": "Case Based Scenario",
+    "source": "Interview | TCS",
+    "tags": [
+      "websocket",
+      "nginx",
+      "reverse-proxy",
+      "case-study"
+    ],
+    "explanation": "Nginx must forward WebSocket upgrade headers: proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection 'upgrade';"
+  },
+  {
+    "text": "What is MTU path discovery?",
+    "options": [
+      "Discovering all hosts",
+      "Finding the largest server",
+      "Determining the maximum packet size that can traverse a path without fragmentation",
+      "Finding the fastest route"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Asked in Microsoft",
+    "tags": [
+      "mtu",
+      "path-discovery"
+    ],
+    "explanation": "Path MTU Discovery finds the maximum packet size by sending packets with DF bit set and reducing size on ICMP errors."
+  },
+  {
+    "text": "What is the purpose of the FIN flag in TCP?",
+    "options": [
+      "Gracefully terminate a connection",
+      "Urgent data",
+      "Reset connection",
+      "Start connection"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Asked in TCS",
+    "tags": [
+      "fin",
+      "tcp"
+    ],
+    "explanation": "FIN indicates the sender has finished sending data — initiating a graceful TCP connection termination."
+  },
+  {
+    "text": "What is ARP spoofing?",
+    "options": [
+      "A routing optimization",
+      "Attacker sends fake ARP messages to link their MAC to a legitimate IP",
+      "DNS poisoning",
+      "Normal ARP operation"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | Walmart",
+    "tags": [
+      "arp-spoofing",
+      "security"
+    ],
+    "explanation": "ARP spoofing sends forged ARP replies to associate the attacker's MAC with the target's IP — enabling MITM attacks."
+  },
+  {
+    "text": "What is Nagle's algorithm?",
+    "options": [
+      "A routing algorithm",
+      "An encryption method",
+      "TCP optimization that buffers small packets to reduce overhead",
+      "A congestion algorithm"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Asked in Google",
+    "tags": [
+      "nagle",
+      "tcp"
+    ],
+    "explanation": "Nagle's algorithm combines small outgoing messages and sends them together to reduce the number of TCP segments."
+  },
+  {
+    "text": "What is the difference between L4 and L7 load balancing?",
+    "options": [
+      "L4 handles more traffic",
+      "No difference",
+      "L4 routes based on IP/port, L7 inspects application-layer content (URL, headers)",
+      "L7 is slower always"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Interview | Cisco",
+    "tags": [
+      "load-balancing",
+      "l4",
+      "l7"
+    ],
+    "explanation": "L4 load balancers route based on TCP/IP info. L7 can make decisions based on HTTP headers, URLs, cookies."
+  },
+  {
+    "text": "What is network segmentation?",
+    "options": [
+      "A hardware component",
+      "Dividing a network into smaller sub-networks for security and performance",
+      "Combining networks",
+      "A protocol"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Interview | AMD",
+    "tags": [
+      "segmentation",
+      "security"
+    ],
+    "explanation": "Segmentation isolates network segments, limiting lateral movement of attacks and reducing broadcast domains."
+  },
+  {
+    "text": "What is the TIME_WAIT state in TCP?",
+    "options": [
+      "A congestion state",
+      "Connection establishment",
+      "A state after FIN where the socket waits 2×MSL before fully closing",
+      "An error state"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2019 | Google",
+    "tags": [
+      "time-wait",
+      "tcp"
+    ],
+    "explanation": "TIME_WAIT (2×MSL ≈ 60-120s) ensures delayed segments don't confuse future connections on the same port."
+  },
+  {
+    "text": "k: Related to Network Layer - What is the purpose of RARP?",
+    "options": [
+      "Resolve IP to MAC",
+      "Resolve MAC to IP — used by diskless workstations to obtain their IP",
+      "Detect errors",
+      "Route packets"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Apple",
+    "tags": [
+      "rarp"
+    ],
+    "explanation": "RARP (Reverse ARP) maps MAC addresses to IP addresses — primarily for diskless stations. Replaced by DHCP."
+  },
+  {
+    "text": "Related to Network Layer - What is a VPN?",
+    "options": [
+      "A protocol only",
+      "A programming language",
+      "Virtual Private Network — creates encrypted tunnel over public network",
+      "A database"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Accenture",
+    "tags": [
+      "vpn",
+      "encryption"
+    ],
+    "explanation": "VPNs create encrypted tunnels over the public internet, providing secure private network access."
+  },
+  {
+    "text": "Related to Network Layer - What is the purpose of ICMP?",
+    "options": [
+      "Resolve names",
+      "Send error messages and diagnostic info about IP packets",
+      "Assign IPs",
+      "Transfer files"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Samsung",
+    "tags": [
+      "icmp",
+      "ping"
+    ],
+    "explanation": "ICMP reports errors (destination unreachable, time exceeded) and handles diagnostic tools like ping and traceroute."
+  },
+  {
+    "text": "Related to Data Link Layer - What layer does a switch operate at?",
+    "options": [
+      "Transport",
+      "Network",
+      "Physical",
+      "Data Link"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Data Link Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | IBM",
+    "tags": [
+      "switch",
+      "layer-2"
+    ],
+    "explanation": "Switches operate at Layer 2 (Data Link), forwarding frames based on MAC addresses."
+  },
+  {
+    "text": "Related to Transport Layer - What is QoS (Quality of Service)?",
+    "options": [
+      "A protocol",
+      "Network speed measurement",
+      "A routing algorithm",
+      "Mechanisms to prioritize certain types of network traffic"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Transport Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Goldman Sachs",
+    "tags": [
+      "qos"
+    ],
+    "explanation": "QoS prioritizes traffic types (VoIP, video, data) to ensure performance for latency-sensitive applications."
+  },
+  {
+    "text": "Related to Application Layer - What is HTTP/2's main improvement over HTTP/1.1?",
+    "options": [
+      "New request methods",
+      "Encryption only",
+      "Different port",
+      "Multiplexing multiple requests over a single TCP connection"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Google",
+    "tags": [
+      "http2",
+      "multiplexing"
+    ],
+    "explanation": "HTTP/2 multiplexes requests on one TCP connection, uses header compression, and supports server push."
+  },
+  {
+    "text": "Related to Application Layer - An organization's DNS is returning stale IP addresses after migrating their website to a new server. The old IP still receives traffic hours after DNS records were updated. What's happening?",
+    "options": [
+      "The server is wrong",
+      "DNS caches at various levels still hold the old record (respect TTL)",
+      "ISP is blocking",
+      "DNS is broken"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Application Layer",
+    "difficulty": "Easy",
+    "type": "Case Based Scenario",
+    "source": "Standard Practice | Google",
+    "tags": [
+      "dns-cache",
+      "ttl",
+      "case-study"
+    ],
+    "explanation": "DNS records are cached at multiple levels (browser, OS, ISP resolvers). Old records persist until their TTL expires. Solution: set low TTL before migration."
+  },
+  {
+    "text": "Related to Network Layer - What is the purpose of ICMP?",
+    "options": [
+      "Send error messages and diagnostic info about IP packets",
+      "Resolve names",
+      "Transfer files",
+      "Assign IPs"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | Uber",
+    "tags": [
+      "icmp",
+      "ping"
+    ],
+    "explanation": "ICMP reports errors (destination unreachable, time exceeded) and handles diagnostic tools like ping and traceroute."
+  },
+  {
+    "text": "Related to Network Layer - Subnet mask 255.255.255.224 supports how many hosts per subnet?",
+    "options": [
+      "64",
+      "30",
+      "32",
+      "62"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | TCS",
+    "tags": [
+      "subnetting",
+      "mask"
+    ],
+    "explanation": "224 = 11100000, so 5 host bits → 2⁵ - 2 = 30 usable hosts (subtract network and broadcast)."
+  },
+  {
+    "text": "Related to Network Layer - What is CIDR notation?",
+    "options": [
+      "A MAC format",
+      "IP address followed by /prefix_length to specify subnet mask",
+      "A routing algorithm",
+      "A DNS format"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Google",
+    "tags": [
+      "cidr",
+      "subnetting"
+    ],
+    "explanation": "CIDR (e.g., 192.168.1.0/24) specifies IP and subnet mask length, replacing classful addressing."
+  },
+  {
+    "text": "Related to Network Layer - What is the size of IPv4 address?",
+    "options": [
+      "16 bits",
+      "32 bits",
+      "64 bits",
+      "128 bits"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Meta",
+    "tags": [
+      "ipv4",
+      "addressing"
+    ],
+    "explanation": "IPv4 addresses are 32 bits (4 bytes), typically written in dotted-decimal notation."
+  },
+  {
+    "text": "Related to Network Layer - What is network segmentation?",
+    "options": [
+      "A hardware component",
+      "Dividing a network into smaller sub-networks for security and performance",
+      "A protocol",
+      "Combining networks"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | PayPal",
+    "tags": [
+      "segmentation",
+      "security"
+    ],
+    "explanation": "Segmentation isolates network segments, limiting lateral movement of attacks and reducing broadcast domains."
+  },
+  {
+    "text": "Related to Network Layer - What is the difference between unicast, multicast, and broadcast?",
+    "options": [
+      "Broadcast is most secure",
+      "Unicast: one-to-one, Multicast: one-to-group, Broadcast: one-to-all",
+      "Multicast is fastest",
+      "All are the same"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Standard Practice | IBM",
+    "tags": [
+      "unicast",
+      "multicast",
+      "broadcast"
+    ],
+    "explanation": "Unicast: single destination. Multicast: specific group. Broadcast: all hosts on subnet."
+  },
+  {
+    "text": "Related to Network Layer - What is the purpose of RARP?",
+    "options": [
+      "Route packets",
+      "Resolve IP to MAC",
+      "Detect errors",
+      "Resolve MAC to IP — used by diskless workstations to obtain their IP"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "Standard Practice | Cisco",
+    "tags": [
+      "rarp"
+    ],
+    "explanation": "RARP (Reverse ARP) maps MAC addresses to IP addresses — primarily for diskless stations. Replaced by DHCP."
+  },
+  {
+    "text": "Related to Network Layer - What is the maximum number of hosts in a /24 network?",
+    "options": [
+      "256",
+      "255",
+      "128",
+      "254"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "Network Layer",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Standard Practice | Apple",
+    "tags": [
+      "subnetting",
+      "cidr"
+    ],
+    "explanation": "/24 = 8 host bits → 2⁸ - 2 = 254 usable hosts (minus network and broadcast addresses)."
+  },
+  {
+    "text": "Which protocol is used to secure HTTP connections?",
+    "options": [
+      "SSH",
+      "TLS/SSL",
+      "FTP",
+      "Telnet"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Application Layer Protocols",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Cloudflare",
+    "tags": [
+      "https",
+      "tls"
+    ]
+  },
+  {
+    "text": "Identify the class of IP address 192.168.1.1",
+    "options": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Network Security",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "GATE",
+    "tags": [
+      "ip",
+      "class c"
+    ]
+  },
+  {
+    "text": "Which layer of the OSI model handles error detection and flow control across a single link?",
+    "options": [
+      "Network Layer",
+      "Data Link Layer",
+      "Transport Layer",
+      "Physical Layer"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Data Link Layer & MAC",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Cisco",
+    "tags": [
+      "datalink"
+    ]
+  },
+  {
+    "text": "What is the standard port for SMTP?",
+    "options": [
+      "21",
+      "22",
+      "25",
+      "80"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Application Layer Protocols",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Google",
+    "tags": [
+      "smtp"
+    ]
+  },
+  {
+    "text": "What algorithm is primarily used in Link State Routing?",
+    "options": [
+      "Bellman-Ford",
+      "Dijkstras",
+      "Prim",
+      "Kruskal"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Routing Algorithms",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2017",
+    "tags": [
+      "dijkstra",
+      "routing"
+    ]
+  },
+  {
+    "text": "IEEE 802.11 refers to which of the following?",
+    "options": [
+      "Ethernet",
+      "Bluetooth",
+      "Wi-Fi",
+      "Token Ring"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Wireless & Mobile Networks",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "Intel",
+    "tags": [
+      "wifi"
+    ]
+  },
+  {
+    "text": "In TCP congestion control, what happens when a timeout occurs?",
+    "options": [
+      "Window size is halved",
+      "Window size is set to 1 MSS",
+      "Fast recovery is initiated",
+      "Retransmission timer doubles"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "TCP vs UDP",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2016",
+    "tags": [
+      "tcp",
+      "congestion"
+    ]
+  },
+  {
+    "text": "What is the maximum payload size of a standard Ethernet frame?",
+    "options": [
+      "1500 bytes",
+      "1518 bytes",
+      "65535 bytes",
+      "1024 bytes"
+    ],
+    "correct": 0,
+    "subject": "CN",
+    "topic": "Data Link Layer & MAC",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Cisco Interview",
+    "tags": [
+      "ethernet"
+    ]
+  },
+  {
+    "text": "In the IPv4 header, what is the purpose of the TTL (Time to Live) field?",
+    "options": [
+      "To measure latency",
+      "To prevent routing loops",
+      "To specify packet priority",
+      "To ensure packet durability"
+    ],
+    "correct": 1,
+    "subject": "CN",
+    "topic": "Routing Algorithms",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2012",
+    "tags": [
+      "ipv4",
+      "ttl"
+    ]
+  },
+  {
+    "text": "Which DNS record type maps a domain name to an IPv6 address?",
+    "options": [
+      "A Record",
+      "CNAME Record",
+      "MX Record",
+      "AAAA Record"
+    ],
+    "correct": 3,
+    "subject": "CN",
+    "topic": "DNS & HTTP",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "source": "Cloudflare Interview",
+    "tags": [
+      "dns",
+      "ipv6"
+    ]
+  },
+  {
+    "text": "BGP (Border Gateway Protocol) is an example of which type of routing protocol?",
+    "options": [
+      "Distance Vector",
+      "Link State",
+      "Path Vector",
+      "Hybrid"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Routing Algorithms",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "source": "GATE 2006",
+    "tags": [
+      "bgp"
+    ]
+  },
+  {
+    "text": "In the CSMA/CD protocol, what does a station do immediately after detecting a collision?",
+    "options": [
+      "Retransmits the frame",
+      "Stops transmitting and waits for a random time",
+      "Transmits a jam signal",
+      "Aborts the transmission permanently"
+    ],
+    "correct": 2,
+    "subject": "CN",
+    "topic": "Data Link Layer & MAC",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "source": "GATE 2021",
+    "tags": [
+      "csma",
+      "mac"
+    ]
+  }
+]
