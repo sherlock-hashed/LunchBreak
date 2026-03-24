@@ -168,32 +168,32 @@ flowchart TD
 Mapping the diverse privileges afforded to Unregistered Users, Verified Players, and Database Administrators.
 
 ```mermaid
-usecaseDiagram
-    actor "Anonymous User" as Anon
-    actor "Verified Player" as Player
-    actor "Admin" as Admin
+flowchart LR
+    Anon([Anonymous User])
+    Player([Verified Player])
+    Admin([Database Admin])
 
-    package "Client Functionality" {
-        usecase "Browse General Rules" as UC1
-        usecase "Authenticate (Firebase / JWT)" as UC2
-        usecase "Access Global Leaderboard" as UC3
-    }
+    subgraph Client [Client Functionality]
+        UC1(Browse General Rules)
+        UC2(Authenticate via Firebase JWT)
+        UC3(Access Global Leaderboard)
+    end
     
-    package "Restricted Gameplay Functions" {
-        usecase "Modify User Profile Metadata" as UC4
-        usecase "Queue Official Matchmaking" as UC5
-        usecase "Create & Propagate Private Hosting Rooms" as UC6
-        usecase "Review Advanced ELO Dashboards" as UC7
-    }
+    subgraph Gameplay [Restricted Gameplay Functions]
+        UC4(Modify User Profile Metadata)
+        UC5(Queue Official Matchmaking)
+        UC6(Create & Propagate Private Hosting Rooms)
+        UC7(Review Advanced ELO Dashboards)
+    end
     
-    package "Administrative Functions" {
-        usecase "Inspect Platform Telemetry" as UC8
-        usecase "Review Live Population Queries" as UC9
-    }
+    subgraph AdminFunctions [Administrative Functions]
+        UC8(Inspect Platform Telemetry)
+        UC9(Review Live Population Queries)
+    end
 
-    Anon --> UC1
-    Anon --> UC2
-    Anon --> UC3
+    Anon -.-> UC1
+    Anon -.-> UC2
+    Anon -.-> UC3
 
     Player --> UC1
     Player --> UC2
@@ -204,8 +204,8 @@ usecaseDiagram
     Player --> UC7
 
     Admin --> Player
-    Admin --> UC8
-    Admin --> UC9
+    Admin ===> UC8
+    Admin ===> UC9
 ```
 
 ---
