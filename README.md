@@ -859,16 +859,3 @@ The Express server automatically detects `NODE_ENV=production` and serves the Re
 - [ ] **Monitoring** — Prometheus + Grafana for real-time server metrics
 
 ---
-
-## 👤 Author
-
-**Varad Parate**
-- 📧 Email: varad.22311382@viit.ac.in
-- 🔗 GitHub: [github.com/sherlock-hashed](https://github.com/sherlock-hashed)
-- 🔗 LinkedIn: [linkedin.com/in/varad-parate-34b38328a](https://linkedin.com/in/varad-parate-34b38328a)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
