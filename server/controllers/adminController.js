@@ -6,9 +6,9 @@ const User = require("../models/User");
 const Match = require("../models/Match");
 const jwt = require("jsonwebtoken");
 
-// Hardcoded admin credentials
-const ADMIN_EMAIL = "lunchbreak@sm.com";
-const ADMIN_PASSWORD = "penthousetapes@calmEE";
+// Admin credentials from environment variables (never hardcode secrets)
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 /**
  * POST /api/admin/login
