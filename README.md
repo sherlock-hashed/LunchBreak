@@ -300,12 +300,18 @@ const botTimers = new Map();       // odlomerId → TimeoutId
 
 ```mermaid
 flowchart LR
-    A[Client clicks Option B] -->|"emit: submit-answer<br/>{questionIdx: 3, optionIdx: 1}"| B[Socket Handler]
-    B --> C[Game Engine]
-    C --> D{Compare optionIdx<br/>vs questions[3].correct<br/>in activeMatches Map}
-    D -->|Match| E["score += 4<br/>streak++<br/>emit: answer-result ✅"]
-    D -->|No Match| F["score -= 1<br/>streak = 0<br/>emit: answer-result ❌"]
+    A["Client clicks Option B"] -->|"emit: submit-answer"| B["Socket Handler"]
+    B --> C["Game Engine"]
+    C --> D{"Compare optionIdx vs correct answer in activeMatches Map"}
+    D -->|"Match"| E["score += 4, streak++, emit answer-result"]
+    D -->|"No Match"| F["score -= 1, streak = 0, emit answer-result"]
 ```
+
+**Detailed flow:**
+1. Client emits `submit-answer` with `{ roomId, questionIdx: 3, optionIdx: 1 }`
+2. Server looks up `activeMatches.get(roomId).questions[3].correct`
+3. Compares `optionIdx === correct` → calculates score
+4. Emits `answer-result` with `{ correct: true/false, score, streak, oppScore }`
 
 > **Note:** The client never receives `questions[i].correct`. It is stripped out in `socketHandler.js` before the `match-found` event is emitted.
 
@@ -843,6 +849,168 @@ The Express server automatically detects `NODE_ENV=production` and serves the Re
 **Problem:** Writing every score update and answer submission to MongoDB during a live match would create unacceptable latency and overwhelm the database.
 
 **Solution:** All match state is maintained in JavaScript `Map` objects in server memory. The database is only written to once — when the match ends — in a single `Match.create()` call that batch-saves all analytics.
+
+---
+
+## 📈 Technical Deep Dives
+
+### Match Lifecycle — State Machine
+
+```mermaid
+stateDiagram-v2
+    [*] --> Idle: User on Arena page
+    Idle --> Queued: join-queue emitted
+    Queued --> Matched: Human opponent found
+    Queued --> BotMatch: 15s timeout, bot injected
+    Matched --> Active: Both players emit match-ready
+    BotMatch --> Active: match-ready emitted
+    Active --> Ended: Timer expires OR all questions answered
+    Active --> Disconnected: Socket disconnect
+    Disconnected --> Active: Rejoin within 5s
+    Disconnected --> Ended: 5s grace period expires
+    Ended --> Saved: Match.create + User.update
+    Saved --> [*]
+```
+
+### Custom Room Lifecycle
+
+```mermaid
+sequenceDiagram
+    participant H as Host
+    participant S as Server
+    participant G as Guest
+
+    H->>S: create-room
+    S->>S: Generate 6-char room code
+    S->>S: Store in customRooms Map
+    S-->>H: room-created (code, settings)
+
+    G->>S: join-room (roomCode)
+    S->>S: Validate room exists and not full
+    S-->>G: room-joined (settings, players)
+    S-->>H: player-joined (updated players list)
+
+    H->>S: room-settings (updated config)
+    S-->>H: settings-updated
+    S-->>G: settings-updated
+
+    H->>S: start-room-match
+    S->>S: Fetch questions from MongoDB
+    S->>S: Create match in activeMatches
+    S-->>H: match-found (questions, roomId)
+    S-->>G: match-found (questions, roomId)
+```
+
+### Bot Engine Decision Flow
+
+```mermaid
+flowchart TD
+    A["Bot receives question"] --> B{"Player Elo >= 2000?"}
+    B -->|Yes| C["accuracy = 88%, avgTime = 1.5s"]
+    B -->|No| D{"Player Elo >= 1600?"}
+    D -->|Yes| E["accuracy = 80%, avgTime = 2.0s"]
+    D -->|No| F{"Player Elo >= 1200?"}
+    F -->|Yes| G["accuracy = 70%, avgTime = 2.5s"]
+    F -->|No| H["accuracy = 60%, avgTime = 3.0s"]
+
+    C --> I["Apply +/-30% time variation"]
+    E --> I
+    G --> I
+    H --> I
+
+    I --> J{"Math.random < accuracy?"}
+    J -->|Yes| K["Select correct answer"]
+    J -->|No| L["Select random wrong answer"]
+    K --> M["Schedule setTimeout with computed delay"]
+    L --> M
+    M --> N["Emit submit-answer after delay"]
+```
+
+### Database Write Optimization
+
+```mermaid
+flowchart LR
+    subgraph NaiveApproach["Naive: Write Every Event"]
+        A1["Answer 1"] --> DB1[("MongoDB Write")]
+        A2["Answer 2"] --> DB2[("MongoDB Write")]
+        A3["Answer 3"] --> DB3[("MongoDB Write")]
+        A4["..."] --> DB4[("MongoDB Write")]
+        A5["Answer 10"] --> DB5[("MongoDB Write")]
+    end
+
+    subgraph CSClashApproach["CSClash: In-Memory + Batch Save"]
+        B1["Answer 1"] --> MAP["In-Memory Map"]
+        B2["Answer 2"] --> MAP
+        B3["Answer 3"] --> MAP
+        B4["..."] --> MAP
+        B5["Answer 10"] --> MAP
+        MAP -->|"Match ends"| DB6[("Single MongoDB Write")]
+    end
+```
+
+> **Result:** 10-20 DB writes per match → **1 DB write per match.** At 100 concurrent matches, this prevents ~2000 unnecessary writes per minute.
+
+### Elo Rating — Worked Example
+
+```
+Player A (Rating: 1400) vs Player B (Rating: 1200)
+K-factor = 32
+
+Step 1: Expected Scores
+  E_A = 1 / (1 + 10^((1200 - 1400) / 400))
+      = 1 / (1 + 10^(-0.5))
+      = 1 / (1 + 0.316)
+      = 0.76 (76% expected win rate)
+
+  E_B = 1 - 0.76 = 0.24
+
+Step 2: Player A wins
+  New_A = 1400 + 32 × (1.0 - 0.76) = 1400 + 7.7 ≈ 1408
+  New_B = 1200 + 32 × (0.0 - 0.24) = 1200 - 7.7 ≈ 1192
+
+Step 3: If the underdog (B) wins instead
+  New_A = 1400 + 32 × (0.0 - 0.76) = 1400 - 24.3 ≈ 1376
+  New_B = 1200 + 32 × (1.0 - 0.24) = 1200 + 24.3 ≈ 1224
+
+→ Upsets are rewarded more. Beating a stronger player gives +24 vs +8.
+```
+
+### JWT Authentication Middleware Flow
+
+```mermaid
+flowchart TD
+    A["Incoming Request"] --> B{"Has Authorization header?"}
+    B -->|No| C{"Has token cookie?"}
+    C -->|No| D["401 Unauthorized"]
+    C -->|Yes| E["Extract token from cookie"]
+    B -->|Yes| F["Extract token from Bearer header"]
+    E --> G{"jwt.verify with JWT_SECRET"}
+    F --> G
+    G -->|Invalid/Expired| D
+    G -->|Valid| H["Decode userId from payload"]
+    H --> I["User.findById - exclude password"]
+    I --> J{"User exists?"}
+    J -->|No| D
+    J -->|Yes| K["Attach user to req.user"]
+    K --> L["next - proceed to route handler"]
+```
+
+### Matchmaking Queue Expansion — Timeline
+
+```
+Time (s)  Elo Range        Action
+───────  ──────────────   ─────────────────────────────
+  0       ±50 of 1400     Queue player, start scanning
+  1       ±70             Wider scan
+  2       ±90             ...
+  5       ±150            Mid-range expansion  
+  8       ±210            ...
+ 10       ±250            Aggressive expansion
+ 12       ±290            ...
+ 15       ±350+           🤖 BOT INJECTED — match guaranteed
+
+ Result: No player waits more than 15 seconds for a match.
+```
 
 ---
 
