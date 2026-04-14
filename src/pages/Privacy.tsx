@@ -70,6 +70,21 @@ const Privacy = () => {
             </p>
           </div>
         </div>
+
+        {/* The real talk */}
+        <div className="border border-border bg-card p-6 sm:p-10 text-center mt-6">
+          <div className="max-w-md mx-auto">
+            <p className="font-heading text-lg sm:text-2xl font-bold text-foreground leading-relaxed mb-4">
+              "Privacy is a myth, just like democracy."
+            </p>
+            <p className="font-mono text-xs sm:text-sm text-muted-foreground">
+              — JK, The Family Man
+            </p>
+            <p className="font-mono text-[10px] sm:text-xs text-muted-foreground/50 mt-4">
+              (Don't worry, we actually take your privacy seriously. Unlike Srikant.)
+            </p>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
